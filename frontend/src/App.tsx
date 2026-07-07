@@ -1,6 +1,9 @@
 import { useState} from 'react';
 import './App.css';
 import Header from './components/Header';
+import PainelGeral from './pages/PainelGeral';
+import GerenciarPessoas from './pages/GerenciarPessoas';
+import LancarTransacoes from './pages/LancarTransacoes';
 
 export default function App() {
 	const [activeTabId, setActiveTabId] = useState<number>(1);
@@ -17,29 +20,4 @@ export default function App() {
       </main>
 		</div>
 	);
-}
-
-function PainelGeral() {
-  return (
-    <>
-      <h2>Painel Geral</h2>
-      {/* Conteúdo do Painel Geral */}
-    </>
-  );
-}
-function GerenciarPessoas() {
-  return (
-    <>
-      <h2>Gerenciar Pessoas</h2>
-      {/* Conteúdo do Gerenciar Pessoas */}
-    </>
-  );
-}
-function LancarTransacoes() {
-  return (
-    <>
-      <h2>Lançar Transações</h2>
-      {/* Conteúdo do Lançar Transações */}
-    </>
-  );
 }

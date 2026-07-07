@@ -18,8 +18,8 @@ export default function Tab({
 			// criar sistema de cores por distancia entre as tabs, aplicando 10% de diferença entre cada tab
 			style={{
 				backgroundColor: isActive
-					? 'var(--cor-azul)'
-					: `color-mix(in srgb, color-mix(in srgb, var(--cor-fundo-pasta) 40%, var(--cor-azul) 60%) ${100 - Math.abs(activeTabId - id) * 10}%, #000)`,
+					? 'var(--cor-botao)'
+					: `color-mix(in srgb, color-mix(in srgb, var(--cor-fundo-pasta) 40%, var(--cor-botao) 60%) ${100 - Math.abs(activeTabId - id) * 10}%, #000)`,
 			}}
 		>
 			{label}
