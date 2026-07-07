@@ -1,6 +1,6 @@
 :root {
     /* Cores Base da Paleta */
-    --cor-fundo-postit: #feffa5; /* Amarelo Pastel */
+    --cor-fundo-pasta: oklab(85% -0.00195 -0.0049); /* cor do fundo do card um pouco mais escuro */
     --cor-azul: #235789; /* Azul Escuro */
     --cor-laranja: #ff934f; /* Laranja */
     --cor-verde: #09bc8a; /* Verde */

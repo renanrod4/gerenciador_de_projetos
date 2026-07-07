@@ -11,32 +11,32 @@
       gap: 5px;
       justify-content: space-between;
       list-style: none;
+      margin-left: 20px;
       li{
-        background-color: var(--cor-primaria);
+        background-color: color-mix(var(--cor-fundo-pasta), var(--cor-azul) 50%);
         color: var(--cor-texto-claro);
+        min-width: 180px;
+        display: flex;
+        justify-content: center;
+
         padding: 10px 20px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         cursor: pointer;
         transition: all 0.1s ease-in-out;
-        &:nth-child(2){
-          filter: brightness(0.8);
-        }
-        &:nth-child(3){
-          filter: brightness(0.6);
-
-        }
         &:hover{
-          filter: brightness(1.1);
           transform: scaleY(1.2) translateY(-3px);
         }
+
       }
     }
   }
   main{
     flex: 1;
-    background-color: var(--cor-fundo-postit);
+    background-color: var(--cor-fundo-pasta);
     border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+    padding: 20px;
   }
 
 }
