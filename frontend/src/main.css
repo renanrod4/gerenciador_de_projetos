@@ -1,0 +1,40 @@
+:root {
+    /* Cores Base da Paleta */
+    --cor-fundo-postit: #feffa5; /* Amarelo Pastel */
+    --cor-azul: #235789; /* Azul Escuro */
+    --cor-laranja: #ff934f; /* Laranja */
+    --cor-verde: #09bc8a; /* Verde */
+    --cor-texto-escuro: #161925; /* Preto Azulado */
+    /* Cores de Apoio de UI */
+    --cor-fundo-tela: #e9ecef; /* Cinza levemente mais escuro para destacar o card branco */
+    --cor-texto-mutado: #5c677d; /* Cinza para textos secundários */
+    --cor-linha: rgba(22, 25, 37, 0.08);
+
+    --cor-primaria: var(--cor-azul); 
+    --cor-texto-claro: var(--cor-fundo-tela); 
+}
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-fundo-tela);
+    color: var(--cor-texto-escuro);
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
