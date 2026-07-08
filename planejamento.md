@@ -12,7 +12,7 @@ O sistema será implementado como uma **SPA (Single Page Application) sem roteam
   * **Tabela de Detalhamento por Pessoa:** Colunas exibindo `Nome | Total Receitas | Total Despesas | Saldo Individual `.
 * **Estado Inicial:** Caso o banco esteja vazio, exibe mensagens informando que nenhuma pessoa ou transação foi computada ainda.
 
-### Aba 2: Gerenciar Pessoas
+### Aba 2: Gerenciar Pessoas <!--* OK  -->
 * **Objetivo:** Cadastrar e remover os membros da residência.
 * **Elementos em Tela:**
   * **Formulário de Cadastro:** Inputs de `Nome` e `Idade`.
