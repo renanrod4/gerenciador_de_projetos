@@ -13,8 +13,8 @@
     --cor-linha: rgba(22, 25, 37, 0.08);
 
     --cor-primaria: var(--cor-azul);
-    --cor-botao: var(--cor-azul);
-    --cor-botao-hover: color-mix(var(--cor-azul), #000 10%);
+    --cor-botao: var(--cor-primaria);
+    --cor-botao-hover: color-mix(var(--cor-primaria), #000 10%);
     --cor-texto-claro: var(--cor-fundo-tela);
 }
 #root {
