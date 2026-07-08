@@ -269,6 +269,26 @@ form {
       }
     }
   }
+  & > .transacao-cards-header {
+    display: grid;
+    grid-template-columns: 200px 1fr 120px 130px 40px;
+    gap: 15px;
+    padding: 10px 60px;
+    width: 100%;
+
+    p {
+      margin: 0;
+      
+      color: var(--cor-texto-mutado);
+      &.nome{
+        min-width: 25ch;
+      }
+      
+      &.valor {
+        text-align: center;
+      }
+    }
+  }
   & > .transacao-cards {
     display: flex;
     flex-direction: column;
@@ -291,7 +311,9 @@ form {
       width: 100%;
       .header {
         position: relative;
-        display: flex;
+        display: grid;
+        grid-template-columns: 200px 1fr 120px 130px 40px;
+        gap: 15px;
         padding-right: 25px;
         align-items: center;
         justify-content: space-between;
@@ -299,6 +321,7 @@ form {
           display: flex;
           align-items: center;
           justify-content: center;
+          max-width: 120px;
           border: 1px solid var(--cor-linha);
           padding: 3px 5px;
           border-radius: 5px;
@@ -321,7 +344,7 @@ form {
           }
         }
         .nome {
-          min-width: 30ch;
+          min-width: 25ch;
         }
         .valor {
           padding: 3px 5px;
@@ -369,12 +392,12 @@ form {
           max-height: 150px;
         }
         .descricao {
-        margin: 10px 0 0 0;
-        background-color: var(--cor-fundo-pasta);
-        padding: 10px;
-        flex: 1;
-        border-radius: 5px;
-      }
+          margin: 10px 0 0 0;
+          background-color: var(--cor-fundo-pasta);
+          padding: 10px;
+          flex: 1;
+          border-radius: 5px;
+        }
       }
     }
   }

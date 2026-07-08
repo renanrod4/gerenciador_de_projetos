@@ -15,6 +15,12 @@ export default function LancarTransacoes() {
 						<p>Lançar transação</p>
 					</button>
 				</div>
+        <div className="transacao-cards-header">
+          <p className="id">ID</p>
+          <p className="nome">Nome</p>
+          <p className="data">Data</p>
+          <p className="valor">Valor</p>
+        </div>
 				<TransacaoCards />
 			</div>
 		</>
@@ -64,7 +70,8 @@ function TransacaoCard({
 						<IoCopyOutline />
 					</button>
 				</div>
-				<p className="nome">{nome}</p>
+        {/* Mostra apenas os 3 primeiros nomes do usuário, caso ele tenha mais de 3 nomes */}
+				<p className="nome">{nome.split(' ').slice(0, 2).join(' ')}</p>
 
 				{/* transformar data no formato pt-br */}
 				<p className="data">{new Date(data).toLocaleDateString('pt-BR')}</p>
