@@ -33,6 +33,7 @@ export default function TransacaoCard({
 
 				{/* transformar data no formato pt-br */}
 				<p className="data">{new Date(data).toLocaleDateString('pt-BR')}</p>
+				<p className="hora">{new Date(data).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}</p>
 
 				{/* a cor do `valor` vai mudar de acordo com o tipo(despesa ou receita) */}
 				{/* muda o valor para o formato usado no Brasil, com vírgula como separador decimal e ponto como separador de milhar */}

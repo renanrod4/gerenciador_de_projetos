@@ -110,7 +110,7 @@ main {
     }
   }
 }
-.coluna-direita {
+.criar-excluir-pessoa {
   display: flex;
   flex: 1;
   height: 100%;
@@ -167,7 +167,7 @@ form {
   }
 }
 
-.pop-up-excluir-pessoa {
+.popup {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,12 +208,50 @@ form {
           background-color: color-mix(in srgb, var(--cor-linha), #000 10%);
         }
       }
-      &.botao-excluir {
+    }
+  }
+  &.popup-excluir-pessoa {
+    .botoes {
+      .botao-excluir {
         background-color: var(--cor-vermelho);
         color: var(--cor-texto-claro);
         &:hover {
           transform: scaleY(1.1) translateY(-2px);
           background-color: color-mix(in srgb, var(--cor-vermelho), #000 10%);
+        }
+      }
+    }
+  }
+  &.popup-lancar-transacao {
+    text-align: left;
+    form {
+      p {
+        padding-left: 10px;
+      }
+      .data {
+        display: flex;
+        gap: 10px;
+        input {
+          padding: 10px;
+          flex: 1;
+          border-radius: 5px;
+          border: 2px solid var(--cor-linha);
+          background-color: var(--cor-fundo-tela);
+          color: var(--cor-texto-escuro);
+          font-size: 16px;
+        }
+      }
+      select {
+        width: 100%;
+      }
+    }
+    .botoes {
+      .botao-lancar {
+        background-color: var(--cor-botao);
+        color: var(--cor-texto-claro);
+        &:hover {
+          transform: scaleY(1.1) translateY(-2px);
+          background-color: var(--cor-botao-hover);
         }
       }
     }
@@ -271,7 +309,7 @@ form {
   }
   & > .transacao-cards-header {
     display: grid;
-    grid-template-columns: 200px 1fr 120px 130px 40px;
+    grid-template-columns: 200px 1fr 120px 80px 130px 40px;
     gap: 15px;
     padding: 10px 60px;
     padding-bottom: 0;
@@ -279,18 +317,19 @@ form {
 
     p {
       margin: 0;
-      
+
       color: var(--cor-texto-mutado);
-      &.nome{
+      &.nome {
         min-width: 25ch;
       }
-      
+
       &.valor {
         text-align: center;
       }
     }
   }
   & > .transacao-cards {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -298,11 +337,22 @@ form {
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-auto-rows: minmax(200px, auto); */
     padding: 20px;
+    padding-top: 0px;
     gap: 10px;
     width: 100%;
     height: 100%;
     overflow-y: auto;
-
+    overflow-x: hidden;
+    &::before {
+  content: "";
+  position: sticky;
+  top: 0;
+  height: 20px;
+  width: 103%;
+  background: linear-gradient(to bottom, var(--cor-fundo-tela) 60%, transparent);
+  z-index: 10;
+  flex-shrink: 0;
+}
     .transacao-card {
       display: flex;
       flex-direction: column;
@@ -313,7 +363,7 @@ form {
       .header {
         position: relative;
         display: grid;
-        grid-template-columns: 200px 1fr 120px 130px 40px;
+        grid-template-columns: 200px 1fr 120px 80px 130px 40px;
         gap: 15px;
         padding-right: 25px;
         align-items: center;
@@ -350,7 +400,10 @@ form {
         .valor {
           padding: 3px 5px;
           border-radius: 5px;
-          min-width: 12ch;
+          width: fit-content;
+          min-width: 80px;
+          justify-self: center;
+
           text-align: center;
           color: var(--cor-texto-claro);
           &.despesa {
@@ -361,6 +414,10 @@ form {
           }
         }
         .data {
+          font-size: 12px;
+          color: var(--cor-texto-mutado);
+        }
+        .hora {
           font-size: 12px;
           color: var(--cor-texto-mutado);
         }

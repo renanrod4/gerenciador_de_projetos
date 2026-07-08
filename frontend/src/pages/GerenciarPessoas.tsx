@@ -6,7 +6,7 @@ export default function GerenciarPessoas() {
 	return (
 		<>
 			<CardGerenciarPessoas />
-			<div className="coluna-direita">
+			<div className="criar-excluir-pessoa">
 				<CriarPessoa />
 				<ExcluirPessoa />
 			</div>

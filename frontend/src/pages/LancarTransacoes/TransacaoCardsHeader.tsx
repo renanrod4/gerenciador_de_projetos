@@ -4,6 +4,7 @@ export default function TransacaoCardsHeader() {
 			<p className="id">ID</p>
 			<p className="nome">Nome</p>
 			<p className="data">Data</p>
+			<p className="hora">Hora</p>
 			<p className="valor">Valor</p>
 		</div>
 	);

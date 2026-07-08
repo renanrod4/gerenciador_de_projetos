@@ -55,11 +55,11 @@ function PopUpExcluirPessoa({ setShowPopUp }: { setShowPopUp: Dispatch<SetStateA
 			hide();
 		}
 	}
-	// usa `createPortal` para renderizar o pop-up em um lugar separado do DOM, 
+	// usa `createPortal` para renderizar o popup em um lugar separado do DOM, 
 	// permitindo que ele seja exibido acima de outros elementos da página
 	return createPortal(
 		<div className={`overlay ${hidePopUp ? 'hide' : ''}`}>
-			<div className={`pop-up-excluir-pessoa ${hidePopUp ? 'hide' : ''}`}>
+			<div className={`popup popup-excluir-pessoa ${hidePopUp ? 'hide' : ''}`}>
 				<h2>Tem certeza que deseja excluir essa pessoa?</h2>
 				<p>Ao excluir uma pessoa, todas as transações relacionadas a ela também serão excluídas!</p>
 				<div className="botoes">
