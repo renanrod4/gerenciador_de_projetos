@@ -274,6 +274,7 @@ form {
     grid-template-columns: 200px 1fr 120px 130px 40px;
     gap: 15px;
     padding: 10px 60px;
+    padding-bottom: 0;
     width: 100%;
 
     p {
