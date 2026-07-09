@@ -344,15 +344,15 @@ form {
     overflow-y: auto;
     overflow-x: hidden;
     &::before {
-  content: "";
-  position: sticky;
-  top: 0;
-  height: 20px;
-  width: 103%;
-  background: linear-gradient(to bottom, var(--cor-fundo-tela) 60%, transparent);
-  z-index: 10;
-  flex-shrink: 0;
-}
+      content: "";
+      position: sticky;
+      top: 0;
+      height: 20px;
+      width: 103%;
+      background: linear-gradient(to bottom, var(--cor-fundo-tela) 60%, transparent);
+      z-index: 10;
+      flex-shrink: 0;
+    }
     .transacao-card {
       display: flex;
       flex-direction: column;
@@ -407,10 +407,10 @@ form {
           text-align: center;
           color: var(--cor-texto-claro);
           &.despesa {
-            background-color: var(--cor-vermelho);
+            background-color: color-mix(in srgb, var(--cor-vermelho), transparent 30%);
           }
           &.receita {
-            background-color: var(--cor-verde);
+            background-color: color-mix(in srgb, var(--cor-verde), transparent 30%);
           }
         }
         .data {
@@ -455,6 +455,127 @@ form {
           padding: 10px;
           flex: 1;
           border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.painel-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  .controls{
+      position:absolute;
+      right: 0px;
+      top: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 10px;
+      padding-right: 20px;
+      margin-bottom: 10px;
+    }
+  .informacoes-totais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 80%;
+    .info-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      flex:1;
+      border-radius: 10px;
+      background-color:color-mix(in srgb, var(--cor-azul), transparent 20%);
+      box-shadow: inset -1px -1px 6px 3px rgba(0, 0, 0, 0.3);
+      padding: 6px;
+      overflow: hidden;
+      .info-cards-title {
+        color: var(--cor-texto-claro);
+        padding-bottom: 5px;
+      }
+      .info-cards-value {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50px;
+        flex: 1;
+        background-color: var(--cor-fundo-tela);
+        border-radius: 6px;
+        box-shadow: inset -1px -1px 6px 3px rgba(0, 0, 0, 0.3);
+      }
+      &.total-receitas {
+        color: color-mix(in srgb, var(--cor-verde), transparent 30%);
+      }
+      &.total-despesas {
+        color: color-mix(in srgb, var(--cor-vermelho), transparent 30%);
+        
+      }
+      &.saldo-liquido-geral {
+        color: var(--cor-texto-mutado);
+      }
+    }
+  }
+  .informacoes-individuais {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-height: 80%;
+    background-color: var(--cor-fundo-tela);
+    box-shadow: inset -1px -1px 6px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px 10px;
+    width: 100%;
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 170px 250px 100px;
+      gap: 15px;
+      margin: 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--cor-linha);
+    }
+    .informacoes-individuais-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      flex: 1;
+      
+      max-height: 100%;
+      overflow-y: auto;
+      .informacoes-individuais-card {
+        display: grid;
+        grid-template-columns: 1fr 170px 170px 150px;
+        gap: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.3);
+        .saldo {
+          text-align: center;
+          color: var(--cor-texto-claro);
+          padding: 3px 5px;
+          border-radius: 5px;
+          align-self: center;
+          justify-self: center;
+          width: fit-content;
+          &.negativo {
+            background-color: color-mix(in srgb, var(--cor-vermelho), transparent 30%);
+          }
+          &.positivo {
+            background-color: color-mix(in srgb, var(--cor-verde), transparent 30%);
+          }
         }
       }
     }

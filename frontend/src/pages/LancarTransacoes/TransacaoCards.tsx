@@ -1,14 +1,15 @@
-import { transacoes } from "../../mockData";
+import { transacoes, pessoas } from "../../mockData";
 import TransacaoCard from "./TransacaoCard";
 
 export default function TransacaoCards() {
+	
 	return (
 		<div className="transacao-cards">
 			{transacoes.map(transacao => (
 				<TransacaoCard
 					key={transacao.id}
 					id={transacao.id}
-					nome={transacao.nome}
+					nome={pessoas.find(pessoa => pessoa.id === transacao.pessoaId)?.nome || 'Pessoa não encontrada'}
 					valor={transacao.valor}
 					data={transacao.data}
 					tipo={transacao.tipo as 'despesa' | 'receita'}

@@ -6,7 +6,7 @@ import GerenciarPessoas from './pages/GerenciarPessoas';
 import LancarTransacoes from './pages/LancarTransacoes';
 
 export default function App() {
-	const [activeTabId, setActiveTabId] = useState<number>(1);
+	const [activeTabId, setActiveTabId] = useState<number>(0);
 	return (
 		<div>
 			{/* Renderiza o Header com as abas */}

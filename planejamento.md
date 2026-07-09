@@ -19,7 +19,7 @@ O sistema será implementado como uma **SPA (Single Page Application) sem roteam
   * **Lista de Pessoas:** Tabela exibindo os membros cadastrados acompanhados de um botão `Excluir`.
   * **Regra Crítica:** Um aviso visual lembrará o usuário de que, ao deletar uma pessoa, todos os gastos vinculados a ela serão apagados permanentemente
 
-### Aba 3: Lançar Transações
+### Aba 3: Lançar Transações <!--* OK -->
 * **Objetivo:** Registrar as movimentações financeiras da casa.
 * **Elementos em Tela:**
   * **Formulário de Lançamento:** Inputs de `Descrição`, `Valor`, `Tipo` (Select: Receita / Despesa) e `Quem fez a movimentação` (Select com nome das pessoas da casa).
