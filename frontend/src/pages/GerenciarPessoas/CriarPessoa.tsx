@@ -5,15 +5,8 @@ export default function CriarPessoa() {
 			<form className="formulario" action="">
 				<p>nome:</p>
 				<input type="text" name="nome" id="nome" placeholder="Digite o nome da pessoa..." />
-				<p>idade:</p>
-				<input
-					type="number"
-					name="idade"
-					id="idade"
-					min={0}
-					max={120}
-					placeholder="Digite a idade da pessoa..."
-				/>
+				<p>data de nascimento:</p>
+				<input type="date" name="dataNascimento" id="dataNascimento" />
 				<button type="submit">Adicionar</button>
 			</form>
 		</div>

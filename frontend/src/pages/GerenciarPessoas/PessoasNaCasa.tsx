@@ -11,10 +11,12 @@ export default function CardGerenciarPessoas() {
 }
 
 function ListaPessoas() {
+
 	return (
 		<ul className="lista-pessoas">
 			{pessoas.map(pessoa => {
-				return <Pessoa key={pessoa.id} nome={pessoa.nome} idade={pessoa.idade} />;
+				const idade = new Date().getFullYear() - new Date(pessoa.dataNascimento).getFullYear();
+				return <Pessoa key={pessoa.id} nome={pessoa.nome} idade={idade} />;
 			})}
 		</ul>
 	);

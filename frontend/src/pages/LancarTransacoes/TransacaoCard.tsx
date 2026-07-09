@@ -28,7 +28,7 @@ export default function TransacaoCard({
 						<IoCopyOutline />
 					</button>
 				</div>
-        {/* Mostra apenas os 3 primeiros nomes do usuário, caso ele tenha mais de 3 nomes */}
+        {/* Mostra apenas os 2 primeiros nomes do usuário, caso ele tenha mais de 2 nomes */}
 				<p className="nome">{nome.split(' ').slice(0, 2).join(' ')}</p>
 
 				{/* transformar data no formato pt-br */}

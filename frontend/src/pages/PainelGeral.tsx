@@ -31,6 +31,9 @@ export default function PainelGeral() {
 			dataLimite.setFullYear(dataLimite.getFullYear() - 1);
 			return new Date(t.data) >= dataLimite;
 		}
+    if (selectedOptionPeriodo === "Todo o Histórico") {
+        return true;
+    }
 
 		return true;
 	});
@@ -51,7 +54,7 @@ export default function PainelGeral() {
 				/>
 				<SelectMenu
 					text="Período"
-					options={['Mês', 'Semestre', 'Ano']}
+					options={['Mês', 'Semestre', 'Ano', 'Todo o Histórico']}
 					isOpen={isOpenMenu === 2}
 					onToggle={() => setIsOpenMenu(isOpenMenu === 2 ? null : 2)}
 					setValue={setSelectedOptionPeriodo}
@@ -116,11 +119,12 @@ export default function PainelGeral() {
 								'despesa',
 							);
 							const saldoPessoa = totalReceitasPessoa - totalDespesasPessoa;
+              const idade = new Date().getFullYear() - new Date(pessoa.dataNascimento).getFullYear();
 							return (
 								<div key={pessoa.id} className="informacoes-individuais-card">
 									<p className="nome">{pessoa.nome}</p>
 									<p className="total-receitas">
-										{pessoa.idade < 18 ? '- - -' : formatarValor(totalReceitasPessoa)}
+										{idade < 18 ? '- - -' : formatarValor(totalReceitasPessoa)}
 									</p>
 									<p className="total-despesas">{formatarValor(totalDespesasPessoa)}</p>
 									<p

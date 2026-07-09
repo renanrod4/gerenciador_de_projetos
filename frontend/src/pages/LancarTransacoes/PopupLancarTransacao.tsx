@@ -13,7 +13,8 @@ export default function PopupLancarTransacao({
 	const [data, setData] = useState(new Date().toISOString().split('T')[0]);
 	const [hora, setHora] = useState(new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }));
 	const pessoaSelecionada = pessoas.find(pessoa => pessoa.nome === nomeSelecionado);
-	const menorDeIdade = pessoaSelecionada ? pessoaSelecionada.idade < 18 : false;
+	const idade = pessoaSelecionada ? new Date().getFullYear() - new Date(pessoaSelecionada.dataNascimento).getFullYear() : 0;
+	const menorDeIdade = pessoaSelecionada ? idade < 18 : false;
 	const [tipoSelecionado, setTipoSelecionado] = useState(menorDeIdade ? 'despesa' : 'receita');
 
 	function handleClose() {
@@ -33,7 +34,8 @@ export default function PopupLancarTransacao({
 		const nome = e.target.value;
 		setNomeSelecionado(nome);
 		const pessoa = pessoas.find(pessoa => pessoa.nome === nome);
-		if (pessoa) setTipoSelecionado(tipoSelecionado => (pessoa.idade < 18 ? 'despesa' : tipoSelecionado));
+		const idade = pessoa ? new Date().getFullYear() - new Date(pessoa.dataNascimento).getFullYear() : 0;
+		if (pessoa) setTipoSelecionado(tipoSelecionado => (idade < 18 ? 'despesa' : tipoSelecionado));
 	}
 
 	return createPortal(
