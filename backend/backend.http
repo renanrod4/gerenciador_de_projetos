@@ -1,5 +1,7 @@
 @backend_HostAddress = http://localhost:5038
 
+############################################################## CRUD PESSOA
+
 ### Criar nova pessoa
 POST {{backend_HostAddress}}/api/pessoas
 Content-Type: application/json
@@ -9,9 +11,27 @@ Content-Type: application/json
   "dataNascimento": "1990-05-15"
 }
 
+
 #### Listar todas as pessoas
 GET {{backend_HostAddress}}/api/pessoas
 Accept: application/json
+
+
+### Editar uma pessoa
+PUT {{backend_HostAddress}}/api/pessoas/id
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "dataNascimento": "1990-05-15"
+}
+
+
+### Deletar uma pessoa
+DELETE {{backend_HostAddress}}/api/pessoas/id
+
+
+############################################################## CRUD TRANSAÇÃO
 
 ### Criar uma Transação
 # 0 para despesa, 1 para receita
@@ -23,10 +43,24 @@ Content-Type: application/json
   "valor": 150.75,
   "data": "2024-06-01",
   "tipo": 0,
-  "pessoaId": "dcef8ae4-d100-4803-9bcb-05d49a1181a5"
+  "pessoaId": "cbc4b824-1c6c-4f3e-aea2-d7d75352116b"
 }
 
-#### Listar todas as transações
+### Listar todas as transações
 GET {{backend_HostAddress}}/api/transacoes
 Accept: application/json
 
+#### Editar uma transação
+PUT {{backend_HostAddress}}/api/transacoes/id
+Content-Type: application/json
+
+{
+  "descricao": "Compra de supermercado",
+  "valor": 150.75,
+  "data": "2024-06-01",
+  "tipo": 0,
+  "pessoaId": "id"
+}
+
+### Deletar uma transação
+DELETE {{backend_HostAddress}}/api/transacoes/id

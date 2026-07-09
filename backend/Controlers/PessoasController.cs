@@ -47,4 +47,36 @@ public class PessoasController : ControllerBase
         return CreatedAtAction(nameof(ListarTodos), new {id = novaPessoa.Id}, novaPessoa);
     }
 
+    // PUT: api/pessoas/{id}
+    // Endpoint para editar uma pessoa existente. campos `Nome` e `DataNascimento`
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Editar(string id, CriarPessoaDTO dto)
+    {
+        var pessoa = await _context.Pessoas.FindAsync(id);
+        if (pessoa == null)
+        {
+            return NotFound($"Pessoa com ID {id} não encontrada.");
+        }
+        pessoa.Nome = dto.Nome;
+        pessoa.DataNascimento = dto.DataNascimento;
+        await _context.SaveChangesAsync();
+
+        return NoContent(); // Retorna 204 No Content
+    }
+
+    // DELETE: api/pessoas/{id}
+    // Endpoint para deletar uma pessoa existente
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Deletar(string id)
+    {
+        var pessoa = await _context.Pessoas.FindAsync(id);
+        if (pessoa == null)
+        {
+            return NotFound($"Pessoa com ID {id} não encontrada.");
+        }
+        _context.Pessoas.Remove(pessoa);
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
+
 }

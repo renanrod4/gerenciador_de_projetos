@@ -224,26 +224,56 @@ form {
     }
   }
   &.popup-lancar-transacao {
+    width: auto;
+    min-width: 900px;
     text-align: left;
     form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       p {
         padding-left: 10px;
       }
-      .data {
+      .form-left {
         display: flex;
+        flex-direction: column;
         gap: 10px;
-        input {
+        flex: 1;
+        .data {
+          display: flex;
+          gap: 10px;
+          input {
+            padding: 10px;
+
+            flex: 1;
+            border-radius: 5px;
+            border: 2px solid var(--cor-linha);
+            background-color: var(--cor-fundo-tela);
+            color: var(--cor-texto-escuro);
+            font-size: 16px;
+          }
+        }
+        select {
+          width: 100%;
+        }
+      }
+      .descricao{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        flex:1;
+        gap: 10px;
+        textarea {
           padding: 10px;
-          flex: 1;
           border-radius: 5px;
           border: 2px solid var(--cor-linha);
           background-color: var(--cor-fundo-tela);
           color: var(--cor-texto-escuro);
           font-size: 16px;
+          resize: none;
+          width: 100%;
+          height: 100%;
         }
-      }
-      select {
-        width: 100%;
       }
     }
     .botoes {
@@ -470,17 +500,17 @@ form {
   width: 100%;
   height: 100%;
   gap: 20px;
-  .controls{
-      position:absolute;
-      right: 0px;
-      top: 50px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      gap: 10px;
-      padding-right: 20px;
-      margin-bottom: 10px;
-    }
+  .controls {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
   .informacoes-totais {
     display: flex;
     justify-content: center;
@@ -495,9 +525,9 @@ form {
       flex-direction: column;
       justify-content: start;
       align-items: center;
-      flex:1;
+      flex: 1;
       border-radius: 10px;
-      background-color:color-mix(in srgb, var(--cor-azul), transparent 20%);
+      background-color: color-mix(in srgb, var(--cor-azul), transparent 20%);
       box-shadow: inset -1px -1px 6px 3px rgba(0, 0, 0, 0.3);
       padding: 6px;
       overflow: hidden;
@@ -522,7 +552,6 @@ form {
       }
       &.total-despesas {
         color: color-mix(in srgb, var(--cor-vermelho), transparent 30%);
-        
       }
       &.saldo-liquido-geral {
         color: var(--cor-texto-mutado);
@@ -553,7 +582,7 @@ form {
       gap: 10px;
       padding: 10px;
       flex: 1;
-      
+
       max-height: 100%;
       overflow-y: auto;
       .informacoes-individuais-card {
