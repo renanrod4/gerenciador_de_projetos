@@ -5,7 +5,7 @@
 
 O sistema será implementado como uma **SPA (Single Page Application) sem roteamento**, utilizando um menu superior de Abas (`Tabs`) para alternar a interface instantaneamente sem recarregamento de página.
 
-### Aba 1: Painel Geral (Visão Padrão)
+### Aba 1: Painel Geral (Visão Padrão) <!--* OK -->
 * **Objetivo:** Dar ao usuário a telemetria financeira imediata da residência.
 * **Elementos em Tela:**
   * **Cards:** Total Geral de Receitas, Total Geral de Despesas e Saldo Líquido Geral da casa

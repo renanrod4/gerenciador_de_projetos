@@ -1,6 +1,32 @@
 @backend_HostAddress = http://localhost:5038
 
-GET {{backend_HostAddress}}/weatherforecast/
+### Criar nova pessoa
+POST {{backend_HostAddress}}/api/pessoas
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "dataNascimento": "1990-05-15"
+}
+
+#### Listar todas as pessoas
+GET {{backend_HostAddress}}/api/pessoas
 Accept: application/json
 
-###
+### Criar uma Transação
+# 0 para despesa, 1 para receita
+POST {{backend_HostAddress}}/api/transacoes
+Content-Type: application/json
+
+{
+  "descricao": "Compra de supermercado",
+  "valor": 150.75,
+  "data": "2024-06-01",
+  "tipo": 0,
+  "pessoaId": "dcef8ae4-d100-4803-9bcb-05d49a1181a5"
+}
+
+#### Listar todas as transações
+GET {{backend_HostAddress}}/api/transacoes
+Accept: application/json
+
