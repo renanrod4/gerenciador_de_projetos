@@ -1,12 +1,38 @@
-import { useState, type Dispatch, type SetStateAction } from 'react';
+import { useEffect, useState, type Dispatch, type SetStateAction } from 'react';
 import { createPortal } from 'react-dom';
-import { pessoas } from '../../mockData';
+import type { pessoasType } from '../../mockData';
+import { excluirPessoa } from '../../api/excluirPessoa';
 
-export default function ExcluirPessoa() {
+export default function ExcluirPessoa({
+	pessoas,
+	onPessoasExcluidas,
+}: {
+	pessoas: pessoasType;
+	onPessoasExcluidas: () => void;
+}) {
 	const [showPopUp, setShowPopUp] = useState(false);
-	function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+	const [selectedPessoa, setSelectedPessoa] = useState<pessoasType[number] | null>(null);
+	useEffect(() => {
+		function setInitialSelectedPessoa() {
+			if (pessoas.length > 0) {
+				setSelectedPessoa(pessoas[0]);
+			} else {
+				setSelectedPessoa(null);
+			}
+		}
+		setInitialSelectedPessoa();
+	}, [pessoas]);
+
+	function handleClick(event: React.MouseEvent<HTMLButtonElement | HTMLSelectElement>) {
 		event.preventDefault();
-		setShowPopUp(true);
+		if (event.currentTarget.type === 'submit') {
+			setShowPopUp(true);
+		}
+	}
+
+	function handleSelectChange(event: React.ChangeEvent<HTMLSelectElement>) {
+		const pessoa = pessoas.find(pessoa => pessoa.nome === event.currentTarget.value) || null;
+		setSelectedPessoa(pessoa);
 	}
 	return (
 		<>
@@ -15,10 +41,9 @@ export default function ExcluirPessoa() {
 				<form className="formulario" action="">
 					<p>nome:</p>
 					{/* input de escolha com nomes */}
-					{/*TODO: adicionar nomes via consulta no banco de dados */}
-					<select name="nome" id="nome">
+					<select name="nome" id="nome" onChange={handleSelectChange} value={selectedPessoa?.nome || ''}>
 						{pessoas.map(pessoa => (
-							<option key={pessoa.id} value={pessoa.nome}>
+							<option className="option" key={pessoa.id} value={pessoa.nome}>
 								{pessoa.nome}
 							</option>
 						))}
@@ -28,14 +53,31 @@ export default function ExcluirPessoa() {
 					</button>
 				</form>
 			</div>
-			{showPopUp && <PopUpExcluirPessoa setShowPopUp={setShowPopUp} />}
+			{showPopUp && (
+				<PopUpExcluirPessoa
+					setShowPopUp={setShowPopUp}
+					pessoaId={selectedPessoa?.id || ''}
+					onPessoasExcluidas={onPessoasExcluidas}
+					setSelectedPessoa={setSelectedPessoa}
+				/>
+			)}
 		</>
 	);
 }
 
-function PopUpExcluirPessoa({ setShowPopUp }: { setShowPopUp: Dispatch<SetStateAction<boolean>> }) {
+function PopUpExcluirPessoa({
+	setShowPopUp,
+	pessoaId,
+	onPessoasExcluidas,
+}: {
+	setShowPopUp: Dispatch<SetStateAction<boolean>>;
+	pessoaId: string;
+	onPessoasExcluidas: () => void;
+	setSelectedPessoa: Dispatch<SetStateAction<pessoasType[number] | null>>;
+}) {
 	const [hidePopUp, setHidePopUp] = useState(false);
-	function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+	async function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+		const target = event.currentTarget as HTMLButtonElement;
 		event.preventDefault();
 
 		function hide() {
@@ -46,16 +88,18 @@ function PopUpExcluirPessoa({ setShowPopUp }: { setShowPopUp: Dispatch<SetStateA
 			}, 300);
 		}
 
-		if (event.currentTarget.className === 'botao-excluir') {
-			alert('Pessoa excluída com sucesso!');
+		if (target.className === 'botao-excluir') {
+			console.log('Excluindo pessoa com ID:', pessoaId);
+			await excluirPessoa(pessoaId)
+			console.log('Pessoa excluída com sucesso!');
+			onPessoasExcluidas();
 			hide();
-			//TODO: adicionar lógica de exclusão da pessoa no banco de dados
 		}
-		if (event.currentTarget.className === 'botao-cancelar') {
+		if (target.className === 'botao-cancelar') {
 			hide();
 		}
 	}
-	// usa `createPortal` para renderizar o popup em um lugar separado do DOM, 
+	// usa `createPortal` para renderizar o popup em um lugar separado do DOM,
 	// permitindo que ele seja exibido acima de outros elementos da página
 	return createPortal(
 		<div className={`overlay ${hidePopUp ? 'hide' : ''}`}>

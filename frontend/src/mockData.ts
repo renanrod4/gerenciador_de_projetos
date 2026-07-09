@@ -7,6 +7,7 @@ export const pessoas = [
 	{nome: 'Susie Tucker', dataNascimento: '1951-11-30', id: 'c372:167f:81ee:6d7b:9dce'},
 	{nome: 'Henrietta Reid', dataNascimento: '1954-08-09', id: '9e3e:083e:be32:a600:e819'},
 ];
+export type pessoasType = typeof pessoas;
 
 // Dados de exemplo enquanto não há conexão com o banco de dados gerados pelo script `script/createTransacoes.py`
 export const transacoes = [

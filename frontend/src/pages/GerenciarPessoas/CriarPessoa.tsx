@@ -1,34 +1,16 @@
 import { useState } from 'react';
+import { criarPessoa } from '../../api/criarPessoas';
 
-export default function CriarPessoa() {
+export default function CriarPessoa({ onPessoaCriada }: { onPessoaCriada: () => void }) {
 	const [nome, setNome] = useState('');
 	const [dataNascimento, setDataNascimento] = useState('');
-	function handleSubmit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+	async function handleSubmit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
 		e.preventDefault();
-		fetch(`${import.meta.env.VITE_DOTNET_HOST_ADDRESS}/api/pessoas`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				nome,
-				dataNascimento,
-			}),
-		})
-			.then(response => {
-				if (!response.ok) {
-					throw new Error('Erro ao adicionar pessoa');
-				}
-				return response.json();
-			})
-			.then(data => {
-				console.log('Pessoa adicionada com sucesso:', data);
-				setNome('');
-				setDataNascimento('');
-			})
-			.catch(error => {
-				console.error('Erro ao adicionar pessoa:', error);
-			});
+		await criarPessoa(nome, dataNascimento);
+		onPessoaCriada();
+		console.log('Pessoa criada com sucesso!');
+		setNome('');
+		setDataNascimento('');
 	}
 	return (
 		<div className="gerenciar-pessoas-cards criarPessoa">

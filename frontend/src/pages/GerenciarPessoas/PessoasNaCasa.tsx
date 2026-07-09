@@ -1,17 +1,16 @@
 import { FaRegEdit } from "react-icons/fa";
-import { pessoas } from "../../mockData";
+import type { pessoasType } from "../../mockData";
 
-export default function CardGerenciarPessoas() {
+export default function CardGerenciarPessoas({ pessoas }: { pessoas: pessoasType;}) {
 	return (
 		<div className="gerenciar-pessoas-cards gerenciarPessoas">
 			<h2>Pessoas na casa</h2>
-			<ListaPessoas />
+			<ListaPessoas pessoas={pessoas}/>
 		</div>
 	);
 }
 
-function ListaPessoas() {
-
+function ListaPessoas({ pessoas  }: { pessoas: pessoasType; }) {
 	return (
 		<ul className="lista-pessoas">
 			{pessoas.map(pessoa => {
