@@ -215,16 +215,13 @@ form {
       }
     }
   }
-  &.popup-excluir-pessoa {
-    .botoes {
-      .botao-excluir {
-        background-color: var(--cor-vermelho);
-        color: var(--cor-texto-claro);
-        &:hover {
-          transform: scaleY(1.1) translateY(-2px);
-          background-color: color-mix(in srgb, var(--cor-vermelho), #000 10%);
-        }
-      }
+
+  .botao-excluir {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-texto-claro);
+    &:hover {
+      transform: scaleY(1.1) translateY(-2px);
+      background-color: color-mix(in srgb, var(--cor-vermelho), #000 10%);
     }
   }
   &.popup-lancar-transacao {
@@ -472,23 +469,39 @@ form {
           font-size: 12px;
           color: var(--cor-texto-mutado);
         }
-        .descricao-btn {
+        .botoes {
           position: absolute;
           right: 0;
-          background-color: transparent;
-          border: none;
-          color: var(--cor-texto-mutado);
-          cursor: pointer;
-          transform: translateY(3px);
-          transition: all 0.1s ease-in-out;
-          &:hover {
-            transform: scaleY(1.1) translateY(1px);
+          display: flex;
+          gap: 10px;
+          button {
+            background-color: transparent;
+            border: none;
             color: var(--cor-texto-mutado);
-          }
-          &.open {
-            transform: rotate(180deg) translateY(1px);
+            cursor: pointer;
+            &.lixeira-btn {
+              transition: all 0.1s ease-in-out;
+              transform: translateY(3px);
+              color: var(--cor-vermelho);
+              font-size: 18px;
+            }
             &:hover {
-              transform: rotate(180deg) scaleY(1.1) translateY(3px);
+              transform: scaleY(1.1) translateY(-2px);
+            }
+
+            &.descricao-btn {
+              transform: translateY(3px);
+              transition: all 0.1s ease-in-out;
+              &:hover {
+                transform: scaleY(1.1) translateY(1px);
+                color: var(--cor-texto-mutado);
+              }
+              &.open {
+                transform: rotate(180deg) translateY(1px);
+                &:hover {
+                  transform: rotate(180deg) scaleY(1.1) translateY(3px);
+                }
+              }
             }
           }
         }

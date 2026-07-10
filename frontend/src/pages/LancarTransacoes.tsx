@@ -57,8 +57,7 @@ export default function LancarTransacoes() {
 			if (selectedOptionFiltrarNome) {
 				const pessoa = pessoas.find(p => p.id === t.pessoaId);
 				if (pessoa) {
-					const nomeCompleto =
-						pessoa.nome.toLowerCase().split(' ')[0] + ' ' + pessoa.nome.toLowerCase().split(' ')[1];
+					const nomeCompleto = pessoa.nome.toLowerCase().split(' ').slice(0, 2).join(' ');
 					const nomeFiltrado = selectedOptionFiltrarNome.toLowerCase();
 					return nomeCompleto === nomeFiltrado;
 				}
@@ -113,9 +112,7 @@ export default function LancarTransacoes() {
 								options={
 									selectedOptionFiltrar === 'Tipo'
 										? ['Receita', 'Despesa']
-										: pessoas.map(
-												pessoa => pessoa.nome.split(' ')[0] + ' ' + pessoa.nome.split(' ')[1],
-											)
+										: pessoas.map(pessoa => pessoa.nome.split(' ').slice(0, 2).join(' '))
 								}
 								isOpen={isOpenMenu === 4}
 								onToggle={() => setIsOpenMenu(isOpenMenu === 4 ? null : 4)}
@@ -141,7 +138,7 @@ export default function LancarTransacoes() {
 					</div>
 				</div>
 				<TransacaoCardsHeader />
-				<TransacaoCards transacoes={transacoesFiltradas} pessoas={pessoas} sortBy={selectedOptionOrganizar} />
+				<TransacaoCards transacoes={transacoesFiltradas} pessoas={pessoas} sortBy={selectedOptionOrganizar} onDeleteTransacao={() => fetchTransacoes(setTransacoes)} />
 			</div>
 			{isLancarTransacaoOpen && (
 				<PopupLancarTransacao

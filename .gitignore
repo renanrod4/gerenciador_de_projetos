@@ -4,6 +4,9 @@
 *.db
 *.db-journal
 *.db-wall
+*.db
+*.db-shm
+*.db-wal
 
 .vs/
 **/Properties/launchSettings.json
@@ -18,8 +21,8 @@ yarn-debug.log*
 yarn-error.log*
 
 **/.env.local
+**/.env
 **/.env.development.local
-
 .DS_Store
 Thumbs.db
 .vscode/
