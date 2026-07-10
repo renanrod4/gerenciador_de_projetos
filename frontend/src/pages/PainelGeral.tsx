@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SelectMenu from '../components/SelectMenu';
-import { pessoas, transacoes } from '../mockData';
+import { type transacoesType, type pessoasType } from '../mockData';
+import { fetchTransacoes } from '../api/fetchTransacoes';
+import { fetchPessoas } from '../api/fetchPessoas';
 
 function calcularTotal(transacoes: { tipo: string; valor: number }[], tipo: string): number {
 	return transacoes.filter(transacao => transacao.tipo === tipo).reduce((acc, transacao) => acc + transacao.valor, 0);
@@ -12,6 +14,14 @@ export default function PainelGeral() {
 	const [isOpenMenu, setIsOpenMenu] = useState<null | number>(null);
 	const [selectedOptionOrganizar, setSelectedOptionOrganizar] = useState<string | null>(null);
 	const [selectedOptionPeriodo, setSelectedOptionPeriodo] = useState<string | null>(null);
+	const [transacoes, setTransacoes] = useState<transacoesType>([]);
+	const [pessoas, setPessoas] = useState<pessoasType>([]);
+
+	useEffect(() => {
+		fetchTransacoes(setTransacoes);
+		fetchPessoas(setPessoas, () => {});
+	}, []);
+
 
 	const transacoesFiltradas = transacoes.filter(t => {
 		if (selectedOptionPeriodo === 'Mês') {
@@ -45,7 +55,7 @@ export default function PainelGeral() {
 		<div className="painel-geral">
 			<div className="controls">
 				<SelectMenu
-					text="Organizar por"
+					text="Ordenar"
 					options={['Nome', 'Total Receitas', 'Total Despesas', 'Saldo']}
 					isOpen={isOpenMenu === 1}
 					onToggle={() => setIsOpenMenu(isOpenMenu === 1 ? null : 1)}

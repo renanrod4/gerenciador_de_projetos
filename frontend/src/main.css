@@ -12,6 +12,7 @@
     --cor-fundo-tela: #e9ecef; /* Cinza levemente mais escuro para destacar o card branco */
     --cor-texto-mutado: #5c677d; /* Cinza para textos secundários */
     --cor-linha: rgba(22, 25, 37, 0.08);
+    --cor-linha-escuro: oklab(18.622% 0.00143 -0.0241 / 0.3);
 
     --cor-primaria: var(--cor-azul);
     --cor-botao: var(--cor-primaria);

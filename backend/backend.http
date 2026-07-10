@@ -22,8 +22,8 @@ PUT {{backend_HostAddress}}/api/pessoas/id
 Content-Type: application/json
 
 {
-  "nome": "João da Silva",
-  "dataNascimento": "1990-05-15"
+  "nome": "Renan Rodrigues de Meneses",
+  "dataNascimento": "2010-05-05"
 }
 
 
@@ -43,7 +43,7 @@ Content-Type: application/json
   "valor": 150.75,
   "data": "2024-06-01",
   "tipo": 0,
-  "pessoaId": "cbc4b824-1c6c-4f3e-aea2-d7d75352116b"
+  "pessoaId": "id"
 }
 
 ### Listar todas as transações

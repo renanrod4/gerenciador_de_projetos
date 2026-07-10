@@ -1,11 +1,28 @@
-import { transacoes, pessoas } from "../../mockData";
+import type { pessoasType, transacoesType } from "../../mockData";
 import TransacaoCard from "./TransacaoCard";
 
-export default function TransacaoCards() {
-	
+export default function TransacaoCards({ transacoes, pessoas, sortBy }: { transacoes: transacoesType; pessoas: pessoasType; sortBy?: string | null }) {
+
+
 	return (
 		<div className="transacao-cards">
-			{transacoes.map(transacao => (
+			{/* {transacoes.map(transacao => ( */}
+			{transacoes.sort((a, b) => {
+				if (sortBy === "Data") {
+					return new Date(b.data).getTime() - new Date(a.data).getTime();
+				} else if (sortBy === "Nome") {
+					const nomeA = pessoas.find(pessoa => pessoa.id === a.pessoaId)?.nome || '';
+					const nomeB = pessoas.find(pessoa => pessoa.id === b.pessoaId)?.nome || '';
+					return nomeA.localeCompare(nomeB);
+				} else if (sortBy === "Descrição") {
+					const descricaoA = a.descricao.toLowerCase();
+					const descricaoB = b.descricao.toLowerCase();
+					return descricaoA.localeCompare(descricaoB);
+				} else if (sortBy === "Valor") {
+					return b.valor - a.valor;
+				}
+				return 0;
+			}).map(transacao => (
 				<TransacaoCard
 					key={transacao.id}
 					id={transacao.id}

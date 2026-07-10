@@ -8,7 +8,7 @@ export const pessoas = [
 	{nome: 'Henrietta Reid', dataNascimento: '1954-08-09', id: '9e3e:083e:be32:a600:e819'},
 ];
 export type pessoasType = typeof pessoas;
-
+export type transacoesType = typeof transacoes;
 // Dados de exemplo enquanto não há conexão com o banco de dados gerados pelo script `script/createTransacoes.py`
 export const transacoes = [
     {
@@ -17,7 +17,7 @@ export const transacoes = [
         valor: 1051.88,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "c9fe:7903:aed6:6dc3:6953:61c7:9cc3:e28d",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -25,7 +25,7 @@ export const transacoes = [
         valor: 320.33,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "65dc:5f4e:7fb5:15bc:a976:7c5a:915a:db0a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -33,7 +33,7 @@ export const transacoes = [
         valor: 168.63,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9cbe:57a4:8264:0389:f24b:bf30:540d:96e7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -41,7 +41,7 @@ export const transacoes = [
         valor: 206.36,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "1e1d:82c9:cfae:5b5b:910c:10ee:fe9b:a83e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -49,7 +49,7 @@ export const transacoes = [
         valor: 52.05,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "fe86:a70d:69dd:8c0b:c603:3973:99fa:aba5",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -57,7 +57,7 @@ export const transacoes = [
         valor: 1096.92,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "ac0d:4fac:37c6:a186:8cd7:e58b:441f:ba09",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -65,7 +65,7 @@ export const transacoes = [
         valor: 111.19,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "7571:f68c:dcc0:0584:84ce:98a6:da95:9d8b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -73,7 +73,7 @@ export const transacoes = [
         valor: 179.41,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "f6cb:3091:e752:3b10:d434:e387:ac5a:7e2d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -81,7 +81,7 @@ export const transacoes = [
         valor: 96.58,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "8f4d:3dc5:4443:9aaa:13ba:bbbe:a039:104d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -89,7 +89,7 @@ export const transacoes = [
         valor: 350.37,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "ff21:7b7e:b1ef:f274:b472:fcb3:9dc2:391d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -97,7 +97,7 @@ export const transacoes = [
         valor: 1076.84,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "2de0:329b:2db5:2735:c5d5:d1bd:c9a2:7596",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -105,7 +105,7 @@ export const transacoes = [
         valor: 28.14,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "e79a:0cf2:3869:e953:4cb4:018a:9abe:2516",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -113,7 +113,7 @@ export const transacoes = [
         valor: 137.97,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "e441:4244:8034:9c78:961b:6e4d:4e57:d438",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -121,7 +121,7 @@ export const transacoes = [
         valor: 91.08,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5085:d5e0:0751:3a0d:2715:6220:32ba:f9bb",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -129,7 +129,7 @@ export const transacoes = [
         valor: 1150.42,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "6865:df68:b5e0:25cb:4920:d9b7:cb41:99b8",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -137,7 +137,7 @@ export const transacoes = [
         valor: 1178.17,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "a6d1:c4a7:76ef:dac7:c041:bd75:75c2:a8b5",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -145,7 +145,7 @@ export const transacoes = [
         valor: 150.59,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "de52:f425:a857:17f8:ddbe:d459:bcfa:4baf",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -153,7 +153,7 @@ export const transacoes = [
         valor: 113.34,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "0b32:9249:df1e:cc33:da11:e9c4:1405:4c00",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -161,7 +161,7 @@ export const transacoes = [
         valor: 159.68,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3016:9980:fc45:369f:4be6:050b:a4cb:525f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -169,7 +169,7 @@ export const transacoes = [
         valor: 3744,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "f7e4:7dfb:8ad7:3be9:7caf:46aa:a875:12e3",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -177,7 +177,7 @@ export const transacoes = [
         valor: 195.71,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f494:b03b:8d41:f1a3:fe98:3333:c430:2c6d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -185,7 +185,7 @@ export const transacoes = [
         valor: 79.96,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "4cfc:3f62:e8d1:8d70:f2e2:80cf:0c25:c46b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -193,7 +193,7 @@ export const transacoes = [
         valor: 157.5,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3335:e377:8fa1:9a52:1899:2e4c:0fa2:b229",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -201,7 +201,7 @@ export const transacoes = [
         valor: 169.16,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "051f:1d3f:2763:cd3b:ba8b:6d4d:e5d3:2e2b",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -209,7 +209,7 @@ export const transacoes = [
         valor: 4199,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "0aa0:6de4:9238:0371:9920:2e54:c5ac:a2b9",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -217,7 +217,7 @@ export const transacoes = [
         valor: 161.19,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "86c8:d288:ca4b:a473:3fa4:90e1:6219:2c31",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -225,7 +225,7 @@ export const transacoes = [
         valor: 139.33,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "7590:5721:bff4:f522:f069:4672:90b5:a6aa",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -233,7 +233,7 @@ export const transacoes = [
         valor: 921.63,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "7073:e565:6871:c2e7:57a1:c1b1:407c:6831",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -241,7 +241,7 @@ export const transacoes = [
         valor: 5104,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "20d7:11da:c770:fbf3:9795:181f:3781:b729",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -249,7 +249,7 @@ export const transacoes = [
         valor: 243.7,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "aecf:7f66:a7d9:c736:60b6:e053:a29b:4d2d",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -257,7 +257,7 @@ export const transacoes = [
         valor: 98.29,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "a5f7:ae7f:a565:be85:b5a3:45dd:b5eb:eda5",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -265,7 +265,7 @@ export const transacoes = [
         valor: 364.07,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "05fe:f15c:ca17:2aca:cb68:00e6:9e69:0d00",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -273,7 +273,7 @@ export const transacoes = [
         valor: 2827,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "0e0a:35c4:897f:ff95:9406:ac5a:ddff:aa0d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -281,7 +281,7 @@ export const transacoes = [
         valor: 86.19,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "2a99:aafe:ef65:9686:fa12:5175:b9a2:9fe3",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -289,7 +289,7 @@ export const transacoes = [
         valor: 44.24,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "1220:f522:8f10:0d87:47b4:d589:f7f1:e952",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -297,7 +297,7 @@ export const transacoes = [
         valor: 205.37,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "1bd6:15ed:5b4e:bb87:742b:e1e2:6074:d339",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -305,7 +305,7 @@ export const transacoes = [
         valor: 95.04,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "9585:c9af:b848:df44:b184:72fe:4433:7e13",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -313,7 +313,7 @@ export const transacoes = [
         valor: 379.95,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "76bc:1917:2b43:17b5:97b6:f763:62e4:b93c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -321,7 +321,7 @@ export const transacoes = [
         valor: 104.31,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "756a:dc38:57d2:2991:de8c:2cbc:f333:1a93",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -329,7 +329,7 @@ export const transacoes = [
         valor: 171.63,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6b51:68e3:7882:85bd:fe0c:0747:cdfe:7bc4",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -337,7 +337,7 @@ export const transacoes = [
         valor: 288.63,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "be21:06f7:9ab1:5806:3a58:fcc7:a641:863d",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -345,7 +345,7 @@ export const transacoes = [
         valor: 70.75,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "19d7:6424:3017:de88:a62f:6685:b211:0912",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -353,7 +353,7 @@ export const transacoes = [
         valor: 109.17,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "cc5c:bd12:2ecc:9e43:4ccb:ba0e:1967:ade2",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -361,7 +361,7 @@ export const transacoes = [
         valor: 147.93,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "0f1b:42a6:f68e:c6ef:4402:2c49:8808:51bd",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -369,7 +369,7 @@ export const transacoes = [
         valor: 104.16,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "5cdf:8294:40e4:c38a:6e6a:1aed:cc1c:a465",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -377,7 +377,7 @@ export const transacoes = [
         valor: 282.08,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "ac79:a985:a713:c853:ecac:cacc:b7fd:c012",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -385,7 +385,7 @@ export const transacoes = [
         valor: 210.82,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "9639:8700:ab1e:73d4:78f9:424b:f5ba:dc29",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -393,7 +393,7 @@ export const transacoes = [
         valor: 37.15,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "7d2e:2278:2e44:0979:6962:d757:bed2:4d8a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -401,7 +401,7 @@ export const transacoes = [
         valor: 230.38,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "4ea4:e9d1:d240:470f:5510:246b:7538:c2a7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -409,7 +409,7 @@ export const transacoes = [
         valor: 53.11,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "c633:58c2:171e:8081:dfea:3173:116c:75d7",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -417,7 +417,7 @@ export const transacoes = [
         valor: 35.53,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "c9c7:7c8f:26fd:c498:5eb5:8d5b:e5ae:0bed",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -425,7 +425,7 @@ export const transacoes = [
         valor: 157.4,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "7f23:62a7:9831:7101:c796:fe53:f7ea:15de",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -433,7 +433,7 @@ export const transacoes = [
         valor: 179.74,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "172c:2aad:f6c3:09b2:91d1:cb15:e52c:e379",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -441,7 +441,7 @@ export const transacoes = [
         valor: 48.44,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "5549:e065:e000:7cd9:d327:97a6:e8f4:9cf7",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -449,7 +449,7 @@ export const transacoes = [
         valor: 198.84,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "d7f6:1b67:606f:5b8d:e95e:fb86:035d:3e4a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -457,7 +457,7 @@ export const transacoes = [
         valor: 169.5,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "be90:200e:668e:c8af:8532:d62f:f4ee:d27c",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -465,7 +465,7 @@ export const transacoes = [
         valor: 445.87,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "6fa8:d4de:2676:fd98:00b2:3663:ecad:a4c3",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -473,7 +473,7 @@ export const transacoes = [
         valor: 108.4,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "1199:b47d:a6db:ab3d:bbf9:ed68:2238:ca69",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -481,7 +481,7 @@ export const transacoes = [
         valor: 1612.32,
         tipo: 'receita',
         descricao: 'Restituição.',
-        id: crypto.randomUUID(),
+        id: "cafc:3fb2:dfca:b568:c147:e640:e005:8336",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -489,7 +489,7 @@ export const transacoes = [
         valor: 154.48,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "74ac:05a5:52ba:30d1:3adc:0076:6f0b:e5d3",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -497,7 +497,7 @@ export const transacoes = [
         valor: 61.04,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "b614:5f4a:f4da:c611:7254:c06f:780b:1fe7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -505,7 +505,7 @@ export const transacoes = [
         valor: 217.45,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "dd34:1d5d:d2e2:747d:a133:0811:e877:734e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -513,7 +513,7 @@ export const transacoes = [
         valor: 258.27,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "12d9:da1d:36c3:7ea6:8c71:e00b:838b:2e3f",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -521,7 +521,7 @@ export const transacoes = [
         valor: 232.79,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a4d1:6ee9:6ef3:d116:6338:8f0f:a19f:5dbd",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -529,7 +529,7 @@ export const transacoes = [
         valor: 116.53,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "3e39:50e0:0ce9:8692:9cb5:36b3:0e4a:d481",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -537,7 +537,7 @@ export const transacoes = [
         valor: 129.3,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "f7bf:2a4a:700d:408b:4e06:ce52:2a55:77c5",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -545,7 +545,7 @@ export const transacoes = [
         valor: 64.41,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "d962:1d38:053c:5336:ed14:59e1:5ad9:1056",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -553,7 +553,7 @@ export const transacoes = [
         valor: 280.19,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "be6a:b027:3590:ff6c:4265:847f:75bc:bcea",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -561,7 +561,7 @@ export const transacoes = [
         valor: 255.99,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "a2ee:a0e9:12e5:8b32:7ca8:5ba8:aa1a:3cde",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -569,7 +569,7 @@ export const transacoes = [
         valor: 240.15,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "9dae:2638:daab:7a17:6a85:5991:5ee8:6f0b",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -577,7 +577,7 @@ export const transacoes = [
         valor: 118.68,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "7dcb:20db:9a6c:1a8b:4e27:0eb6:9293:9cdd",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -585,7 +585,7 @@ export const transacoes = [
         valor: 111.29,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "5b6b:3a73:b13c:9c3b:53c1:61c0:6b58:7320",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -593,7 +593,7 @@ export const transacoes = [
         valor: 126.14,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "2d85:c096:705a:b4b4:8981:4550:0d0b:5aab",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -601,7 +601,7 @@ export const transacoes = [
         valor: 130.28,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "9380:eb60:26ec:b839:24ab:5571:59e2:8375",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -609,7 +609,7 @@ export const transacoes = [
         valor: 186.87,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4014:ed78:db1b:e976:4f48:b5a5:8698:8950",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -617,7 +617,7 @@ export const transacoes = [
         valor: 148.87,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "f6bf:1e01:a73f:b72c:e004:da5e:c6cc:e062",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -625,7 +625,7 @@ export const transacoes = [
         valor: 161.32,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4a69:9bbf:cf08:dc63:7d37:bcfc:9515:3e60",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -633,7 +633,7 @@ export const transacoes = [
         valor: 315.42,
         tipo: 'despesa',
         descricao: 'Farmácia.',
-        id: crypto.randomUUID(),
+        id: "98e9:4131:28cb:a902:e248:ef67:4719:2156",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -641,7 +641,7 @@ export const transacoes = [
         valor: 251.55,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f14a:b0a9:f3d1:fb06:40e7:c355:f85a:87bf",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -649,7 +649,7 @@ export const transacoes = [
         valor: 226.86,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "9892:4def:1716:d4b5:9958:e41c:f84f:e28e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -657,7 +657,7 @@ export const transacoes = [
         valor: 98.84,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "8564:bac7:b6ba:c3bf:72e6:bf1d:9053:2d14",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -665,7 +665,7 @@ export const transacoes = [
         valor: 934.18,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "a810:2855:9cfc:3200:2254:4568:6520:9e5a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -673,7 +673,7 @@ export const transacoes = [
         valor: 228.05,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "8e66:2b91:9456:5f31:d4d2:eeb8:bcbd:5581",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -681,7 +681,7 @@ export const transacoes = [
         valor: 1691.38,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "cd24:ed90:f428:8ca6:41cb:4cde:0ccc:a777",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -689,7 +689,7 @@ export const transacoes = [
         valor: 228.28,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "32d1:548d:202b:f02c:ce1e:edf6:daaa:e774",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -697,7 +697,7 @@ export const transacoes = [
         valor: 355.02,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "0390:156b:6958:e1ee:216f:a02f:ddec:b802",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -705,7 +705,7 @@ export const transacoes = [
         valor: 1095.84,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "298f:9151:78fa:9695:01e4:1574:b42a:d60b",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -713,7 +713,7 @@ export const transacoes = [
         valor: 90.95,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "8744:b7e2:831a:2017:1e65:52fe:e9a8:c599",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -721,7 +721,7 @@ export const transacoes = [
         valor: 1130.64,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "1a88:1add:cf63:24ab:d83e:90db:6a01:737b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -729,7 +729,7 @@ export const transacoes = [
         valor: 118.75,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "f5d0:dbd4:eb99:c69c:354f:6685:3e0a:da80",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -737,7 +737,7 @@ export const transacoes = [
         valor: 103.57,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "5cae:cea9:6487:9eb3:11ca:0e29:d051:2550",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -745,7 +745,7 @@ export const transacoes = [
         valor: 1333.37,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "149a:e62c:41c0:c3ca:39af:59b2:6087:7a8c",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -753,7 +753,7 @@ export const transacoes = [
         valor: 384.02,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2b2b:0347:c926:4916:19aa:8d8e:4255:ea1e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -761,7 +761,7 @@ export const transacoes = [
         valor: 383.04,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "abec:7bb7:1003:94b4:4a0d:ad7d:e3ee:6a73",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -769,7 +769,7 @@ export const transacoes = [
         valor: 94.73,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "7f42:7318:b6ed:ccdf:597d:d37d:7092:6dac",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -777,7 +777,7 @@ export const transacoes = [
         valor: 112.84,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "b5ec:c89b:9f87:9e3d:995f:b53a:f830:1b83",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -785,7 +785,7 @@ export const transacoes = [
         valor: 3214,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "365f:43a5:7d9d:091f:e174:dd56:beb6:cf9d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -793,7 +793,7 @@ export const transacoes = [
         valor: 213.15,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "2881:d0fc:5bc5:e07c:32d1:d127:3c70:4097",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -801,7 +801,7 @@ export const transacoes = [
         valor: 345.25,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a3dd:d8a5:6344:22aa:bf20:985d:5c5c:45c0",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -809,7 +809,7 @@ export const transacoes = [
         valor: 62.1,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "dccf:d3ac:1392:29d0:6f8b:7fcc:be90:18b3",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -817,7 +817,7 @@ export const transacoes = [
         valor: 143.46,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "3272:b421:5e77:d488:32dd:6a7d:d7d9:7bd8",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -825,7 +825,7 @@ export const transacoes = [
         valor: 4450,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "f4c6:bc6d:035e:738a:3fea:2aaa:887e:db21",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -833,7 +833,7 @@ export const transacoes = [
         valor: 360.68,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "e3c6:3a4d:d6de:6fc7:b55d:4225:52a3:e776",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -841,7 +841,7 @@ export const transacoes = [
         valor: 99.81,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "15f9:2850:5c66:0e7a:baf6:903e:fc41:918f",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -849,7 +849,7 @@ export const transacoes = [
         valor: 4889,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "991c:edeb:d15d:add4:8121:71af:fc4d:003b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -857,7 +857,7 @@ export const transacoes = [
         valor: 211.95,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "5c73:8ca8:eee5:228f:ce6c:325f:896c:ca5e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -865,7 +865,7 @@ export const transacoes = [
         valor: 71.8,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "5fee:937b:2c11:3c70:9bfc:b3ea:58d3:b2cd",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -873,7 +873,7 @@ export const transacoes = [
         valor: 252.64,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6270:1146:a9ef:797e:385f:af96:b0db:f2ba",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -881,7 +881,7 @@ export const transacoes = [
         valor: 4754,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "3da6:9ed1:1244:03f4:5eec:7f65:9376:56fa",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -889,7 +889,7 @@ export const transacoes = [
         valor: 170.84,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "8014:23e0:45c4:3625:a7c0:0db2:8f25:805e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -897,7 +897,7 @@ export const transacoes = [
         valor: 110.43,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "ea44:58f7:0c93:84d9:c640:1729:8c07:805c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -905,7 +905,7 @@ export const transacoes = [
         valor: 76.2,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "a6cf:70c5:2152:f422:d5a6:5794:3943:9bdf",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -913,7 +913,7 @@ export const transacoes = [
         valor: 134.47,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "60db:7473:1caa:181f:2201:d178:271b:c4a9",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -921,7 +921,7 @@ export const transacoes = [
         valor: 392.8,
         tipo: 'despesa',
         descricao: 'Exames laboratoriais.',
-        id: crypto.randomUUID(),
+        id: "3ebc:4c79:2372:d036:f5ee:02b8:9310:fd6d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -929,7 +929,7 @@ export const transacoes = [
         valor: 410.66,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "0c70:6014:62d7:2bba:e579:4985:9fba:44ee",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -937,7 +937,7 @@ export const transacoes = [
         valor: 415.88,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "bf90:5d05:5fba:4d8a:2f84:7a40:90a4:175d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -945,7 +945,7 @@ export const transacoes = [
         valor: 126.79,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "e342:9afe:2794:4942:4e94:f4c0:b148:6a53",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -953,7 +953,7 @@ export const transacoes = [
         valor: 48.14,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "7420:73e2:dcda:46dc:d559:a78f:7341:4e99",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -961,7 +961,7 @@ export const transacoes = [
         valor: 308.44,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "249b:fab5:bad5:a2c0:9fda:8fb7:0d26:5a4c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -969,7 +969,7 @@ export const transacoes = [
         valor: 159.55,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "8ae5:8720:bc46:1778:980b:aa81:7e60:8e58",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -977,7 +977,7 @@ export const transacoes = [
         valor: 167.17,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "7a15:f033:c4f3:cc0e:f57a:5927:e4a7:850a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -985,7 +985,7 @@ export const transacoes = [
         valor: 91.72,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "be10:5911:6b0a:262a:5d55:556a:6027:66df",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -993,7 +993,7 @@ export const transacoes = [
         valor: 926.85,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "42d3:c77f:09b5:afd7:4b84:102f:63b9:d1f7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1001,7 +1001,7 @@ export const transacoes = [
         valor: 330.14,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "5917:b2f4:88cd:0c9b:d21c:8fc1:60c0:9b74",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1009,7 +1009,7 @@ export const transacoes = [
         valor: 134.11,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "ae5d:77ea:c6a4:8e9c:f09c:4aa3:e2b7:e2d1",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1017,7 +1017,7 @@ export const transacoes = [
         valor: 64.33,
         tipo: 'despesa',
         descricao: 'Consulta médica.',
-        id: crypto.randomUUID(),
+        id: "b833:8d2c:9e96:2b59:a676:d022:da88:4d28",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1025,7 +1025,7 @@ export const transacoes = [
         valor: 213.23,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "b87e:c573:2db8:209c:e637:3d04:4d2d:fa5b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1033,7 +1033,7 @@ export const transacoes = [
         valor: 128.98,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "153b:c96b:4502:c835:a3ad:71db:1b82:df1c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1041,7 +1041,7 @@ export const transacoes = [
         valor: 126.71,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "09f9:2d3a:7c01:2b6b:c257:d1c6:c35a:f611",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1049,7 +1049,7 @@ export const transacoes = [
         valor: 206.77,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "b891:5dda:2016:5b23:7c57:bab5:01b4:6a94",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1057,7 +1057,7 @@ export const transacoes = [
         valor: 312.48,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "8360:ec27:7df3:691c:d896:b27c:9d5e:b7d0",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1065,7 +1065,7 @@ export const transacoes = [
         valor: 221.09,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "2e17:6c56:133f:abee:a6c1:ec2a:1632:e821",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1073,7 +1073,7 @@ export const transacoes = [
         valor: 156.12,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0a79:f824:1583:0e15:bef6:57d9:55bc:f33b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1081,7 +1081,7 @@ export const transacoes = [
         valor: 892.64,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "48c5:b1a1:2b58:3e61:11c2:37b3:9d63:1d31",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1089,7 +1089,7 @@ export const transacoes = [
         valor: 48.11,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "2797:ac59:d36c:2bc1:2ec4:8b97:18af:4227",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1097,7 +1097,7 @@ export const transacoes = [
         valor: 350,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2c52:a3ab:81c0:38cf:0eb9:340c:1444:72e3",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1105,7 +1105,7 @@ export const transacoes = [
         valor: 146.86,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "3206:095f:0a0d:b698:d53d:c722:7d43:e229",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1113,7 +1113,7 @@ export const transacoes = [
         valor: 96.96,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0fab:e018:edeb:40db:9e0b:7c85:9ad1:851d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1121,7 +1121,7 @@ export const transacoes = [
         valor: 252.6,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "8717:b178:3d22:a9b9:808b:ddfe:2b0f:dd90",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1129,7 +1129,7 @@ export const transacoes = [
         valor: 59.13,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "88ee:69c2:7a3f:6774:18ad:55cc:e2bd:7122",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1137,7 +1137,7 @@ export const transacoes = [
         valor: 210.34,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2f6a:2f1a:9b31:0a43:e882:dcc9:69eb:4b60",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1145,7 +1145,7 @@ export const transacoes = [
         valor: 62.56,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "c5b1:47cc:1532:5eda:ef90:fd7e:de31:7197",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1153,7 +1153,7 @@ export const transacoes = [
         valor: 74.49,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "70c0:f559:2125:f821:2a26:88e4:7b25:9d26",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1161,7 +1161,7 @@ export const transacoes = [
         valor: 166.26,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "868c:1921:0dfa:c37b:8d2c:7084:ee6c:bcc3",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1169,7 +1169,7 @@ export const transacoes = [
         valor: 134.39,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "e8aa:8867:f86c:829b:a861:a7ef:c50b:f9ba",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1177,7 +1177,7 @@ export const transacoes = [
         valor: 339.81,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "22a9:ae26:567c:c24b:0d95:a46c:3be7:e117",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1185,7 +1185,7 @@ export const transacoes = [
         valor: 91.92,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "b677:2cec:46de:36e4:2851:3389:cd82:7dcf",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1193,7 +1193,7 @@ export const transacoes = [
         valor: 153.14,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "eff3:67fe:c3f2:d178:3a34:b00e:61ed:a267",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1201,7 +1201,7 @@ export const transacoes = [
         valor: 161.87,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a12e:2e66:3a24:a4eb:9996:030d:2c8a:18ec",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1209,7 +1209,7 @@ export const transacoes = [
         valor: 89.68,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "3c10:ef23:4cd1:6a0d:e72a:ab6c:b669:ac37",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1217,7 +1217,7 @@ export const transacoes = [
         valor: 80.17,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "3862:60f6:70cd:1b47:4fd2:5eb8:6e28:636c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1225,7 +1225,7 @@ export const transacoes = [
         valor: 102.73,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9910:ffe8:f898:2121:1d85:b85e:6149:737b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1233,7 +1233,7 @@ export const transacoes = [
         valor: 142,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "f1b4:c1ce:b981:7c6b:e0d5:3f15:de4a:23db",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1241,7 +1241,7 @@ export const transacoes = [
         valor: 392.39,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "ab71:8bb1:43ba:51bc:a7a3:c5ec:e609:866e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1249,7 +1249,7 @@ export const transacoes = [
         valor: 123.45,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "3665:4eb8:1f12:dcc4:bfa9:b17b:5136:ee33",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1257,7 +1257,7 @@ export const transacoes = [
         valor: 174.15,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "bc65:4c36:69fc:b5b3:8987:6675:402d:ff71",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1265,7 +1265,7 @@ export const transacoes = [
         valor: 79.65,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "1b81:9524:f4d2:97d3:6798:2bac:40a8:8575",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1273,7 +1273,7 @@ export const transacoes = [
         valor: 794,
         tipo: 'receita',
         descricao: 'Reembolso.',
-        id: crypto.randomUUID(),
+        id: "df7d:a76a:135e:3518:adc8:a0b2:dc85:9984",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1281,7 +1281,7 @@ export const transacoes = [
         valor: 135.87,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "3ca7:1bc4:dc25:9172:76ec:7bb5:c799:d6b9",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1289,7 +1289,7 @@ export const transacoes = [
         valor: 181.11,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "dbb5:bf87:1b2b:23bf:070c:0545:a5bf:30d2",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1297,7 +1297,7 @@ export const transacoes = [
         valor: 803.67,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "7a7d:6690:b428:6877:d7bb:38fb:a2c2:83a5",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1305,7 +1305,7 @@ export const transacoes = [
         valor: 42.34,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "3e73:a6fb:7cac:2d1b:34c7:5640:ca77:6289",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1313,7 +1313,7 @@ export const transacoes = [
         valor: 141.31,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "68d5:576b:48e8:c4ec:677c:1b6f:24af:67e7",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1321,7 +1321,7 @@ export const transacoes = [
         valor: 1163.69,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "0be7:7f9b:aa60:1567:1cf2:c2ea:4fc7:7135",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1329,7 +1329,7 @@ export const transacoes = [
         valor: 172.08,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "f71e:7686:9dc1:e924:6eec:8408:039d:68a0",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1337,7 +1337,7 @@ export const transacoes = [
         valor: 27.54,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "ed96:832d:5e64:ba7e:ebdb:f0d0:99ae:1687",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1345,7 +1345,7 @@ export const transacoes = [
         valor: 429.33,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "462a:1037:6671:c0d3:c8a4:adc9:3a45:fb48",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1353,7 +1353,7 @@ export const transacoes = [
         valor: 1760.75,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "61a6:3524:2920:f8d8:ea9c:b43a:65bd:2b7b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1361,7 +1361,7 @@ export const transacoes = [
         valor: 684.78,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "1e99:b808:6855:5936:98a0:f0f3:0d39:5942",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1369,7 +1369,7 @@ export const transacoes = [
         valor: 1725.45,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "95b3:3f22:f945:9dba:1088:88d0:f4a0:e393",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1377,7 +1377,7 @@ export const transacoes = [
         valor: 257.45,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "d8f8:a9b6:6fd8:6a82:a8bc:d99e:e036:5d75",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1385,7 +1385,7 @@ export const transacoes = [
         valor: 79.65,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "240e:39fb:8ff5:7343:099c:ccb8:878d:b841",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1393,7 +1393,7 @@ export const transacoes = [
         valor: 166.1,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f6f5:1780:43ef:0507:9087:5205:49e5:246c",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1401,7 +1401,7 @@ export const transacoes = [
         valor: 234.82,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "35c9:972d:01d7:fc35:d0bc:27d1:115b:5f22",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1409,7 +1409,7 @@ export const transacoes = [
         valor: 1682.09,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "b27a:d7a4:5f7b:a5ee:3c8e:ea4a:2869:d33a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1417,7 +1417,7 @@ export const transacoes = [
         valor: 230.89,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "898c:0620:cee0:bdb2:2bbe:91ee:476b:6529",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1425,7 +1425,7 @@ export const transacoes = [
         valor: 155.93,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "de57:916a:6cad:aac2:0ad1:c95c:a1c7:289f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1433,7 +1433,7 @@ export const transacoes = [
         valor: 322.41,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "c046:679e:6241:3bcf:aa6e:4ee7:1d9e:890c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1441,7 +1441,7 @@ export const transacoes = [
         valor: 87.29,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "1181:49d0:4262:233a:da0d:04c5:9104:6e9b",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1449,7 +1449,7 @@ export const transacoes = [
         valor: 168.4,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "cd08:d379:2ddb:a733:7baa:1145:671a:55cd",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1457,7 +1457,7 @@ export const transacoes = [
         valor: 4940,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "19f6:b1f8:f5e8:8b50:066b:a1ba:c5af:c5f2",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1465,7 +1465,7 @@ export const transacoes = [
         valor: 175.04,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "793b:70d6:62d2:28c1:56b8:88b5:df8f:be56",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1473,7 +1473,7 @@ export const transacoes = [
         valor: 167.78,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "b4e3:f7d7:9bd5:bd7c:38b4:8813:76e9:6323",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1481,7 +1481,7 @@ export const transacoes = [
         valor: 564.12,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "2b49:77a6:5a06:deda:1867:e561:fdce:8b3c",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1489,7 +1489,7 @@ export const transacoes = [
         valor: 3214,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "1730:ed26:1a49:97be:e73f:8671:1ec8:de43",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1497,7 +1497,7 @@ export const transacoes = [
         valor: 6451,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "17a5:0111:cd8a:b82f:16f5:748e:3a24:bb24",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1505,7 +1505,7 @@ export const transacoes = [
         valor: 791.31,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "a63a:b854:ab49:4824:f5c4:0aca:a478:42c1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1513,7 +1513,7 @@ export const transacoes = [
         valor: 80.25,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "854a:a864:28de:1bfd:b095:49e6:6155:d884",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1521,7 +1521,7 @@ export const transacoes = [
         valor: 172.43,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "4ba1:dc2f:328b:a716:9832:b5a9:b501:6e51",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1529,7 +1529,7 @@ export const transacoes = [
         valor: 4095,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "848e:5754:31c0:b270:2377:55a7:3cfa:16f4",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1537,7 +1537,7 @@ export const transacoes = [
         valor: 356.33,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "402e:1d36:14e7:af51:f95a:2ea1:14a4:41c2",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1545,7 +1545,7 @@ export const transacoes = [
         valor: 327.36,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "0d98:ead7:e50c:f91d:5936:0b05:de54:0359",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1553,7 +1553,7 @@ export const transacoes = [
         valor: 192.39,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "520b:eec7:645c:9b41:f071:9ae2:4599:2b81",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1561,7 +1561,7 @@ export const transacoes = [
         valor: 189.45,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "89ac:7e11:5e1b:411a:9bcc:b6d1:f83d:762b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1569,7 +1569,7 @@ export const transacoes = [
         valor: 144.05,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0de6:4711:2d3b:6353:38fa:4bc3:3996:7bda",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1577,7 +1577,7 @@ export const transacoes = [
         valor: 1046.66,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "182b:12d9:fa91:52d5:94a1:12f6:dee6:dae8",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1585,7 +1585,7 @@ export const transacoes = [
         valor: 79.25,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "1ec4:82cf:a256:b9da:474d:84b6:87d5:45b7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1593,7 +1593,7 @@ export const transacoes = [
         valor: 438.01,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "bba2:7c30:5a2c:edbd:f83e:a420:4bf9:0a14",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1601,7 +1601,7 @@ export const transacoes = [
         valor: 179.21,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "310d:ee98:53b4:a8ae:affd:9e86:f4b9:154b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1609,7 +1609,7 @@ export const transacoes = [
         valor: 203.91,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f4e1:6807:bcf4:16a6:b3fb:103a:7bfa:0553",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1617,7 +1617,7 @@ export const transacoes = [
         valor: 171.11,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "cf3d:ede8:1f05:fb47:3aca:8903:200c:4d5b",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1625,7 +1625,7 @@ export const transacoes = [
         valor: 182.53,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "3215:1877:bcf4:f8ea:c7dc:f6b5:f755:478f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1633,7 +1633,7 @@ export const transacoes = [
         valor: 138.84,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "cf87:11e2:7105:243d:7cf3:f214:98fa:9f3a",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1641,7 +1641,7 @@ export const transacoes = [
         valor: 255.97,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "e526:e8aa:aac0:4103:15f7:77a8:1c56:a1ed",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1649,7 +1649,7 @@ export const transacoes = [
         valor: 117.78,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "1179:fe1d:f60d:0c94:d8ed:4d76:b2b3:8616",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1657,7 +1657,7 @@ export const transacoes = [
         valor: 102.3,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "b039:e39c:e9b9:3e77:5a75:3aa6:1e78:0b5a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1665,7 +1665,7 @@ export const transacoes = [
         valor: 119.16,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "ddb9:2466:4626:6b0b:e8d9:3f77:74db:61ac",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1673,7 +1673,7 @@ export const transacoes = [
         valor: 374.46,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "ab61:da7c:105d:113b:043f:e679:173e:857b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1681,7 +1681,7 @@ export const transacoes = [
         valor: 212.56,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "be43:7a0a:12b9:e839:35d8:f459:14c5:2e08",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1689,7 +1689,7 @@ export const transacoes = [
         valor: 222.48,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "87eb:0855:23af:00b4:c57d:4853:90b0:ca1d",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1697,7 +1697,7 @@ export const transacoes = [
         valor: 310.28,
         tipo: 'despesa',
         descricao: 'Uniforme escolar.',
-        id: crypto.randomUUID(),
+        id: "60de:6e77:2455:26eb:e3df:c8ad:c672:e24a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1705,7 +1705,7 @@ export const transacoes = [
         valor: 142.53,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "0f67:742b:106f:e4b0:4f07:aa84:c8fa:f071",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1713,7 +1713,7 @@ export const transacoes = [
         valor: 158.54,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "4898:7fbd:09f7:a057:b8f8:7124:7a3b:f0fb",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1721,7 +1721,7 @@ export const transacoes = [
         valor: 237.53,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3157:a945:6c08:2274:8905:7175:659c:877d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1729,7 +1729,7 @@ export const transacoes = [
         valor: 257.73,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "28a9:a2b8:0c1f:c012:2ca9:ad69:b284:cd5c",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1737,7 +1737,7 @@ export const transacoes = [
         valor: 151.23,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "6cfd:1b67:f21b:d465:9b9b:a253:24a8:61cb",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1745,7 +1745,7 @@ export const transacoes = [
         valor: 128.11,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "e63b:c00a:dc2e:a33f:9736:69bb:a8b5:3125",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1753,7 +1753,7 @@ export const transacoes = [
         valor: 242.04,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "a9b2:65b0:6247:005b:a678:b80a:610a:9418",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1761,7 +1761,7 @@ export const transacoes = [
         valor: 315.63,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "2bb3:d405:3866:7263:d9c8:a254:3d62:164b",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1769,7 +1769,7 @@ export const transacoes = [
         valor: 189.58,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "2627:552f:7bd9:fe56:2e24:c432:c63e:7306",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1777,7 +1777,7 @@ export const transacoes = [
         valor: 162.55,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "af37:954b:f25e:16cb:a0ce:5c8b:bc8c:a924",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1785,7 +1785,7 @@ export const transacoes = [
         valor: 110.23,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "9c6a:31c4:7821:39fd:20a2:7c6b:8a2c:c22b",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1793,7 +1793,7 @@ export const transacoes = [
         valor: 64.56,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "95b6:25c1:9444:7bff:45e2:f922:84fc:5d88",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1801,7 +1801,7 @@ export const transacoes = [
         valor: 325.34,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "98a2:2a6b:5d28:db29:ecff:3961:a341:eb46",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1809,7 +1809,7 @@ export const transacoes = [
         valor: 393.38,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "10a3:1e45:57d9:9c1f:6fad:8ef0:e4d4:f1b9",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1817,7 +1817,7 @@ export const transacoes = [
         valor: 143.52,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "2d8c:6436:dafa:5699:a092:3927:8a46:1ea9",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1825,7 +1825,7 @@ export const transacoes = [
         valor: 176.65,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "c5be:9c49:7349:0abf:336d:70ee:212d:9bb7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1833,7 +1833,7 @@ export const transacoes = [
         valor: 544.66,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "1946:d4c9:ec71:1560:0f99:6eb7:93e9:8c25",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1841,7 +1841,7 @@ export const transacoes = [
         valor: 137.48,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "96ab:9d99:679b:3637:da67:94c3:2697:49ed",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1849,7 +1849,7 @@ export const transacoes = [
         valor: 170.52,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "6a18:ae66:8752:0672:9353:d82b:eee9:c16d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1857,7 +1857,7 @@ export const transacoes = [
         valor: 609.91,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "8492:d72a:6781:60b7:17fe:17c7:4a3a:bc82",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1865,7 +1865,7 @@ export const transacoes = [
         valor: 166.78,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "abac:3a65:c6f0:748e:fd91:cad5:f6d8:c394",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1873,7 +1873,7 @@ export const transacoes = [
         valor: 44.23,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "7083:933e:3c48:0b25:4204:7571:5528:949b",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1881,7 +1881,7 @@ export const transacoes = [
         valor: 95.93,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "3f44:b02a:2614:48b6:ed27:6980:f0ec:066f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1889,7 +1889,7 @@ export const transacoes = [
         valor: 129.73,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "e929:108d:b0fc:3a95:2913:ddb6:183c:ad8e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1897,7 +1897,7 @@ export const transacoes = [
         valor: 51.46,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "6d6a:f430:5cba:73e4:514b:3c96:e299:53a8",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1905,7 +1905,7 @@ export const transacoes = [
         valor: 309.91,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "68a6:2c04:a4cf:48e3:1f89:459b:c1d6:87db",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -1913,7 +1913,7 @@ export const transacoes = [
         valor: 136.66,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "4473:a39c:131f:c9f3:758d:5c4e:40a3:0b70",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1921,7 +1921,7 @@ export const transacoes = [
         valor: 218.27,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "7075:39f5:ab48:8f7d:6ba2:10bc:d8cd:fa3b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1929,7 +1929,7 @@ export const transacoes = [
         valor: 106.98,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "399d:09a2:3eaa:2b7c:357c:d07b:39df:fe1c",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1937,7 +1937,7 @@ export const transacoes = [
         valor: 120.36,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "f349:650a:df64:7eee:e3c3:6812:8fae:b344",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -1945,7 +1945,7 @@ export const transacoes = [
         valor: 445.7,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "d415:5ab8:935c:1e2d:d345:42db:1e82:0205",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1953,7 +1953,7 @@ export const transacoes = [
         valor: 150.21,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "3b2c:3700:1e4e:1e3e:bc39:2aea:a00f:3eb2",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -1961,7 +1961,7 @@ export const transacoes = [
         valor: 124.57,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "f5b8:d7a6:0bca:fac2:e767:b215:a31a:d1f9",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1969,7 +1969,7 @@ export const transacoes = [
         valor: 96.61,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c130:1c11:fceb:6a74:0055:0e0b:8838:d59d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -1977,7 +1977,7 @@ export const transacoes = [
         valor: 245.67,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "90d9:3d36:5d66:79cb:4f98:f52a:600b:d06c",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -1985,7 +1985,7 @@ export const transacoes = [
         valor: 147.71,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "d042:07d8:2b01:7186:3185:8274:e9f1:0fee",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -1993,7 +1993,7 @@ export const transacoes = [
         valor: 365.71,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "e799:0904:2f2a:3a32:31f9:cd66:0adc:a4ba",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2001,7 +2001,7 @@ export const transacoes = [
         valor: 181.7,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4ed7:df68:0e52:e3fe:bce3:f19c:5087:dd6f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2009,7 +2009,7 @@ export const transacoes = [
         valor: 118.03,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "773c:2cb1:f97f:bfe9:69d8:3f82:3e09:c174",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2017,7 +2017,7 @@ export const transacoes = [
         valor: 878.09,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "772b:32ed:37d8:b9b4:fc15:a6c7:b1c1:5c0d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2025,7 +2025,7 @@ export const transacoes = [
         valor: 86.06,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "02d4:2c61:9875:306e:6398:4e47:1d74:76e2",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2033,7 +2033,7 @@ export const transacoes = [
         valor: 210.96,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4b3b:dd96:2f5d:2ef5:25bb:2aee:6b57:af8c",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2041,7 +2041,7 @@ export const transacoes = [
         valor: 1682.54,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "3c37:e9b3:4367:b068:6e59:94ec:7465:84b7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2049,7 +2049,7 @@ export const transacoes = [
         valor: 1237.02,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "1add:2b9e:8ba5:3e1a:893f:e651:04fa:c859",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2057,7 +2057,7 @@ export const transacoes = [
         valor: 1120.09,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "ebe6:4d52:5a74:4d3b:18d8:efee:5c12:2db3",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2065,7 +2065,7 @@ export const transacoes = [
         valor: 270.38,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "cb71:b696:4952:f4af:cccc:f04a:b8a3:fb55",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2073,7 +2073,7 @@ export const transacoes = [
         valor: 429.94,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "993d:f067:88a4:d978:cee3:f6e8:3e18:3b44",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2081,7 +2081,7 @@ export const transacoes = [
         valor: 234.08,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "fb37:0d3c:e02a:9554:4662:765f:1f15:5138",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2089,7 +2089,7 @@ export const transacoes = [
         valor: 106.64,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "e82c:6ec8:064e:e10c:51f3:c768:8cab:e742",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2097,7 +2097,7 @@ export const transacoes = [
         valor: 5180,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "0b9d:c5ea:f697:3e16:6f21:aa4f:be2e:5978",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2105,7 +2105,7 @@ export const transacoes = [
         valor: 3094,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "0f6a:63d2:ff91:6d68:9bb8:8d8b:3931:1246",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2113,7 +2113,7 @@ export const transacoes = [
         valor: 410.86,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "e19d:ee75:5788:8a89:933f:e5f1:35db:9293",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2121,7 +2121,7 @@ export const transacoes = [
         valor: 52.46,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "6c3f:3d49:6991:f877:d18c:641b:48ee:3b33",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2129,7 +2129,7 @@ export const transacoes = [
         valor: 6688,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "7730:379a:0d8e:e39f:0b89:7066:28f0:bc77",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2137,7 +2137,7 @@ export const transacoes = [
         valor: 195.23,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "8643:d261:ad6e:8fa2:dbcb:1174:dedb:7c9a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2145,7 +2145,7 @@ export const transacoes = [
         valor: 153.57,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "d6f6:e49c:3407:fe26:ed07:a7a1:241a:2767",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2153,7 +2153,7 @@ export const transacoes = [
         valor: 138.65,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "22cf:4b10:5749:c40e:97fa:7848:7636:d8ef",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2161,7 +2161,7 @@ export const transacoes = [
         valor: 178.76,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "d6dd:9f9a:0c20:90fc:488a:305a:2925:0fb2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2169,7 +2169,7 @@ export const transacoes = [
         valor: 82.74,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "3ac0:0cf0:c2dc:f66f:be24:c110:fc94:0972",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2177,7 +2177,7 @@ export const transacoes = [
         valor: 34.88,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "5fed:58a7:8b8c:467d:4bf1:5862:1d99:777c",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2185,7 +2185,7 @@ export const transacoes = [
         valor: 432.51,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "1815:36d9:1f20:3083:137f:34bf:5260:b6d6",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2193,7 +2193,7 @@ export const transacoes = [
         valor: 5118,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "5ebd:ff48:c526:3e9e:cca1:6af9:97c5:c478",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2201,7 +2201,7 @@ export const transacoes = [
         valor: 123.03,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "4b13:0991:47c5:3151:6ffe:5a40:f4bc:7320",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2209,7 +2209,7 @@ export const transacoes = [
         valor: 93.03,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "442e:494d:6909:b906:b685:1f83:1722:d765",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2217,7 +2217,7 @@ export const transacoes = [
         valor: 373.29,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "c509:b39a:d18f:fcb3:ef6b:f3c9:8db6:5113",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2225,7 +2225,7 @@ export const transacoes = [
         valor: 205.64,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2091:b8d2:8e06:8fad:8a1c:bdbb:4730:5cbc",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2233,7 +2233,7 @@ export const transacoes = [
         valor: 91.79,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "be23:c8c7:9a3a:ddee:f9f6:cdcd:2510:06e2",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2241,7 +2241,7 @@ export const transacoes = [
         valor: 373.9,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "1203:7a03:fcb2:888d:a75c:3bc7:7388:2743",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2249,7 +2249,7 @@ export const transacoes = [
         valor: 200.71,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0227:38eb:4d5c:973c:de78:9e9f:002f:22f8",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2257,7 +2257,7 @@ export const transacoes = [
         valor: 986.29,
         tipo: 'receita',
         descricao: 'Freelance.',
-        id: crypto.randomUUID(),
+        id: "4bc1:3e83:efe5:8c80:91b8:209a:6b9d:73e6",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2265,7 +2265,7 @@ export const transacoes = [
         valor: 148.9,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "050e:b02b:70be:d467:5842:85ca:63a8:9e6a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2273,7 +2273,7 @@ export const transacoes = [
         valor: 168.86,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "bd9f:ebbb:1ed4:f847:febc:adaf:4b1a:470c",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2281,7 +2281,7 @@ export const transacoes = [
         valor: 207.33,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "3ad1:8378:79cf:7a38:766a:2cd8:8e14:097b",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2289,7 +2289,7 @@ export const transacoes = [
         valor: 400.31,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "cb5d:0031:9d98:3899:fc67:8736:bda1:dd29",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2297,7 +2297,7 @@ export const transacoes = [
         valor: 80.88,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "3498:2cc6:1b61:6acb:b3ec:933f:bea5:2c6b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2305,7 +2305,7 @@ export const transacoes = [
         valor: 157.69,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "4c96:73af:c649:8af4:0788:b06f:fd1b:43a7",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2313,7 +2313,7 @@ export const transacoes = [
         valor: 176.63,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "0278:d670:dd51:d037:a9dd:9a94:14c8:c608",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2321,7 +2321,7 @@ export const transacoes = [
         valor: 70.85,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "7149:da06:62a7:0618:4439:b431:51c2:f8a6",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2329,7 +2329,7 @@ export const transacoes = [
         valor: 86.59,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f6de:4c71:9f87:033d:867b:59b7:f9b1:abf6",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2337,7 +2337,7 @@ export const transacoes = [
         valor: 165.71,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "b491:37ff:24d7:2989:1def:40f8:ca74:2978",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2345,7 +2345,7 @@ export const transacoes = [
         valor: 42.58,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "29bd:f227:5188:b36a:e949:af94:daa7:da73",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2353,7 +2353,7 @@ export const transacoes = [
         valor: 176.03,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "1d21:c01a:cd40:0e87:8ad0:13b4:3d61:542a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2361,7 +2361,7 @@ export const transacoes = [
         valor: 240.74,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "bc6a:f826:a6c9:062c:f38d:3ba4:5dee:fe55",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2369,7 +2369,7 @@ export const transacoes = [
         valor: 105.43,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "c4f7:f9ac:aeaf:ae88:285c:6e77:11dd:1de9",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2377,7 +2377,7 @@ export const transacoes = [
         valor: 405.12,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "33eb:9afe:64aa:e4df:8019:0739:44a4:5d44",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2385,7 +2385,7 @@ export const transacoes = [
         valor: 107.03,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "a075:5c02:1ed3:afc2:c03c:4605:31c4:578e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2393,7 +2393,7 @@ export const transacoes = [
         valor: 121.35,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3587:d7b8:844c:0267:c962:7fc4:a50c:a0f7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2401,7 +2401,7 @@ export const transacoes = [
         valor: 201.35,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "aba8:a04d:9430:d74d:3bf6:e534:a3d8:0a8a",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2409,7 +2409,7 @@ export const transacoes = [
         valor: 126.63,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "2752:773b:3417:3030:e18c:4329:acf3:2d41",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2417,7 +2417,7 @@ export const transacoes = [
         valor: 192.12,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "79b0:8cfc:17e4:2809:65dd:731d:3bb9:5ba7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2425,7 +2425,7 @@ export const transacoes = [
         valor: 135.19,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "241b:33ad:268a:da6b:cafc:55a3:8585:47fd",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2433,7 +2433,7 @@ export const transacoes = [
         valor: 250.15,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "36f7:8511:b05a:c579:471c:6aa5:2292:6c92",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2441,7 +2441,7 @@ export const transacoes = [
         valor: 63.93,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "ba46:c307:0459:23e2:7698:c0aa:459e:18fe",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2449,7 +2449,7 @@ export const transacoes = [
         valor: 253.81,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "401d:7f61:52a6:98eb:3fa2:6e1e:e8c4:0021",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2457,7 +2457,7 @@ export const transacoes = [
         valor: 416,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "186d:2549:ecba:7182:4bef:f044:c541:6ca0",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2465,7 +2465,7 @@ export const transacoes = [
         valor: 106.95,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "fb15:690c:bdc9:e964:0a84:100a:dbfb:68e5",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2473,7 +2473,7 @@ export const transacoes = [
         valor: 330.12,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "a670:2e1c:20ef:6d84:e3c3:f218:9189:b2dc",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2481,7 +2481,7 @@ export const transacoes = [
         valor: 337.15,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "3942:ea1e:6743:bb84:48db:5cbf:27e9:4473",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2489,7 +2489,7 @@ export const transacoes = [
         valor: 95.83,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "9a5c:fd50:906b:9c9e:6870:152c:4fc5:5ed3",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2497,7 +2497,7 @@ export const transacoes = [
         valor: 113.09,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "521d:e57a:6f9a:1545:016b:87db:1d21:6805",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2505,7 +2505,7 @@ export const transacoes = [
         valor: 74.37,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "6489:7262:9669:bd1d:5e2f:5ab1:8fc2:8c46",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2513,7 +2513,7 @@ export const transacoes = [
         valor: 161.61,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "8ce3:0eef:9254:17a1:8181:4e3c:d18e:ca24",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2521,7 +2521,7 @@ export const transacoes = [
         valor: 85.64,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "642c:dbd9:3517:eb10:5e3e:13b9:a03b:942f",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2529,7 +2529,7 @@ export const transacoes = [
         valor: 169.54,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3e70:9b8d:b597:62c4:ac50:f4fa:387a:2555",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2537,7 +2537,7 @@ export const transacoes = [
         valor: 172.23,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "8fdf:7eba:0f63:624f:def8:b60c:c8be:5d7c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2545,7 +2545,7 @@ export const transacoes = [
         valor: 213.91,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "69a9:0192:4a20:5bae:176c:17e5:e7ab:400d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2553,7 +2553,7 @@ export const transacoes = [
         valor: 26.22,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "85d5:7ab1:1fd1:0ca2:398a:e440:6362:6756",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2561,7 +2561,7 @@ export const transacoes = [
         valor: 119.91,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "1173:42fa:9862:bd46:8a94:1836:d794:446c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2569,7 +2569,7 @@ export const transacoes = [
         valor: 84.53,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "1f3d:64dc:0bc7:8eb7:5a44:412b:50ce:3f48",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2577,7 +2577,7 @@ export const transacoes = [
         valor: 100.03,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "bb5e:ae40:85a2:c28b:ea58:ab7a:19ed:0c5a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2585,7 +2585,7 @@ export const transacoes = [
         valor: 232.98,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0f43:0949:1ca5:7f60:3b08:989f:9dbb:8f64",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2593,7 +2593,7 @@ export const transacoes = [
         valor: 139.28,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "7c2d:76e6:fa05:106c:661d:e576:a3a3:b1f7",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2601,7 +2601,7 @@ export const transacoes = [
         valor: 412,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "30c1:ec01:fed0:3ee0:8fec:e5e9:51e9:dac9",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2609,7 +2609,7 @@ export const transacoes = [
         valor: 102.89,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "995a:9324:c7a6:7987:39aa:3347:14c9:eee1",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2617,7 +2617,7 @@ export const transacoes = [
         valor: 1645.69,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "a72e:aec4:00f1:9b3a:76aa:a7f9:77e2:a6f5",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2625,7 +2625,7 @@ export const transacoes = [
         valor: 130.65,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "81c8:14f6:2ed8:3f5e:77c8:ebc7:6730:39ef",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2633,7 +2633,7 @@ export const transacoes = [
         valor: 88.31,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "fabb:606d:30e1:04b9:bef6:9b60:1c99:8163",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2641,7 +2641,7 @@ export const transacoes = [
         valor: 110.09,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "124f:6a33:3f7c:ace0:f5b6:90c2:a4a2:f976",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2649,7 +2649,7 @@ export const transacoes = [
         valor: 419.57,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a70b:386f:06ea:5e35:0c9a:e6f5:da05:0005",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2657,7 +2657,7 @@ export const transacoes = [
         valor: 177.44,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "00b0:17df:8384:713e:2c23:2148:b605:1c7a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2665,7 +2665,7 @@ export const transacoes = [
         valor: 70.83,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "94fd:c679:5d73:9069:ea9d:ab3a:0342:df19",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2673,7 +2673,7 @@ export const transacoes = [
         valor: 816.29,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "5ec3:60b7:7cd1:993c:2e58:5cb3:a8c2:3912",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2681,7 +2681,7 @@ export const transacoes = [
         valor: 373.57,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "95d5:8f8c:11ad:f921:a97f:6e13:ad47:2995",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2689,7 +2689,7 @@ export const transacoes = [
         valor: 131.16,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "b3ff:ae01:8834:a4e8:71c3:a780:e8d2:ffad",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2697,7 +2697,7 @@ export const transacoes = [
         valor: 379.01,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a709:6614:498b:f635:a995:c4e2:3428:bf3b",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2705,7 +2705,7 @@ export const transacoes = [
         valor: 336.92,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "58b0:6f25:4f00:ca4f:e7ff:6337:9ac6:d435",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2713,7 +2713,7 @@ export const transacoes = [
         valor: 126.8,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "9f7c:b1d1:28bc:00aa:d594:b426:bade:b4f2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2721,7 +2721,7 @@ export const transacoes = [
         valor: 851.9,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "7b3f:3d42:ba62:e513:262e:7143:90a0:3ada",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2729,7 +2729,7 @@ export const transacoes = [
         valor: 3576,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "66de:f3eb:c771:1633:3c87:a541:de18:966f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2737,7 +2737,7 @@ export const transacoes = [
         valor: 1444.77,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "9249:4cf1:973a:ffb6:2910:fd2e:2cd3:41b1",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2745,7 +2745,7 @@ export const transacoes = [
         valor: 5085,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "21e9:d417:35cc:7a65:2b8d:7873:e73f:2eb7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2753,7 +2753,7 @@ export const transacoes = [
         valor: 133.86,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "2ab5:6e2b:a248:aead:8029:d1b0:5eba:5f08",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2761,7 +2761,7 @@ export const transacoes = [
         valor: 197.01,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "e614:949a:4991:4279:73e3:8b39:2617:7ae7",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2769,7 +2769,7 @@ export const transacoes = [
         valor: 219.72,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "6f83:c910:96cb:2e05:0f2d:0d98:2856:a283",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2777,7 +2777,7 @@ export const transacoes = [
         valor: 89.84,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "a0e9:84fc:4935:76c0:cc10:8598:3b48:374b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2785,7 +2785,7 @@ export const transacoes = [
         valor: 5207,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "8c1b:822b:9667:deee:0114:6582:d438:9d94",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2793,7 +2793,7 @@ export const transacoes = [
         valor: 6105,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "dbc5:4650:7f23:cdc6:a2c5:b3fd:6442:06b6",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2801,7 +2801,7 @@ export const transacoes = [
         valor: 399.26,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2caf:eb8f:ab05:b839:2aa8:9ca6:c8e6:3bad",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2809,7 +2809,7 @@ export const transacoes = [
         valor: 87.55,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "d1c8:f5c8:cd1f:c27f:a3cb:07b5:8520:a717",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2817,7 +2817,7 @@ export const transacoes = [
         valor: 318.66,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f031:c7f8:ff5c:be4c:f9a1:fd41:9554:6a34",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2825,7 +2825,7 @@ export const transacoes = [
         valor: 367.4,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "6df4:d748:0893:ce32:4a3d:f381:0e9e:31c2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2833,7 +2833,7 @@ export const transacoes = [
         valor: 203.57,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4c92:061d:3f09:5160:0c8e:124a:6155:b955",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2841,7 +2841,7 @@ export const transacoes = [
         valor: 67.72,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "a5ed:3bf7:a2fa:04b0:9cde:b650:3c29:c5cb",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2849,7 +2849,7 @@ export const transacoes = [
         valor: 97.2,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4357:6739:c0bc:c3ec:1972:476c:c3be:0481",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -2857,7 +2857,7 @@ export const transacoes = [
         valor: 367.43,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "392b:f2a8:aabc:bbd7:892d:5100:a9c7:0d24",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2865,7 +2865,7 @@ export const transacoes = [
         valor: 173.21,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "6f71:b34a:f0a5:5bd7:2f35:e230:030f:4eff",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2873,7 +2873,7 @@ export const transacoes = [
         valor: 79.92,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "972d:6f95:f327:9230:d844:fe11:18e8:2b64",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2881,7 +2881,7 @@ export const transacoes = [
         valor: 134.57,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "df2f:ad76:2218:60e5:49c6:99e8:30fe:f2b3",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2889,7 +2889,7 @@ export const transacoes = [
         valor: 27.07,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "0305:10b7:cd43:bdae:353e:7705:4f6f:bf18",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2897,7 +2897,7 @@ export const transacoes = [
         valor: 233.69,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6b1e:5a08:e6d4:e197:8656:85d6:f566:04be",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2905,7 +2905,7 @@ export const transacoes = [
         valor: 156.46,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "9232:f3de:9f0d:03cb:4301:c9c5:4e88:0270",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2913,7 +2913,7 @@ export const transacoes = [
         valor: 309.65,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "6b19:4b74:9ae2:3425:d538:75ee:60a0:7acf",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2921,7 +2921,7 @@ export const transacoes = [
         valor: 46.88,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "fcfc:3447:ca98:2dad:1182:d569:39f2:2920",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2929,7 +2929,7 @@ export const transacoes = [
         valor: 33.56,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "5a2f:26af:c03d:0449:686f:6bd2:e207:bed4",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2937,7 +2937,7 @@ export const transacoes = [
         valor: 401.23,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "16b9:a974:bd9f:d0b7:1c85:0941:429d:3201",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2945,7 +2945,7 @@ export const transacoes = [
         valor: 311.51,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "5baa:f0f7:b716:1f3f:99cc:5a49:db8c:5e8e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2953,7 +2953,7 @@ export const transacoes = [
         valor: 220.63,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "9749:bce3:9b36:f187:b053:936c:9585:3149",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -2961,7 +2961,7 @@ export const transacoes = [
         valor: 148.96,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "909d:10ff:68e5:5170:b980:1f70:8962:60a8",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -2969,7 +2969,7 @@ export const transacoes = [
         valor: 252.03,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a02b:52f7:62e0:d158:9be5:c6ed:145d:ad4d",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -2977,7 +2977,7 @@ export const transacoes = [
         valor: 216.33,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "dbc1:ab66:988f:026a:c5e7:9487:6970:3d94",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -2985,7 +2985,7 @@ export const transacoes = [
         valor: 251.1,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6a8f:bf4c:a488:4727:bcbd:20ac:3120:e719",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -2993,7 +2993,7 @@ export const transacoes = [
         valor: 239.75,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "ad09:f905:bc11:5bdc:968b:c9be:1c14:98ad",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3001,7 +3001,7 @@ export const transacoes = [
         valor: 309.45,
         tipo: 'despesa',
         descricao: 'Farmácia.',
-        id: crypto.randomUUID(),
+        id: "8857:2310:de72:ab9d:0c2b:bff3:9237:a9c9",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3009,7 +3009,7 @@ export const transacoes = [
         valor: 183.28,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "34f2:8e2c:0781:50a9:58fe:7ca9:7dbe:289e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3017,7 +3017,7 @@ export const transacoes = [
         valor: 28.39,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "dcf2:1fb2:d5f1:d2c9:81c9:d3a7:e0d1:635b",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3025,7 +3025,7 @@ export const transacoes = [
         valor: 105.62,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "5d81:edc5:ac69:2240:6dc0:e73a:3706:1aa9",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3033,7 +3033,7 @@ export const transacoes = [
         valor: 50.49,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "3903:7a87:7b71:4685:b01e:0490:bdaf:9566",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3041,7 +3041,7 @@ export const transacoes = [
         valor: 30.42,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "72fb:44af:0753:ebcc:4933:914d:99da:f84c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3049,7 +3049,7 @@ export const transacoes = [
         valor: 152.39,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "fcb5:6d08:1a5b:0a57:7793:faef:7cb4:e5d6",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3057,7 +3057,7 @@ export const transacoes = [
         valor: 238.3,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "aa30:6275:5e78:b1dc:a210:594a:ccf6:61f0",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3065,7 +3065,7 @@ export const transacoes = [
         valor: 169.05,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "0b06:b132:cbf0:8bf1:8411:b777:f161:6fdc",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3073,7 +3073,7 @@ export const transacoes = [
         valor: 231.22,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "51d1:2b21:5c44:b287:3f4c:04dc:2377:eb59",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3081,7 +3081,7 @@ export const transacoes = [
         valor: 222.13,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "9834:c86a:c464:9a37:5242:c90d:9f24:d6d8",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3089,7 +3089,7 @@ export const transacoes = [
         valor: 206.91,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6a6c:23dc:fc27:dc5e:55c7:6ac4:06e5:87a7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3097,7 +3097,7 @@ export const transacoes = [
         valor: 120.5,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "b837:809d:a1e0:c3ba:c789:5b0a:5aa5:0e60",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3105,7 +3105,7 @@ export const transacoes = [
         valor: 134.54,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "2421:c059:1d82:7031:516e:7111:e383:7291",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3113,7 +3113,7 @@ export const transacoes = [
         valor: 321.52,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "ed3d:0c35:3fa1:1ca6:2494:097e:cf1a:34ef",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3121,7 +3121,7 @@ export const transacoes = [
         valor: 529.88,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "2aef:7d46:9d1c:0770:48f6:e734:1f93:83a5",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3129,7 +3129,7 @@ export const transacoes = [
         valor: 173.32,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "4a28:5a58:2910:492f:90e0:ad70:ecff:532f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3137,7 +3137,7 @@ export const transacoes = [
         valor: 364.66,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "a172:fbf2:d2fa:5450:229d:890e:cc3f:a97d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3145,7 +3145,7 @@ export const transacoes = [
         valor: 1041.8,
         tipo: 'despesa',
         descricao: 'Calçados.',
-        id: crypto.randomUUID(),
+        id: "f6e3:7824:779f:cffd:9b01:a3db:af4e:e410",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3153,7 +3153,7 @@ export const transacoes = [
         valor: 137.65,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "50e1:f125:dbce:d26f:8d9a:74bb:d2dc:8587",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3161,7 +3161,7 @@ export const transacoes = [
         valor: 175.97,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "6360:4aed:f7a4:6561:2073:088e:3814:6959",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3169,7 +3169,7 @@ export const transacoes = [
         valor: 94.71,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "5600:9ca1:859f:1bd7:eb8e:98d4:f0fd:962b",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3177,7 +3177,7 @@ export const transacoes = [
         valor: 163.86,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "e972:20d4:7270:b141:678e:f798:5daa:142b",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3185,7 +3185,7 @@ export const transacoes = [
         valor: 757.19,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "9236:e962:0249:ee13:022d:4f91:e31e:e623",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3193,7 +3193,7 @@ export const transacoes = [
         valor: 429.82,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3fe1:49c6:850f:5ec1:10c9:760b:b103:2e76",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3201,7 +3201,7 @@ export const transacoes = [
         valor: 143.22,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "de03:3b27:892b:5c62:959e:2987:3846:bf31",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3209,7 +3209,7 @@ export const transacoes = [
         valor: 88.13,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "e7f8:58ae:5ea8:7941:ae96:be03:71cd:54c8",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3217,7 +3217,7 @@ export const transacoes = [
         valor: 365.82,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "5016:5fb3:5629:9afa:f1ed:090c:02ba:d9d1",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3225,7 +3225,7 @@ export const transacoes = [
         valor: 1191.66,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "652a:8451:31cd:649f:f6a4:1c73:e3e4:a565",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3233,7 +3233,7 @@ export const transacoes = [
         valor: 194.79,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "51c0:af42:f3fd:f47c:7f2c:0c5a:72cc:cee2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3241,7 +3241,7 @@ export const transacoes = [
         valor: 62.86,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "f4ba:1bfd:ed25:603c:9fe6:95b3:04b6:fa71",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3249,7 +3249,7 @@ export const transacoes = [
         valor: 145.72,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "8db4:fdae:a61d:2b34:b971:065f:109f:9374",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3257,7 +3257,7 @@ export const transacoes = [
         valor: 129.45,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c04a:f871:58e6:2a9b:6cf2:0567:2307:5d9b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3265,7 +3265,7 @@ export const transacoes = [
         valor: 405.67,
         tipo: 'receita',
         descricao: 'Restituição.',
-        id: crypto.randomUUID(),
+        id: "fe1d:c9fd:9b41:7320:d2f6:278e:70a2:721c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3273,7 +3273,7 @@ export const transacoes = [
         valor: 116.1,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "5076:60d8:6087:7da9:a3ba:5bc4:334b:2c33",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3281,7 +3281,7 @@ export const transacoes = [
         valor: 169.72,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "d41b:0ee5:ec73:b20b:0519:6929:bd2d:5ecf",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3289,7 +3289,7 @@ export const transacoes = [
         valor: 107.65,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "ca85:41aa:8b36:2611:3fe8:8eb0:ca7e:c2c5",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3297,7 +3297,7 @@ export const transacoes = [
         valor: 43.25,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "6c5f:98a7:e7f8:f116:8117:8379:8919:3fcd",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3305,7 +3305,7 @@ export const transacoes = [
         valor: 226.59,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "eb99:c9ac:53dd:f03d:cee0:2189:9088:3de3",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3313,7 +3313,7 @@ export const transacoes = [
         valor: 1690.3,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "51c4:b8a4:e8eb:6eb5:5c9d:0a42:7782:a244",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3321,7 +3321,7 @@ export const transacoes = [
         valor: 192.75,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "c380:e5c2:55fa:db3f:a10d:4f87:cd72:36a2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3329,7 +3329,7 @@ export const transacoes = [
         valor: 150.78,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "8f23:534b:5a55:e92c:c783:d1d6:41bf:3d60",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3337,7 +3337,7 @@ export const transacoes = [
         valor: 1174.88,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "58dd:adf1:8870:442d:b23e:4a9d:f84f:718f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3345,7 +3345,7 @@ export const transacoes = [
         valor: 139.86,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "9c2b:2cbf:c987:2cd4:c6a1:bd3c:9659:169f",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3353,7 +3353,7 @@ export const transacoes = [
         valor: 264.54,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "097f:442c:711f:1bb4:c851:a574:b274:1a3f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3361,7 +3361,7 @@ export const transacoes = [
         valor: 723.38,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "c3cd:d4ff:a318:0b49:d72f:1c5c:3ebc:9c06",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3369,7 +3369,7 @@ export const transacoes = [
         valor: 1789.53,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "7a0e:acbb:6cc0:9f68:85a1:1d14:dea9:60ad",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3377,7 +3377,7 @@ export const transacoes = [
         valor: 443.37,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "09bb:fc3f:c197:cbae:198e:b7c9:9f64:74ac",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3385,7 +3385,7 @@ export const transacoes = [
         valor: 104.94,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "1336:48cd:2bef:3a10:ef0b:ff2b:184c:ad6e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3393,7 +3393,7 @@ export const transacoes = [
         valor: 128.64,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "06df:afe7:c02c:2ebf:d72b:8ce9:1b0f:1fa2",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3401,7 +3401,7 @@ export const transacoes = [
         valor: 156.56,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "b075:59ad:b589:09d1:7d41:6061:71d4:7225",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3409,7 +3409,7 @@ export const transacoes = [
         valor: 176.58,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "c936:0a31:a7c7:cfa6:fb8c:de06:791d:52b3",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3417,7 +3417,7 @@ export const transacoes = [
         valor: 445.12,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "9449:5dbf:4487:04d6:d345:cdab:3c6a:f3a8",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3425,7 +3425,7 @@ export const transacoes = [
         valor: 4314,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "002a:5491:1f60:46d8:b87f:df3c:0012:87d4",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3433,7 +3433,7 @@ export const transacoes = [
         valor: 3657,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "ff3a:7698:5cd7:d194:aadf:829e:66f1:5af9",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3441,7 +3441,7 @@ export const transacoes = [
         valor: 49.04,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "855f:e948:e3f5:701f:05d8:2623:6ab8:0abf",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3449,7 +3449,7 @@ export const transacoes = [
         valor: 36.31,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "101e:d3e8:3df5:a449:ff0e:e551:b788:047b",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3457,7 +3457,7 @@ export const transacoes = [
         valor: 5408,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "d877:e669:0972:e1d5:a77f:d568:2771:4a7d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3465,7 +3465,7 @@ export const transacoes = [
         valor: 4063,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "c9ae:c70b:fc5e:913a:dd55:f4a9:5e83:0c02",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3473,7 +3473,7 @@ export const transacoes = [
         valor: 170.56,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4a95:997d:05e4:0d29:5cc6:4edc:2df5:03db",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3481,7 +3481,7 @@ export const transacoes = [
         valor: 219.9,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "ea03:dae4:2f24:8b22:3ca4:4d3d:e845:56a5",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3489,7 +3489,7 @@ export const transacoes = [
         valor: 114.52,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "b413:4545:6f1e:cbc9:dec1:2cb8:9c31:354e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3497,7 +3497,7 @@ export const transacoes = [
         valor: 219.41,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "b07f:e81e:00b3:33ee:07d6:1c88:bc4c:cde4",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3505,7 +3505,7 @@ export const transacoes = [
         valor: 50.56,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "ceff:bd61:60d9:a888:4e57:812e:f09a:49fb",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3513,7 +3513,7 @@ export const transacoes = [
         valor: 117.04,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "6670:9845:250f:98bc:dff3:9792:1d25:81d2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3521,7 +3521,7 @@ export const transacoes = [
         valor: 185.04,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c152:8f0b:f1be:2029:59c2:3849:b15b:183e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3529,7 +3529,7 @@ export const transacoes = [
         valor: 360.38,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "54b2:70ca:188a:b2b4:fc69:9fbe:34cb:5d69",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3537,7 +3537,7 @@ export const transacoes = [
         valor: 575.19,
         tipo: 'despesa',
         descricao: 'Farmácia.',
-        id: crypto.randomUUID(),
+        id: "cde7:bd12:9c3b:1530:9387:81c8:e8fa:3ba5",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3545,7 +3545,7 @@ export const transacoes = [
         valor: 309.86,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "aa20:a9f9:3424:c037:cc22:1e68:d07f:d23e",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3553,7 +3553,7 @@ export const transacoes = [
         valor: 217.42,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "5080:21d7:8e50:5cb5:df3a:6dfb:87ca:6d68",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3561,7 +3561,7 @@ export const transacoes = [
         valor: 84.13,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "5209:0f7c:42e1:04bc:180c:017e:3dc4:d3e7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3569,7 +3569,7 @@ export const transacoes = [
         valor: 253.81,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "f3fd:158f:f93b:9540:fe0a:e661:6728:5123",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3577,7 +3577,7 @@ export const transacoes = [
         valor: 374.32,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "5997:07d8:90be:314e:06cf:2fb3:9870:14e3",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3585,7 +3585,7 @@ export const transacoes = [
         valor: 431,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f315:2e0c:df5f:acaf:f74f:b6d6:bd97:78be",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3593,7 +3593,7 @@ export const transacoes = [
         valor: 382.43,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0cfb:1e00:3b32:7080:6164:c175:b916:db82",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3601,7 +3601,7 @@ export const transacoes = [
         valor: 429.49,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "ab62:a824:7bda:0f18:68d6:80f2:2ef5:9caa",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3609,7 +3609,7 @@ export const transacoes = [
         valor: 194.33,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "b1fb:ab59:c2fa:603e:65d5:e83f:4178:ab9c",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3617,7 +3617,7 @@ export const transacoes = [
         valor: 145.66,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "60e1:a6c2:4384:682b:b8e6:4c27:a7c9:2376",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3625,7 +3625,7 @@ export const transacoes = [
         valor: 139.76,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "5e76:685e:a2e2:29f0:c4fd:dfe7:9f4a:9bb5",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3633,7 +3633,7 @@ export const transacoes = [
         valor: 416.4,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f7ea:8b4a:b5dc:50dd:9c83:63c9:ba18:aaf9",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3641,7 +3641,7 @@ export const transacoes = [
         valor: 360.22,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "7864:3ad1:fe9b:9c4c:55a9:c0e9:bf08:a8d7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3649,7 +3649,7 @@ export const transacoes = [
         valor: 289.1,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f627:abfe:787e:e81c:f1fe:f432:015e:b734",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3657,7 +3657,7 @@ export const transacoes = [
         valor: 291.67,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "ed99:c215:523a:2988:24b0:ea79:21c1:d329",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3665,7 +3665,7 @@ export const transacoes = [
         valor: 232.5,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "4ac1:70de:c8cb:53e1:a82f:523d:a4a0:a589",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3673,7 +3673,7 @@ export const transacoes = [
         valor: 166.52,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "f5fb:e4a4:29a7:9b82:ebfa:4ba4:da55:1cb8",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3681,7 +3681,7 @@ export const transacoes = [
         valor: 164.84,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "6566:7cd6:293c:02e8:7cdc:3fdd:cdae:de6e",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3689,7 +3689,7 @@ export const transacoes = [
         valor: 299.44,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9bc0:73f3:b5f1:7a6a:5cd2:a582:a0a9:6776",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3697,7 +3697,7 @@ export const transacoes = [
         valor: 125.43,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "5b1a:d8e0:72f6:a40c:4ff1:3e75:8a4d:3f50",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3705,7 +3705,7 @@ export const transacoes = [
         valor: 95.93,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "b178:3d17:ce81:885d:5835:b2e4:f6dc:508a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3713,7 +3713,7 @@ export const transacoes = [
         valor: 121.36,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "3e47:792a:560e:1108:0d8b:276d:51c0:5067",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3721,7 +3721,7 @@ export const transacoes = [
         valor: 214.47,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "8a68:c716:8390:60c1:45a8:23b0:2539:0102",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3729,7 +3729,7 @@ export const transacoes = [
         valor: 39.76,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "ab2a:976e:a758:35b3:dc3f:51e7:b6e1:24da",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3737,7 +3737,7 @@ export const transacoes = [
         valor: 96.9,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "3a92:373f:1eba:837e:c67b:763b:3ded:a8ad",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3745,7 +3745,7 @@ export const transacoes = [
         valor: 101.02,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "e7cd:a68b:6310:2dda:917c:4cb6:0047:df9d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3753,7 +3753,7 @@ export const transacoes = [
         valor: 261.69,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "9654:b3ec:20b7:33c5:03fa:48f9:84f3:6cf6",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3761,7 +3761,7 @@ export const transacoes = [
         valor: 73.28,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3493:f0b0:b34a:744d:e94f:96b3:b537:167c",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3769,7 +3769,7 @@ export const transacoes = [
         valor: 104.75,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "e1ed:293a:8329:dc94:fd8f:177e:7170:f240",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3777,7 +3777,7 @@ export const transacoes = [
         valor: 96.65,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "b296:1fee:6c78:4d9b:77bb:4673:5b1b:93af",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3785,7 +3785,7 @@ export const transacoes = [
         valor: 150.13,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "7209:cd70:e4db:91bc:9e9b:3e48:74df:fcfc",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3793,7 +3793,7 @@ export const transacoes = [
         valor: 109.73,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0da7:689d:68c7:81cb:2fe2:6aad:f7c8:102a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3801,7 +3801,7 @@ export const transacoes = [
         valor: 150.9,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "0b3c:2591:f3d5:d672:2f1f:d09f:d545:df9f",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -3809,7 +3809,7 @@ export const transacoes = [
         valor: 243.77,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "af85:5d41:046f:5008:9e42:fb7a:f06e:b28d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3817,7 +3817,7 @@ export const transacoes = [
         valor: 494.3,
         tipo: 'despesa',
         descricao: 'Calçados.',
-        id: crypto.randomUUID(),
+        id: "5da4:408d:fd85:699d:80cf:1888:ef49:d48a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3825,7 +3825,7 @@ export const transacoes = [
         valor: 130.32,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "dc2d:6d3e:b9ee:1dd0:da99:bc9d:1863:e463",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3833,7 +3833,7 @@ export const transacoes = [
         valor: 177.53,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "76cc:743c:02be:6667:fe13:5a87:7cdc:a788",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3841,7 +3841,7 @@ export const transacoes = [
         valor: 867.35,
         tipo: 'receita',
         descricao: 'Venda de objeto usado.',
-        id: crypto.randomUUID(),
+        id: "ae98:6378:a5fc:79b3:9315:ecc2:a450:412d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3849,7 +3849,7 @@ export const transacoes = [
         valor: 130.09,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "c113:5953:6fee:5c22:56fb:d476:0679:c745",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3857,7 +3857,7 @@ export const transacoes = [
         valor: 93.02,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "2348:b177:af4a:5c04:64a3:b10e:8a58:fe60",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3865,7 +3865,7 @@ export const transacoes = [
         valor: 70.9,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "8b78:9212:aa31:3eba:1468:609c:4bbb:a27f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3873,7 +3873,7 @@ export const transacoes = [
         valor: 197.04,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3e88:8450:06d0:0d9a:b802:014f:8f77:880b",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3881,7 +3881,7 @@ export const transacoes = [
         valor: 390.34,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "4547:85c6:e078:0e80:c6db:ed21:53f5:753a",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3889,7 +3889,7 @@ export const transacoes = [
         valor: 169.74,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f000:f245:25a0:bc97:e85f:a91d:4e0a:5fb3",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3897,7 +3897,7 @@ export const transacoes = [
         valor: 197.05,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "7b07:1967:0bdd:cd17:f5ab:fa2e:7b37:1eda",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3905,7 +3905,7 @@ export const transacoes = [
         valor: 337.18,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "122e:2627:794e:ec0e:7738:c7f6:0201:8723",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3913,7 +3913,7 @@ export const transacoes = [
         valor: 1678.12,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "399e:8de6:87f5:bb0b:fe2d:a991:dbb0:800d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -3921,7 +3921,7 @@ export const transacoes = [
         valor: 1384.49,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "5408:8eb3:b068:dbeb:dc9f:688d:1eca:9fe1",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3929,7 +3929,7 @@ export const transacoes = [
         valor: 238.33,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "3eae:1e3a:9852:a56e:8f3c:a6a4:56a5:e7c6",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3937,7 +3937,7 @@ export const transacoes = [
         valor: 130.07,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "99f4:0128:4e4d:f7cc:1044:8449:362e:d2d0",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -3945,7 +3945,7 @@ export const transacoes = [
         valor: 225.43,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "36c8:3956:81e4:a712:6a71:2dd2:edf4:5960",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3953,7 +3953,7 @@ export const transacoes = [
         valor: 288.92,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "989e:63ee:46b9:c045:74ff:d14f:5fc7:c427",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -3961,7 +3961,7 @@ export const transacoes = [
         valor: 90.68,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "1d85:eaef:1c17:88aa:50be:a3e2:442b:9ad2",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3969,7 +3969,7 @@ export const transacoes = [
         valor: 206.06,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c389:0dfc:1549:0e2f:3afc:f8fc:df9e:d587",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3977,7 +3977,7 @@ export const transacoes = [
         valor: 150.23,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "d15d:ad71:4ad4:c61c:a4e5:2075:277d:691f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -3985,7 +3985,7 @@ export const transacoes = [
         valor: 1148.58,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "d930:4954:936c:6f4f:cf19:f99c:37fd:36d9",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -3993,7 +3993,7 @@ export const transacoes = [
         valor: 178.47,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "11fa:f455:5e8e:e594:6da1:e965:68b0:1304",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4001,7 +4001,7 @@ export const transacoes = [
         valor: 1378.6,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "0795:1ed3:78d6:ac82:7290:ffeb:8105:598b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4009,7 +4009,7 @@ export const transacoes = [
         valor: 89.98,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "587b:247e:9e37:4f4e:699f:63ae:b6cd:730a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4017,7 +4017,7 @@ export const transacoes = [
         valor: 97.92,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "2574:e6df:4f75:e500:2718:edcc:218a:459e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4025,7 +4025,7 @@ export const transacoes = [
         valor: 5261,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "0abc:3017:14a5:40ce:31e3:320e:3f39:5ced",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4033,7 +4033,7 @@ export const transacoes = [
         valor: 6470,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "3d25:c3f2:9b65:d335:80a5:d134:2706:4db1",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4041,7 +4041,7 @@ export const transacoes = [
         valor: 72.72,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "e762:7767:de77:28fa:7662:685a:5d88:07a4",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4049,7 +4049,7 @@ export const transacoes = [
         valor: 425.98,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0ecb:2574:d3eb:3cab:8448:087c:ec2e:dff9",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4057,7 +4057,7 @@ export const transacoes = [
         valor: 5616,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "9a25:4c50:55e6:cba5:b58d:f3ba:7dba:fb00",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4065,7 +4065,7 @@ export const transacoes = [
         valor: 240.84,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "9a2b:1522:53b5:c4d6:54f7:867f:5457:1d2a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4073,7 +4073,7 @@ export const transacoes = [
         valor: 254.09,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "456f:3e90:d3a3:7be8:f688:de8c:bdb5:da13",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4081,7 +4081,7 @@ export const transacoes = [
         valor: 967.94,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "bb67:c51d:dce8:2648:23e6:61ca:b956:c19f",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4089,7 +4089,7 @@ export const transacoes = [
         valor: 299.25,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "358f:532a:fbe3:7446:d4ac:9fa4:2893:cea7",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4097,7 +4097,7 @@ export const transacoes = [
         valor: 94.41,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "5c3d:8be2:bcd4:c4bd:1121:0f5e:d3d2:f288",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4105,7 +4105,7 @@ export const transacoes = [
         valor: 4002,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "bc8b:6796:b596:7726:a243:384b:3e3c:eda6",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4113,7 +4113,7 @@ export const transacoes = [
         valor: 416.07,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "136e:3812:d5fe:c096:f4e6:7ba6:aeba:e4fb",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4121,7 +4121,7 @@ export const transacoes = [
         valor: 104.64,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "5caf:0347:d9f8:c2b0:262a:2850:3122:891e",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4129,7 +4129,7 @@ export const transacoes = [
         valor: 348.27,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "ae37:df51:246c:88b4:673c:176d:57ff:242a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4137,7 +4137,7 @@ export const transacoes = [
         valor: 139.45,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "7306:9f24:e00f:e630:1ca8:a537:81c1:ecf8",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4145,7 +4145,7 @@ export const transacoes = [
         valor: 184.81,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "1b5f:1c3f:d1e7:7a6c:1a66:9930:1de2:9865",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4153,7 +4153,7 @@ export const transacoes = [
         valor: 38.66,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "89bb:0a15:2391:7c44:d6c7:dcd5:2124:bd99",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4161,7 +4161,7 @@ export const transacoes = [
         valor: 95.67,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "df66:135c:2f08:723c:02ad:8007:c3ce:1348",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4169,7 +4169,7 @@ export const transacoes = [
         valor: 197.53,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "fb6f:43d7:64eb:079f:2c93:647c:bfe0:2394",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4177,7 +4177,7 @@ export const transacoes = [
         valor: 258.02,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "6d6a:b588:d70d:7c31:8e31:2362:7985:7cf9",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4185,7 +4185,7 @@ export const transacoes = [
         valor: 83.28,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5f53:87b0:7cc1:cf61:a4a7:3a47:889b:cdf5",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4193,7 +4193,7 @@ export const transacoes = [
         valor: 71.99,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0917:19e9:92de:2b70:7a10:7ca6:528b:03e7",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4201,7 +4201,7 @@ export const transacoes = [
         valor: 349.36,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "6a84:2d8e:b394:9912:5c0a:8104:62e4:d630",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4209,7 +4209,7 @@ export const transacoes = [
         valor: 176.09,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "0d5d:e00f:2a22:4d62:1714:ecc7:b943:3a82",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4217,7 +4217,7 @@ export const transacoes = [
         valor: 320.55,
         tipo: 'despesa',
         descricao: 'Uniforme escolar.',
-        id: crypto.randomUUID(),
+        id: "d5bc:717f:b07e:e5fa:4748:b451:d50b:ac26",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4225,7 +4225,7 @@ export const transacoes = [
         valor: 127.05,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "020e:c165:e651:7d3c:e035:ac4a:3a04:c515",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4233,7 +4233,7 @@ export const transacoes = [
         valor: 338.56,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "5ad1:bc00:30f9:16ac:a09f:443b:b1ae:b747",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4241,7 +4241,7 @@ export const transacoes = [
         valor: 4472,
         tipo: 'receita',
         descricao: 'Décimo terceiro salário.',
-        id: crypto.randomUUID(),
+        id: "36b5:35c6:e608:b417:b3e7:d5c9:c3c3:2d1d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4249,7 +4249,7 @@ export const transacoes = [
         valor: 171.99,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3bda:83c2:f6ff:8488:2402:c787:5245:f3a9",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4257,7 +4257,7 @@ export const transacoes = [
         valor: 310.86,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "c01f:a139:5d15:2720:19ad:aa95:1b22:0616",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4265,7 +4265,7 @@ export const transacoes = [
         valor: 187.99,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "602f:db41:3706:d210:d5de:8ae9:8269:11d0",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4273,7 +4273,7 @@ export const transacoes = [
         valor: 114.97,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "e5ae:673c:8beb:89fe:5312:1318:811f:80c1",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4281,7 +4281,7 @@ export const transacoes = [
         valor: 135.56,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "af65:5832:2044:5142:a442:e104:2b7b:9ef7",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4289,7 +4289,7 @@ export const transacoes = [
         valor: 232.4,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "ddb5:411b:116e:05ab:b82d:2900:caa4:96da",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4297,7 +4297,7 @@ export const transacoes = [
         valor: 347.98,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "ed14:4f84:a333:a0ef:2689:b3c6:149a:621e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4305,7 +4305,7 @@ export const transacoes = [
         valor: 5077,
         tipo: 'receita',
         descricao: 'Décimo terceiro salário.',
-        id: crypto.randomUUID(),
+        id: "05fa:95e7:3455:d104:99ee:af23:5225:4454",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4313,7 +4313,7 @@ export const transacoes = [
         valor: 111.63,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "3c7a:3932:aa66:40e3:84c8:497b:2afa:c926",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4321,7 +4321,7 @@ export const transacoes = [
         valor: 83.7,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "5c8a:d47a:305b:5301:037e:f633:e9f5:3f62",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4329,7 +4329,7 @@ export const transacoes = [
         valor: 294.36,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "4fe2:142f:f8ad:b19c:8117:946f:48b9:fdd1",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4337,7 +4337,7 @@ export const transacoes = [
         valor: 88.72,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "abbe:8735:1e0d:8472:f01f:4ff5:3889:6732",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4345,7 +4345,7 @@ export const transacoes = [
         valor: 118.03,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "5dc3:36cb:41c4:7446:a255:d01f:4429:c6f9",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4353,7 +4353,7 @@ export const transacoes = [
         valor: 6352,
         tipo: 'receita',
         descricao: 'Décimo terceiro salário.',
-        id: crypto.randomUUID(),
+        id: "be11:bef0:ec7c:132e:2e5b:49ee:16d3:2e17",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4361,7 +4361,7 @@ export const transacoes = [
         valor: 208.42,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5cd0:89a6:2d54:8e03:180d:480c:df64:4cea",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4369,7 +4369,7 @@ export const transacoes = [
         valor: 121.06,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "2ecb:ef21:5826:a957:356e:6a70:5481:72ca",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4377,7 +4377,7 @@ export const transacoes = [
         valor: 151.07,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a339:0347:fcf9:5567:b023:e28a:d5ba:7d3e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4385,7 +4385,7 @@ export const transacoes = [
         valor: 242.61,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4625:246e:de0e:b8af:8860:7d7e:b567:9a1e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4393,7 +4393,7 @@ export const transacoes = [
         valor: 5223,
         tipo: 'receita',
         descricao: 'Décimo terceiro salário.',
-        id: crypto.randomUUID(),
+        id: "9fcd:d052:714e:9e79:98f1:d16d:b5b3:b29f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4401,7 +4401,7 @@ export const transacoes = [
         valor: 90,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "c878:36d2:0633:9831:8862:2271:a21d:f74c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4409,7 +4409,7 @@ export const transacoes = [
         valor: 109.88,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "66fe:dafb:de2a:157b:9168:3a6f:4703:0028",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4417,7 +4417,7 @@ export const transacoes = [
         valor: 161.82,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "8d98:3cce:a12a:1617:c4d9:4535:61fb:7e36",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4425,7 +4425,7 @@ export const transacoes = [
         valor: 118.64,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "6a0a:bb5e:c46d:5620:cd8e:a44f:44b5:0321",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4433,7 +4433,7 @@ export const transacoes = [
         valor: 133.65,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "7123:d76c:eaae:5ecf:805d:590d:4e63:e5bb",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4441,7 +4441,7 @@ export const transacoes = [
         valor: 199.82,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "cbc5:7964:642c:d5f0:95d9:01ac:984b:57c7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4449,7 +4449,7 @@ export const transacoes = [
         valor: 171.82,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "5b0a:7c11:cdc2:6ef2:2399:634b:9f47:6873",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4457,7 +4457,7 @@ export const transacoes = [
         valor: 300.09,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "22fc:6d33:4b6b:1b35:c7df:60a9:f79d:c11c",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4465,7 +4465,7 @@ export const transacoes = [
         valor: 92.17,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "6d0e:c13e:46a9:27db:d680:886c:dfff:1719",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4473,7 +4473,7 @@ export const transacoes = [
         valor: 175.57,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "c0c1:f8ed:4df3:bddd:77e4:2c6d:76c2:7eb6",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4481,7 +4481,7 @@ export const transacoes = [
         valor: 117.61,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "d3df:1dc8:2b66:1bfa:5211:11b8:a1e2:6513",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4489,7 +4489,7 @@ export const transacoes = [
         valor: 178.14,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "abe1:01a6:c4f8:fa0b:e980:14fb:584a:d6ac",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4497,7 +4497,7 @@ export const transacoes = [
         valor: 37.32,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "4d52:a3ea:bab3:d368:9bf4:74f8:7c67:cb51",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4505,7 +4505,7 @@ export const transacoes = [
         valor: 160.62,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "a109:e4f9:5c93:4b8a:0f8e:23ef:362a:ca65",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4513,7 +4513,7 @@ export const transacoes = [
         valor: 1294.07,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "219c:ca08:288a:549b:a250:0b4e:52f2:0ee9",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4521,7 +4521,7 @@ export const transacoes = [
         valor: 91.28,
         tipo: 'despesa',
         descricao: 'Exames laboratoriais.',
-        id: crypto.randomUUID(),
+        id: "e2cb:be0a:c892:fdc1:32a8:06aa:6b63:5533",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4529,7 +4529,7 @@ export const transacoes = [
         valor: 89.92,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "7f26:c2cf:9542:7e1a:c821:36be:0ddc:0ffb",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4537,7 +4537,7 @@ export const transacoes = [
         valor: 176.89,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "6a9a:1977:0f1e:3251:f0e9:132c:2f5d:1a3a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4545,7 +4545,7 @@ export const transacoes = [
         valor: 227.24,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "7ce6:d396:cab4:72c8:1631:d399:d2ca:290d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4553,7 +4553,7 @@ export const transacoes = [
         valor: 147.03,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "c5d5:8681:85c5:6bb4:af4d:e28b:1e87:48ae",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4561,7 +4561,7 @@ export const transacoes = [
         valor: 1595.94,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "b746:5782:c5bc:c06b:fda1:8c22:6d2f:a4e3",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4569,7 +4569,7 @@ export const transacoes = [
         valor: 105.21,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "8091:7311:2a6a:dc94:ae21:b74c:64c9:80d7",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4577,7 +4577,7 @@ export const transacoes = [
         valor: 244.86,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c63b:de5d:2a24:43b9:d1de:96f3:53db:0c2d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4585,7 +4585,7 @@ export const transacoes = [
         valor: 1327.15,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "3968:6993:e5ec:b81f:ad41:3a8e:0935:41c5",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4593,7 +4593,7 @@ export const transacoes = [
         valor: 178.58,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "767c:76cb:587f:0a41:ad95:37fa:62f5:17ce",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4601,7 +4601,7 @@ export const transacoes = [
         valor: 31.42,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "65ab:238a:0e3b:5c42:7402:a746:770f:6c9e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4609,7 +4609,7 @@ export const transacoes = [
         valor: 141.53,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a068:1f4a:fff8:660a:6c61:926a:8031:0dd1",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4617,7 +4617,7 @@ export const transacoes = [
         valor: 1000.46,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "bfa5:1c24:8973:0c4e:e290:598c:1d33:6416",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4625,7 +4625,7 @@ export const transacoes = [
         valor: 441.59,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "994f:f98a:e6b2:9dab:7d37:513d:53e1:669f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4633,7 +4633,7 @@ export const transacoes = [
         valor: 48.1,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "ea53:8478:5cc3:3b5a:d2ce:51b8:9657:cbc7",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4641,7 +4641,7 @@ export const transacoes = [
         valor: 248.93,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "d3b4:59a6:2734:03ad:e030:12cf:d755:30e1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4649,7 +4649,7 @@ export const transacoes = [
         valor: 4472,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "3254:b764:63bc:d44f:93d5:67f4:69b4:886a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4657,7 +4657,7 @@ export const transacoes = [
         valor: 5077,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "ee93:7fe8:1984:d33c:478b:1be1:3804:eef1",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4665,7 +4665,7 @@ export const transacoes = [
         valor: 364.74,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "477a:f803:5d0c:1762:f96b:a605:bc09:bb2f",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4673,7 +4673,7 @@ export const transacoes = [
         valor: 239.6,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "337e:0bbf:77ff:93f9:d343:03f4:044c:3e44",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4681,7 +4681,7 @@ export const transacoes = [
         valor: 6352,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "1108:2653:c955:4ad0:412a:6fb6:ff54:a54a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4689,7 +4689,7 @@ export const transacoes = [
         valor: 60.73,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "009f:26fb:3ad0:9450:d952:b199:4040:4391",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4697,7 +4697,7 @@ export const transacoes = [
         valor: 142.47,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "cebe:da3f:2d18:6a78:e8ea:0917:6bf1:3564",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4705,7 +4705,7 @@ export const transacoes = [
         valor: 258.65,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "3506:35ac:bdf5:c066:b275:5d5a:b4c6:0315",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4713,7 +4713,7 @@ export const transacoes = [
         valor: 210.48,
         tipo: 'despesa',
         descricao: 'Uniforme escolar.',
-        id: crypto.randomUUID(),
+        id: "313c:f719:8f3c:0427:2733:7b7a:4b85:d272",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4721,7 +4721,7 @@ export const transacoes = [
         valor: 5223,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "ec03:5bc7:4daf:d682:0af8:331c:1919:05f1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4729,7 +4729,7 @@ export const transacoes = [
         valor: 108.47,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "7345:667e:a8ef:9de7:2f44:a8d7:b8a9:d353",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4737,7 +4737,7 @@ export const transacoes = [
         valor: 193.34,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "e888:7043:6187:80bd:ba1a:d4cd:22f1:1453",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4745,7 +4745,7 @@ export const transacoes = [
         valor: 75.15,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "305b:595a:89ea:058d:0cbf:f7ff:087d:af5e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4753,7 +4753,7 @@ export const transacoes = [
         valor: 239.81,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "bab9:bfa0:0b24:3cb4:4c49:dc87:1b5b:5bf3",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4761,7 +4761,7 @@ export const transacoes = [
         valor: 274.36,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "d1d8:43f5:dbf4:6711:2ada:23f0:fe96:280b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4769,7 +4769,7 @@ export const transacoes = [
         valor: 161.68,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "0345:e68f:00b3:3fdc:6348:588a:063f:0b1a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4777,7 +4777,7 @@ export const transacoes = [
         valor: 324.66,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f5db:659a:b81e:5b1f:d886:1d99:fe7e:e551",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4785,7 +4785,7 @@ export const transacoes = [
         valor: 75.96,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "ff7a:16d4:92a7:f83b:7cfc:c9e8:cfab:75bb",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4793,7 +4793,7 @@ export const transacoes = [
         valor: 393.72,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "0535:8260:58a1:3644:3a52:b13f:b659:c7ba",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4801,7 +4801,7 @@ export const transacoes = [
         valor: 81.32,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9129:f5e4:4971:37d3:45b8:7bbe:685c:21fd",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -4809,7 +4809,7 @@ export const transacoes = [
         valor: 105.01,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "5262:d70f:c259:d568:21ff:9bad:63a9:5e31",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4817,7 +4817,7 @@ export const transacoes = [
         valor: 1449.21,
         tipo: 'receita',
         descricao: 'Restituição.',
-        id: crypto.randomUUID(),
+        id: "0224:f469:5706:932c:4955:b87c:451b:b9cd",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4825,7 +4825,7 @@ export const transacoes = [
         valor: 217.8,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "fbce:ad9b:e607:5d72:0223:31fb:66fd:ddd0",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4833,7 +4833,7 @@ export const transacoes = [
         valor: 90.67,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "3ff1:d0ee:564d:e970:645d:a139:7e79:d62a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4841,7 +4841,7 @@ export const transacoes = [
         valor: 184.58,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6eb7:9245:c342:ee29:2ef6:b4ff:881f:6ae2",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4849,7 +4849,7 @@ export const transacoes = [
         valor: 574.68,
         tipo: 'despesa',
         descricao: 'Consulta médica.',
-        id: crypto.randomUUID(),
+        id: "6385:1a46:f182:a94b:23f6:7dfc:90a5:7fb6",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4857,7 +4857,7 @@ export const transacoes = [
         valor: 286.48,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a74b:3204:8ad2:7c43:167d:6db6:a68f:62da",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4865,7 +4865,7 @@ export const transacoes = [
         valor: 42.04,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "f58c:7068:81eb:f542:e1a7:fe00:acaf:34aa",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4873,7 +4873,7 @@ export const transacoes = [
         valor: 251.86,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "97fb:d2f8:85a8:9478:1e33:f762:ee33:cb5d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -4881,7 +4881,7 @@ export const transacoes = [
         valor: 132.92,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "6a83:c9c3:c769:a18a:bbee:94e6:aaf1:6b23",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4889,7 +4889,7 @@ export const transacoes = [
         valor: 140.27,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "ae38:218d:c51f:4959:b551:7e83:9f0a:93fa",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4897,7 +4897,7 @@ export const transacoes = [
         valor: 395.91,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "ffca:0fa5:7f95:3d75:90d3:7b7f:8443:fc4e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4905,7 +4905,7 @@ export const transacoes = [
         valor: 120.1,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "74c4:5b78:dcbb:a730:0798:43c8:6638:7c39",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4913,7 +4913,7 @@ export const transacoes = [
         valor: 76.43,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "a933:bc76:ac19:952b:a8ad:d3aa:ba06:7b4e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4921,7 +4921,7 @@ export const transacoes = [
         valor: 362.07,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "29cf:a144:5c4b:915b:c6d9:0cc9:310b:dd66",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4929,7 +4929,7 @@ export const transacoes = [
         valor: 147.18,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "98a8:ccef:ffec:d96b:1ae3:7052:aa00:99d7",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4937,7 +4937,7 @@ export const transacoes = [
         valor: 204.86,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "d6cf:0565:0ffd:5b4c:3412:3465:b7c4:4fc2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4945,7 +4945,7 @@ export const transacoes = [
         valor: 160.95,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "961e:5449:06dd:ac87:8f2d:ce69:793f:d2ff",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -4953,7 +4953,7 @@ export const transacoes = [
         valor: 298.78,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "35c0:b610:3c09:c593:8e00:e48c:e501:e6e7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4961,7 +4961,7 @@ export const transacoes = [
         valor: 153.04,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "de7b:c5f1:87e4:c023:7aee:8778:5bac:1b64",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4969,7 +4969,7 @@ export const transacoes = [
         valor: 105.24,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "abc1:c168:7cd5:1f0c:c36b:8009:2290:1afc",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -4977,7 +4977,7 @@ export const transacoes = [
         valor: 29.31,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "068d:0aaa:b898:8910:ef38:3a4f:4e4a:31b5",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -4985,7 +4985,7 @@ export const transacoes = [
         valor: 102.52,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "6b2c:9c4e:c63a:d307:f786:7f98:2b1d:b717",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -4993,7 +4993,7 @@ export const transacoes = [
         valor: 189.31,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0666:e913:d5dc:3b42:35fd:6d33:20e5:94aa",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5001,7 +5001,7 @@ export const transacoes = [
         valor: 155.11,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "1922:a081:f2a3:f567:9412:bb68:5445:5699",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5009,7 +5009,7 @@ export const transacoes = [
         valor: 132.05,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "0b19:5b5d:d362:2e14:a595:a561:4cf1:add8",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5017,7 +5017,7 @@ export const transacoes = [
         valor: 191.02,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0239:99d8:4285:03df:df8d:b274:89b1:3f7d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5025,7 +5025,7 @@ export const transacoes = [
         valor: 354.81,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "a44b:cd24:e11e:5e49:7b21:24a9:51ee:9913",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5033,7 +5033,7 @@ export const transacoes = [
         valor: 89.74,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "b857:c972:4b19:f4ed:d6be:b55d:63ae:cef8",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5041,7 +5041,7 @@ export const transacoes = [
         valor: 223.31,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6737:98f0:51d8:e063:a058:906a:2d4a:bca2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5049,7 +5049,7 @@ export const transacoes = [
         valor: 236.15,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "ce57:c3ba:162b:0ad8:d77c:4928:3cc1:c82a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5057,7 +5057,7 @@ export const transacoes = [
         valor: 117.77,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "fba0:f0ca:1e88:61be:df3a:0c9f:c7ea:4ac2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5065,7 +5065,7 @@ export const transacoes = [
         valor: 97.69,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "005a:058a:388f:8c82:c7a3:af0e:c872:0783",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5073,7 +5073,7 @@ export const transacoes = [
         valor: 424.91,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9d5e:a066:0f4b:f33e:24ab:0a98:b4c7:61ab",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5081,7 +5081,7 @@ export const transacoes = [
         valor: 178.27,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "1e50:5d47:2f8e:05f2:77f2:1e4c:ce7b:7ef6",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5089,7 +5089,7 @@ export const transacoes = [
         valor: 395.39,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "23fa:2810:22aa:a3d9:8b00:3b01:5dfc:d551",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5097,7 +5097,7 @@ export const transacoes = [
         valor: 97.72,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "8b87:3237:0b86:5982:6757:445b:ae23:f662",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5105,7 +5105,7 @@ export const transacoes = [
         valor: 76.03,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "f291:7ff1:12c5:4e79:9ac5:f958:ee7e:8715",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5113,7 +5113,7 @@ export const transacoes = [
         valor: 97.51,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "f53d:c1e8:3406:737d:41df:c8ae:bc8b:af98",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5121,7 +5121,7 @@ export const transacoes = [
         valor: 1080.25,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "cc21:dd47:1064:c199:651c:5baf:b1f5:ba2f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5129,7 +5129,7 @@ export const transacoes = [
         valor: 132.13,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5fc1:0662:8290:6d54:2b55:8c2a:819f:c392",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5137,7 +5137,7 @@ export const transacoes = [
         valor: 652.19,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "4ce9:d97e:dccd:5ef6:d744:e25b:597a:4fa3",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5145,7 +5145,7 @@ export const transacoes = [
         valor: 282.88,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "6dff:ef8c:3c33:0a21:54e2:cbfd:e7e6:7e0c",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5153,7 +5153,7 @@ export const transacoes = [
         valor: 128.39,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "3eef:f242:c557:8fe7:9208:9021:296b:cc4e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5161,7 +5161,7 @@ export const transacoes = [
         valor: 104.34,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "dd5c:3974:77bb:66b5:617c:8bf5:43a0:0ef8",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5169,7 +5169,7 @@ export const transacoes = [
         valor: 114.27,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "a293:0d5e:cff2:6439:2276:ac89:6c17:9803",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5177,7 +5177,7 @@ export const transacoes = [
         valor: 38.57,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "11c2:9bb1:10e1:c996:9497:5248:4352:2320",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5185,7 +5185,7 @@ export const transacoes = [
         valor: 1452.52,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "77f9:cebd:a69e:9da7:b0ff:1e4b:ea6f:4868",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5193,7 +5193,7 @@ export const transacoes = [
         valor: 1433.8,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "2129:e80b:6bba:d183:4d74:1d4d:1ea4:12af",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5201,7 +5201,7 @@ export const transacoes = [
         valor: 102.96,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "2b12:61d6:1e79:acd1:4e2c:99a6:dfe8:1e50",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5209,7 +5209,7 @@ export const transacoes = [
         valor: 262.06,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2116:0b3c:b861:b238:1475:48c6:cd7d:887d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5217,7 +5217,7 @@ export const transacoes = [
         valor: 1213.05,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "9fb2:09aa:0239:6903:e472:0e98:7f33:04b0",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5225,7 +5225,7 @@ export const transacoes = [
         valor: 1248.26,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "54a5:e661:0b82:ad77:e7df:2893:8b07:e23d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5233,7 +5233,7 @@ export const transacoes = [
         valor: 179.69,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0f0d:aec9:3059:b030:02e4:0e8a:5f14:7529",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5241,7 +5241,7 @@ export const transacoes = [
         valor: 367.33,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "719d:381d:95e6:6387:166d:a972:5598:20b4",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5249,7 +5249,7 @@ export const transacoes = [
         valor: 90.54,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "6b90:1d2b:9bd7:535c:c809:bb75:edee:8227",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5257,7 +5257,7 @@ export const transacoes = [
         valor: 4687,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "bfc4:e373:bc38:9cb3:da8d:d803:1547:9064",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5265,7 +5265,7 @@ export const transacoes = [
         valor: 164.97,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "32d7:3b71:3067:14f0:6c88:525d:d618:b6f2",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5273,7 +5273,7 @@ export const transacoes = [
         valor: 128.39,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "ba0d:e593:7e26:93ba:1c21:877b:8a74:3f22",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5281,7 +5281,7 @@ export const transacoes = [
         valor: 198.25,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0af1:bd9d:fbab:c841:e4e2:2295:650a:4920",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5289,7 +5289,7 @@ export const transacoes = [
         valor: 252.71,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "75c8:fb3c:0f0e:5cb5:e432:3e17:8e44:7aa4",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5297,7 +5297,7 @@ export const transacoes = [
         valor: 3968,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "5d1a:8742:02f2:cf65:0bae:5062:f4ba:a816",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5305,7 +5305,7 @@ export const transacoes = [
         valor: 226.16,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "b946:13f9:28cf:3755:b817:f3e2:f1e8:54e2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5313,7 +5313,7 @@ export const transacoes = [
         valor: 5333,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "8f7c:8866:8018:4ba5:181c:46a5:2324:9b14",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5321,7 +5321,7 @@ export const transacoes = [
         valor: 134.27,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "adde:1762:cef6:d8f6:8a6d:efce:6d6e:3057",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5329,7 +5329,7 @@ export const transacoes = [
         valor: 6695,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "9428:7213:7f4d:91f0:51d5:8b36:2f3f:da10",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5337,7 +5337,7 @@ export const transacoes = [
         valor: 131.9,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "4b3b:ce0a:77c5:bea6:dc93:ace0:3ee1:0928",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5345,7 +5345,7 @@ export const transacoes = [
         valor: 251.89,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "ead2:cc28:58ff:7d5a:09cd:e462:a8ba:00eb",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5353,7 +5353,7 @@ export const transacoes = [
         valor: 150.66,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9a4d:2fb4:e8b6:eee8:5f67:f5c4:d7de:6766",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5361,7 +5361,7 @@ export const transacoes = [
         valor: 286.23,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "ebed:2b0d:ec1c:7d60:bf2d:7650:8f94:51ea",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5369,7 +5369,7 @@ export const transacoes = [
         valor: 142.11,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "7f73:44ac:54c4:ed4b:da97:db74:98a0:a6a0",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5377,7 +5377,7 @@ export const transacoes = [
         valor: 353.78,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "ff40:fb55:53c1:8e64:df49:0c25:501e:9ed9",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5385,7 +5385,7 @@ export const transacoes = [
         valor: 88.51,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "ebf0:f961:78e3:62d0:3311:6c5c:6706:7bca",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5393,7 +5393,7 @@ export const transacoes = [
         valor: 138.46,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "6659:9f7c:3f9e:7660:aa6f:8f4c:61c3:ca85",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5401,7 +5401,7 @@ export const transacoes = [
         valor: 406.61,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "4a06:8c1b:1ede:ba69:ef1d:8a36:94bf:6496",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5409,7 +5409,7 @@ export const transacoes = [
         valor: 101.09,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3786:45b7:68bd:fa69:7f3e:b654:6efc:4b8d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5417,7 +5417,7 @@ export const transacoes = [
         valor: 143.1,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "df7b:5845:6756:c1f0:2144:9474:561c:9881",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5425,7 +5425,7 @@ export const transacoes = [
         valor: 382.49,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "663b:1e9d:8d67:52b9:2b39:57a9:79bf:5ee2",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5433,7 +5433,7 @@ export const transacoes = [
         valor: 123.52,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "0da4:00d8:144b:2043:f7c2:52ba:f1c5:d609",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5441,7 +5441,7 @@ export const transacoes = [
         valor: 399.01,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "0188:a5ac:deeb:2cf7:b0b1:1603:f4cb:d29b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5449,7 +5449,7 @@ export const transacoes = [
         valor: 137.96,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "0ff1:184f:53a4:c722:02b7:3323:5205:d85d",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5457,7 +5457,7 @@ export const transacoes = [
         valor: 432.22,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "71db:840c:33b0:4cf2:c7dc:5480:6824:7d46",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5465,7 +5465,7 @@ export const transacoes = [
         valor: 24.39,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "3b22:8c72:d8f6:8145:6f8c:acde:7087:fd48",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5473,7 +5473,7 @@ export const transacoes = [
         valor: 251.3,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "cef7:0663:f5ae:5a19:f4ea:9e0a:0754:e66b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5481,7 +5481,7 @@ export const transacoes = [
         valor: 156.34,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "c46f:9676:0143:1383:8c97:92a8:bc61:889b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5489,7 +5489,7 @@ export const transacoes = [
         valor: 217.62,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "bb45:c1a6:937c:c1eb:9ade:c560:736c:1fd0",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5497,7 +5497,7 @@ export const transacoes = [
         valor: 283.04,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "2b63:c3cb:d010:5d16:e4a3:a806:0954:cef2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5505,7 +5505,7 @@ export const transacoes = [
         valor: 160.53,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "1fd6:59a3:ae17:bd32:7c09:5b6b:8ba0:d650",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5513,7 +5513,7 @@ export const transacoes = [
         valor: 291.18,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "3df0:b8af:0007:6759:aa1d:bd4f:c028:dbb6",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5521,7 +5521,7 @@ export const transacoes = [
         valor: 36.39,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "3faf:b82c:b187:7aab:2c20:0dbb:c02b:1817",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5529,7 +5529,7 @@ export const transacoes = [
         valor: 101.27,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "76a8:5074:9687:463e:1f40:6049:4227:0378",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5537,7 +5537,7 @@ export const transacoes = [
         valor: 149.31,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "e70e:f283:303c:cc56:74e4:216c:8f12:e3fa",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5545,7 +5545,7 @@ export const transacoes = [
         valor: 20.85,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "ec8f:68e8:27ef:429c:afcf:84f1:36ec:a3fb",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5553,7 +5553,7 @@ export const transacoes = [
         valor: 713.34,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "77a1:ba10:21c1:b951:7248:b177:c4fb:cf9b",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5561,7 +5561,7 @@ export const transacoes = [
         valor: 327.6,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "3489:7542:803e:5f14:3703:1056:4f8d:f712",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5569,7 +5569,7 @@ export const transacoes = [
         valor: 93.07,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "3d9a:192c:c601:f7ae:2253:aa48:caf0:484b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5577,7 +5577,7 @@ export const transacoes = [
         valor: 374.54,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "104f:2aaa:08b8:d271:04d6:6a4a:9ae8:7676",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5585,7 +5585,7 @@ export const transacoes = [
         valor: 201.18,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "f30e:09e7:0f1d:a977:710d:a5cf:5e61:9377",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5593,7 +5593,7 @@ export const transacoes = [
         valor: 182.96,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "071a:9912:8cf3:af3e:7622:a474:0e86:ffce",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5601,7 +5601,7 @@ export const transacoes = [
         valor: 99.25,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "cd7e:1b5b:ae32:a49b:8fbd:480f:911e:eb2a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5609,7 +5609,7 @@ export const transacoes = [
         valor: 966.1,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "d887:64c5:5412:8e9f:f1e2:24bf:a4b2:7b4d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5617,7 +5617,7 @@ export const transacoes = [
         valor: 344.2,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "a974:bdac:de89:cdf3:91f0:feee:9f59:68cc",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5625,7 +5625,7 @@ export const transacoes = [
         valor: 108.04,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "8acb:b364:541a:bcce:28c7:467c:ab39:21e6",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5633,7 +5633,7 @@ export const transacoes = [
         valor: 40.54,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "3c1e:858c:18ca:6a63:9601:052e:06d5:3e5f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5641,7 +5641,7 @@ export const transacoes = [
         valor: 259.09,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3760:f08b:58d5:d60c:7b2d:ae30:8a5f:3878",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5649,7 +5649,7 @@ export const transacoes = [
         valor: 75.91,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "1c15:e4d6:1b0d:5482:66cd:3010:8dac:4451",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5657,7 +5657,7 @@ export const transacoes = [
         valor: 113.2,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "0bc8:5ac3:ba87:ba6e:b8e7:6b1a:a19e:d3ef",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5665,7 +5665,7 @@ export const transacoes = [
         valor: 176.42,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "b92c:6ff5:9d77:a3f3:4ea9:b5b0:03af:9a71",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5673,7 +5673,7 @@ export const transacoes = [
         valor: 141.1,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "30fc:3079:79bb:95a6:ba18:f463:345d:674a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5681,7 +5681,7 @@ export const transacoes = [
         valor: 466.04,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "eb80:e51e:fa74:2531:773a:6809:f37f:0df5",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5689,7 +5689,7 @@ export const transacoes = [
         valor: 498.55,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "8b6d:98fe:a0f0:b3f3:a69d:ee06:b30d:d9b5",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5697,7 +5697,7 @@ export const transacoes = [
         valor: 49.33,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "167a:f387:45dc:e659:aab8:c34c:326d:1902",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5705,7 +5705,7 @@ export const transacoes = [
         valor: 318.82,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "ad03:536a:0616:7350:0f05:2b20:785f:c5af",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5713,7 +5713,7 @@ export const transacoes = [
         valor: 148.22,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "132f:91cf:ae72:b61e:2c2a:b4ab:3e99:9fbd",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5721,7 +5721,7 @@ export const transacoes = [
         valor: 267.66,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "6f68:efdf:c8a3:8e35:3d80:bdfc:8a0f:f6b7",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5729,7 +5729,7 @@ export const transacoes = [
         valor: 114.7,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "1117:5a27:a426:d4d8:7b28:26f4:99fb:1fee",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5737,7 +5737,7 @@ export const transacoes = [
         valor: 196.83,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "8599:8808:39f9:3a1e:50cc:ecde:977c:a887",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5745,7 +5745,7 @@ export const transacoes = [
         valor: 123.28,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "5437:466d:02e1:0049:9190:6ed9:4956:2540",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5753,7 +5753,7 @@ export const transacoes = [
         valor: 160.45,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "2359:0de7:9c98:7e36:3360:16fa:53be:4cfb",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5761,7 +5761,7 @@ export const transacoes = [
         valor: 30.82,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "a05d:2261:59b4:533f:a42e:2229:2b5d:7812",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5769,7 +5769,7 @@ export const transacoes = [
         valor: 238.51,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "f4b6:c119:4222:d4be:682c:7b73:1395:7b6d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5777,7 +5777,7 @@ export const transacoes = [
         valor: 113.4,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "5a38:c693:8d57:51e1:312e:3629:d0fa:4f3a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5785,7 +5785,7 @@ export const transacoes = [
         valor: 57.26,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "5048:7a4c:bfed:ed75:4351:8fdc:9308:dde3",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5793,7 +5793,7 @@ export const transacoes = [
         valor: 146.18,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "a25d:36aa:d584:3426:3a91:8a7b:8698:8e5d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5801,7 +5801,7 @@ export const transacoes = [
         valor: 1409.69,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "6d03:7f3f:ca28:3498:e692:f26a:419d:cda5",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5809,7 +5809,7 @@ export const transacoes = [
         valor: 107.35,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "66fe:ab26:a39f:f549:09b5:d4a8:c996:787e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5817,7 +5817,7 @@ export const transacoes = [
         valor: 140.26,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "0a20:4ad5:63cc:bac4:3335:136b:8e00:0d64",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5825,7 +5825,7 @@ export const transacoes = [
         valor: 149.33,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "9a50:8c5d:a189:b97b:8c88:6545:f1f5:ffa4",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5833,7 +5833,7 @@ export const transacoes = [
         valor: 115.54,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "d1ac:4904:ae1d:221f:ddcf:335c:0fed:0b21",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5841,7 +5841,7 @@ export const transacoes = [
         valor: 880.3,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "fb9c:77b6:e72c:e9ed:bda6:f116:a1bc:2e58",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5849,7 +5849,7 @@ export const transacoes = [
         valor: 126.49,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "d2da:bd90:0dee:c571:cbf8:ec20:4970:01c7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5857,7 +5857,7 @@ export const transacoes = [
         valor: 38.9,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "5a0b:ea75:10c5:b92d:0479:56c4:ee7d:fc16",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5865,7 +5865,7 @@ export const transacoes = [
         valor: 1748.04,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "9d5b:1a51:0afc:f308:541c:c928:61f9:18c2",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5873,7 +5873,7 @@ export const transacoes = [
         valor: 110.97,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "8a15:b6d6:4f3b:8843:fb97:892a:72e2:fd99",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -5881,7 +5881,7 @@ export const transacoes = [
         valor: 449.09,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "be5c:407b:5c67:a5f7:ae1e:7947:de36:26e0",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5889,7 +5889,7 @@ export const transacoes = [
         valor: 134.5,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "7b21:538a:9f6f:d1eb:fc87:cfa5:4beb:e5cf",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5897,7 +5897,7 @@ export const transacoes = [
         valor: 174.52,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "b5ec:fa18:72bd:70b9:8664:2225:75fc:4034",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5905,7 +5905,7 @@ export const transacoes = [
         valor: 318.28,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "4afd:835b:d3a0:b28b:fca3:5702:4fc2:533e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5913,7 +5913,7 @@ export const transacoes = [
         valor: 335.14,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "7390:3b5a:7b13:6c5a:01f4:bd47:a833:e722",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5921,7 +5921,7 @@ export const transacoes = [
         valor: 112.96,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "82ab:7ad4:64b2:d6e0:eaa6:b1cc:e8fc:7d55",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5929,7 +5929,7 @@ export const transacoes = [
         valor: 569.95,
         tipo: 'despesa',
         descricao: 'Farmácia.',
-        id: crypto.randomUUID(),
+        id: "6375:4691:4f2e:549d:eeca:ecca:59eb:ff31",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5937,7 +5937,7 @@ export const transacoes = [
         valor: 1334.08,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "8baf:1204:a9fc:674b:0c56:662e:a8a2:a360",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5945,7 +5945,7 @@ export const transacoes = [
         valor: 274.96,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "b9fc:1572:d320:57fe:ff6d:b00b:e2e4:00cf",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -5953,7 +5953,7 @@ export const transacoes = [
         valor: 161.43,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "e5d5:1332:8dfa:4f73:1928:b9e3:2af7:f576",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5961,7 +5961,7 @@ export const transacoes = [
         valor: 179.81,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a68f:42e3:9a51:3b35:8be4:f58e:af1e:84e7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -5969,7 +5969,7 @@ export const transacoes = [
         valor: 4631,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "b00c:0254:0693:2997:8903:683c:25f4:bc19",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -5977,7 +5977,7 @@ export const transacoes = [
         valor: 92.57,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "559d:d0d7:ea46:1adc:b6d1:926e:50a6:d27d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -5985,7 +5985,7 @@ export const transacoes = [
         valor: 2693,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "941c:2465:acce:3858:a2b8:f762:6ac2:7662",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -5993,7 +5993,7 @@ export const transacoes = [
         valor: 5170,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "9347:0037:809d:7385:a63a:d4fd:f6e0:4f79",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6001,7 +6001,7 @@ export const transacoes = [
         valor: 194.53,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "12f3:a6e1:e2a6:f99c:16d8:e555:d1ba:4484",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6009,7 +6009,7 @@ export const transacoes = [
         valor: 83.1,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5e7b:c5e7:c7a7:5baf:192f:2c14:3071:cb86",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6017,7 +6017,7 @@ export const transacoes = [
         valor: 3301,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "8726:7965:e198:3aec:d3b5:2f2c:d744:e33e",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6025,7 +6025,7 @@ export const transacoes = [
         valor: 353.42,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3c0e:8ad0:da48:084b:6eed:7628:665d:1b96",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6033,7 +6033,7 @@ export const transacoes = [
         valor: 166.22,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "1a97:3ffc:2ce4:c8a0:cf59:19c0:9d74:3dcf",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6041,7 +6041,7 @@ export const transacoes = [
         valor: 153.65,
         tipo: 'despesa',
         descricao: 'Calçados.',
-        id: crypto.randomUUID(),
+        id: "ab65:319e:d7dc:3e22:13aa:683a:0830:a94a",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6049,7 +6049,7 @@ export const transacoes = [
         valor: 116.4,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "81ae:b0ce:22a1:2fff:6f7b:7517:a9b1:8d9f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6057,7 +6057,7 @@ export const transacoes = [
         valor: 75.75,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "f45e:bd74:a5c0:051d:dfc7:e761:f8df:eddf",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6065,7 +6065,7 @@ export const transacoes = [
         valor: 197.91,
         tipo: 'despesa',
         descricao: 'Uniforme escolar.',
-        id: crypto.randomUUID(),
+        id: "65f4:af0c:8445:4c40:6443:6ee3:ef80:a93e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6073,7 +6073,7 @@ export const transacoes = [
         valor: 354.91,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "b1cf:f533:315d:5ea5:4b57:a059:a44c:bad6",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6081,7 +6081,7 @@ export const transacoes = [
         valor: 52.01,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "df99:414d:2474:959c:836a:2063:582a:5255",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6089,7 +6089,7 @@ export const transacoes = [
         valor: 358.09,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f7ae:f7a2:8978:85db:9580:d012:50ae:5e96",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6097,7 +6097,7 @@ export const transacoes = [
         valor: 166.77,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "aa57:ef56:27e8:3522:73d3:0597:ee7c:1fea",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6105,7 +6105,7 @@ export const transacoes = [
         valor: 88.46,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "becd:b371:8163:54f3:5753:880c:1e24:23a1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6113,7 +6113,7 @@ export const transacoes = [
         valor: 159.46,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "4297:a5b4:4892:3789:619c:a7dc:5248:fb4c",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6121,7 +6121,7 @@ export const transacoes = [
         valor: 409.57,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9f61:8f19:dfcc:f5b4:54ab:9804:59e6:e9db",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6129,7 +6129,7 @@ export const transacoes = [
         valor: 98.53,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "0930:451c:8564:8a76:0021:ef03:53ed:0422",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6137,7 +6137,7 @@ export const transacoes = [
         valor: 864.14,
         tipo: 'receita',
         descricao: 'Venda de objeto usado.',
-        id: crypto.randomUUID(),
+        id: "7ab3:a5f0:9a58:ded6:e1aa:ca08:a83a:c984",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6145,7 +6145,7 @@ export const transacoes = [
         valor: 173.78,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "b0b7:056a:8dc1:68da:c025:f8b6:52a1:b0ef",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6153,7 +6153,7 @@ export const transacoes = [
         valor: 166.24,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "9e42:39cd:983d:1413:4016:f1dd:59c7:af5a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6161,7 +6161,7 @@ export const transacoes = [
         valor: 789.85,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "6ee7:4cc6:8975:cdee:fe9d:8392:f24e:cc91",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6169,7 +6169,7 @@ export const transacoes = [
         valor: 216.16,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "453f:1982:bb48:a057:cc85:3c57:e557:9cd3",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6177,7 +6177,7 @@ export const transacoes = [
         valor: 157.04,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "7fc2:d83d:3e58:7a0c:05a8:f62e:2489:f459",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6185,7 +6185,7 @@ export const transacoes = [
         valor: 322,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "77fd:cc59:6253:bd70:9fed:5fc1:14ea:7f07",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6193,7 +6193,7 @@ export const transacoes = [
         valor: 188.83,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "aa41:8473:72ad:5829:147d:b6a5:0abe:fc70",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6201,7 +6201,7 @@ export const transacoes = [
         valor: 104.91,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "4235:07c2:79bc:9e5c:206d:2de6:6ec8:5dd1",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6209,7 +6209,7 @@ export const transacoes = [
         valor: 161.62,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "6edb:d130:d50c:50c1:8577:b202:289b:8642",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6217,7 +6217,7 @@ export const transacoes = [
         valor: 343.32,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "4ace:8f68:bd06:e797:bffc:c055:c82c:3532",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6225,7 +6225,7 @@ export const transacoes = [
         valor: 222.93,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "8d54:c07f:6e66:aaaa:4c6a:f2aa:b6f1:38bc",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6233,7 +6233,7 @@ export const transacoes = [
         valor: 281.34,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "5a50:6013:bd3c:1203:e3d5:570c:f697:d850",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6241,7 +6241,7 @@ export const transacoes = [
         valor: 353.39,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "4d21:293a:7552:a8f8:49be:eebf:237c:f218",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6249,7 +6249,7 @@ export const transacoes = [
         valor: 160.25,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "8baf:446f:33f8:b122:e580:1d51:a326:2d34",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6257,7 +6257,7 @@ export const transacoes = [
         valor: 131.59,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "83d0:8eeb:88a7:766f:cbe4:286c:76e4:3ad4",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6265,7 +6265,7 @@ export const transacoes = [
         valor: 121.51,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5323:a84a:06cc:c73b:64dd:3517:e82d:84fe",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6273,7 +6273,7 @@ export const transacoes = [
         valor: 437,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "060d:6624:dfe3:0835:ef0e:9300:289b:8d7c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6281,7 +6281,7 @@ export const transacoes = [
         valor: 421.04,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f8f0:bcf5:8239:e258:e5f8:ab64:65f1:19ee",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6289,7 +6289,7 @@ export const transacoes = [
         valor: 137.68,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "eca8:8cea:615d:628f:e3d4:ba28:0879:6262",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6297,7 +6297,7 @@ export const transacoes = [
         valor: 66.55,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "b957:e5f2:8bbd:d831:9845:5933:6a78:6180",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6305,7 +6305,7 @@ export const transacoes = [
         valor: 449.39,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "32ab:2761:1860:ccaf:2b5d:6047:5acd:0c5f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6313,7 +6313,7 @@ export const transacoes = [
         valor: 394,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "d76e:d1c2:2d5d:850f:978a:c2ec:7b90:d231",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6321,7 +6321,7 @@ export const transacoes = [
         valor: 87.2,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "9eda:5537:a1e1:1bc3:da73:b863:cae3:2896",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6329,7 +6329,7 @@ export const transacoes = [
         valor: 217.56,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "d5d6:5852:ab7d:453f:6ac6:a4b0:bfde:d1fc",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6337,7 +6337,7 @@ export const transacoes = [
         valor: 315.18,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "79b2:984c:8ada:e408:f340:65db:b74d:0425",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6345,7 +6345,7 @@ export const transacoes = [
         valor: 289.66,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "83e9:f065:0213:dca3:f4c8:ca7f:5f6b:338a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6353,7 +6353,7 @@ export const transacoes = [
         valor: 399.92,
         tipo: 'despesa',
         descricao: 'Calçados.',
-        id: crypto.randomUUID(),
+        id: "9679:77d4:b688:b246:6e53:9528:d643:f712",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6361,7 +6361,7 @@ export const transacoes = [
         valor: 144.37,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "86ef:9102:fca0:29ea:1f7f:850d:ee5b:126d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6369,7 +6369,7 @@ export const transacoes = [
         valor: 950.59,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "686e:4f4f:095e:eeaf:4c17:5b06:fcc0:90ca",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6377,7 +6377,7 @@ export const transacoes = [
         valor: 240.32,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "9d52:4e89:dffc:cb4f:8bf0:7025:bf16:2f25",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6385,7 +6385,7 @@ export const transacoes = [
         valor: 207.76,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "1112:a125:cc98:12f5:e63e:8a32:fa8d:664d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6393,7 +6393,7 @@ export const transacoes = [
         valor: 92.39,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "cce8:21e0:d67d:12e8:b219:081f:efe7:9928",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6401,7 +6401,7 @@ export const transacoes = [
         valor: 64.04,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "6316:639d:3fda:8ca8:311f:dffc:4bd3:c22c",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6409,7 +6409,7 @@ export const transacoes = [
         valor: 206.55,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "33b2:8abf:6100:813e:ff7a:7286:eb3c:706a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6417,7 +6417,7 @@ export const transacoes = [
         valor: 57.8,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "ae84:8cb9:e3e0:0116:6852:258d:d84b:6983",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6425,7 +6425,7 @@ export const transacoes = [
         valor: 250.67,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "e2ad:f65f:9835:512f:718d:5fff:409a:29c7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6433,7 +6433,7 @@ export const transacoes = [
         valor: 138.99,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "30dc:7ff1:faae:4d09:e457:86da:6174:4761",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6441,7 +6441,7 @@ export const transacoes = [
         valor: 43.99,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "b233:62a8:4794:6af5:5803:1ef3:4af8:92c3",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6449,7 +6449,7 @@ export const transacoes = [
         valor: 59.12,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "52b0:7424:8937:aa89:958b:2fe1:008c:aa50",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6457,7 +6457,7 @@ export const transacoes = [
         valor: 343.75,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3573:7e0f:a193:b9be:e594:cc7e:e5be:07cb",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6465,7 +6465,7 @@ export const transacoes = [
         valor: 180.38,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f709:035e:978c:f520:ebe2:87d1:9808:7eb0",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6473,7 +6473,7 @@ export const transacoes = [
         valor: 124.57,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "9a48:8a0d:4c0b:a88d:0bb7:11ef:46cf:e36c",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6481,7 +6481,7 @@ export const transacoes = [
         valor: 156.85,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "08e8:2124:3255:9fa0:c3ef:48d2:0456:f9ca",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6489,7 +6489,7 @@ export const transacoes = [
         valor: 133.11,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "7a3a:1980:d4c9:124d:34da:b08f:7b03:7046",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6497,7 +6497,7 @@ export const transacoes = [
         valor: 280.48,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f792:b799:1aa8:5f16:ee83:bfd2:f971:520a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6505,7 +6505,7 @@ export const transacoes = [
         valor: 107.01,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "9aee:7f28:5e8f:256b:5b6c:2c5e:a793:fd68",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6513,7 +6513,7 @@ export const transacoes = [
         valor: 253.6,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "912b:e3c8:ee09:93b4:5b41:918e:9a88:7033",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6521,7 +6521,7 @@ export const transacoes = [
         valor: 105.9,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "a55b:4652:f281:1086:1360:e5f2:0c86:8109",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6529,7 +6529,7 @@ export const transacoes = [
         valor: 194.91,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "14cc:e8f4:5b58:b445:d0ee:7f9a:34af:9e92",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6537,7 +6537,7 @@ export const transacoes = [
         valor: 277.1,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a6b0:6931:5350:a5df:7b89:ba38:7288:e2aa",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6545,7 +6545,7 @@ export const transacoes = [
         valor: 1123.97,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "5b5e:c1f7:6aa0:a1a5:48a8:8906:62e9:6566",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6553,7 +6553,7 @@ export const transacoes = [
         valor: 284.63,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "6db4:d984:e890:f84d:c324:3086:d222:4d55",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6561,7 +6561,7 @@ export const transacoes = [
         valor: 321.79,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "bfa8:ccd8:193e:5631:e9ed:f3a2:db1f:6d97",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6569,7 +6569,7 @@ export const transacoes = [
         valor: 109.21,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "3411:fbb7:8060:ee1d:ca1a:4523:9828:c7c2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6577,7 +6577,7 @@ export const transacoes = [
         valor: 247.56,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c834:9a56:7395:a42a:8fd1:6886:c0e2:9910",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6585,7 +6585,7 @@ export const transacoes = [
         valor: 1167.85,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "6bf4:df4c:fa42:ca07:9136:6a0e:e95c:7418",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6593,7 +6593,7 @@ export const transacoes = [
         valor: 45.41,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "374f:e244:e41f:8709:62ae:3fb6:101f:c0b6",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6601,7 +6601,7 @@ export const transacoes = [
         valor: 149.45,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "03bd:65c3:9507:4fd9:5eb9:da3d:abd7:a294",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6609,7 +6609,7 @@ export const transacoes = [
         valor: 72.74,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "1651:12ee:fb8e:b9da:c787:d561:c827:fcb0",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6617,7 +6617,7 @@ export const transacoes = [
         valor: 1542.87,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "85dd:0c52:5762:2650:18cb:bc3e:3d91:9063",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6625,7 +6625,7 @@ export const transacoes = [
         valor: 1307.29,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "e989:ec49:89d4:f154:7eae:767d:5ff9:1113",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6633,7 +6633,7 @@ export const transacoes = [
         valor: 1484.99,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "3190:4812:3d38:b09e:d8bf:db09:c3de:ba2a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6641,7 +6641,7 @@ export const transacoes = [
         valor: 5496,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "e4d7:e79f:935d:1d04:34d7:28b6:a8a9:a8b7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6649,7 +6649,7 @@ export const transacoes = [
         valor: 110.86,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "0e4d:0d58:9cd6:6701:acd7:d654:cd47:ed13",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6657,7 +6657,7 @@ export const transacoes = [
         valor: 6843,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "e240:3246:eef1:1106:36b9:cbc3:bfc4:0f43",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6665,7 +6665,7 @@ export const transacoes = [
         valor: 178.73,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "2161:3ac7:81d6:75e4:944e:f5a8:69d9:b87c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6673,7 +6673,7 @@ export const transacoes = [
         valor: 90.09,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "d5f0:be75:bb6c:92c8:3ad7:9ace:bd03:a261",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6681,7 +6681,7 @@ export const transacoes = [
         valor: 5891,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "a5b9:6598:89b8:de67:12f8:2fab:be2f:7a4a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6689,7 +6689,7 @@ export const transacoes = [
         valor: 824.06,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "f552:3a58:9352:4f99:5529:e938:36f4:ad62",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6697,7 +6697,7 @@ export const transacoes = [
         valor: 4041,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "6429:77f7:0629:d462:aa90:f1da:3c46:be79",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6705,7 +6705,7 @@ export const transacoes = [
         valor: 97.05,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "e40f:5eae:cab8:1fc9:f031:f4d5:e96a:08a7",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6713,7 +6713,7 @@ export const transacoes = [
         valor: 105.37,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "5a7e:75e1:83d0:43e1:670f:34fe:a9c2:d06e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6721,7 +6721,7 @@ export const transacoes = [
         valor: 90.57,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "11a7:6a9e:cb3a:958f:fb96:1343:44f4:f4fc",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6729,7 +6729,7 @@ export const transacoes = [
         valor: 484.95,
         tipo: 'despesa',
         descricao: 'Calçados.',
-        id: crypto.randomUUID(),
+        id: "0940:78d9:0c3d:b778:558b:902f:f3fe:ff4d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6737,7 +6737,7 @@ export const transacoes = [
         valor: 110.3,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "143a:833d:0724:9441:6fba:39ce:4301:6e0e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6745,7 +6745,7 @@ export const transacoes = [
         valor: 130.31,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "b21d:13b8:0a66:9ee0:467d:6438:ffda:3538",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6753,7 +6753,7 @@ export const transacoes = [
         valor: 141.96,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "d338:6423:eb85:75fa:9b14:9b2b:90f3:77dd",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6761,7 +6761,7 @@ export const transacoes = [
         valor: 144.22,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "d8c5:7d4f:a4be:fbb5:a2da:b66a:d4e0:a6ff",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6769,7 +6769,7 @@ export const transacoes = [
         valor: 245.15,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "55db:a465:0782:cb1a:7dbd:5ce5:fb4a:81ba",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6777,7 +6777,7 @@ export const transacoes = [
         valor: 93.75,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a19b:e711:7bc9:b54c:bd18:0bbc:cca0:7d61",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6785,7 +6785,7 @@ export const transacoes = [
         valor: 130,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "0eba:0052:472d:9faf:ad0d:b619:a190:e175",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6793,7 +6793,7 @@ export const transacoes = [
         valor: 85.68,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "cec0:5bb7:1ea5:3b33:9434:7d60:cdb2:4570",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6801,7 +6801,7 @@ export const transacoes = [
         valor: 190.3,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "e038:b310:4503:f175:55b7:39d0:d8be:5d45",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6809,7 +6809,7 @@ export const transacoes = [
         valor: 45.77,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "f552:34eb:47d6:985b:d40a:e85f:18ff:b71d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6817,7 +6817,7 @@ export const transacoes = [
         valor: 203.61,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "2685:be59:d3fc:348f:5351:d573:526f:040c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6825,7 +6825,7 @@ export const transacoes = [
         valor: 784.04,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "4ef0:dc71:0d47:9655:e4e6:72ca:2762:ea57",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6833,7 +6833,7 @@ export const transacoes = [
         valor: 115.18,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "ede6:207c:b78c:0199:0e70:ba95:bd64:7877",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6841,7 +6841,7 @@ export const transacoes = [
         valor: 381,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0b45:9512:7f57:1217:6fb2:8b8b:f1ec:d84f",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6849,7 +6849,7 @@ export const transacoes = [
         valor: 148.07,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "e02a:8cde:b37a:1d3c:dd94:16bd:cf67:2a0b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6857,7 +6857,7 @@ export const transacoes = [
         valor: 144.26,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "89e9:251a:2772:0111:fcbe:2d10:5bec:bc50",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6865,7 +6865,7 @@ export const transacoes = [
         valor: 213.18,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "4d51:8358:5fed:0c26:ec24:f648:a7f3:9b85",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6873,7 +6873,7 @@ export const transacoes = [
         valor: 396.85,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "9084:0e38:dc3e:b981:b7cc:d8d3:27bd:19d7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6881,7 +6881,7 @@ export const transacoes = [
         valor: 86.7,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "52a0:3a2b:c3c3:095e:1ed3:16aa:f031:01c9",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6889,7 +6889,7 @@ export const transacoes = [
         valor: 288.24,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "9e45:43ed:121d:77f0:a223:11b0:6658:f756",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6897,7 +6897,7 @@ export const transacoes = [
         valor: 146.64,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "93c0:c3ef:2b66:78fd:ae60:83ba:29bf:1f8f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6905,7 +6905,7 @@ export const transacoes = [
         valor: 124.41,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "52c3:af64:6301:02c1:02a2:4c46:78ad:0444",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6913,7 +6913,7 @@ export const transacoes = [
         valor: 75.34,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "32b6:a7d1:ff2d:e926:2dd6:ad87:e452:9d3d",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -6921,7 +6921,7 @@ export const transacoes = [
         valor: 305.01,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "1f8c:b190:d839:60f8:eef6:a621:5bd8:441d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -6929,7 +6929,7 @@ export const transacoes = [
         valor: 299.08,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "3461:a6c0:468b:e6e7:4184:cd63:85d3:c764",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6937,7 +6937,7 @@ export const transacoes = [
         valor: 259.53,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "adfe:9f97:b7cf:d90f:4abc:83b6:6a27:2b8f",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -6945,7 +6945,7 @@ export const transacoes = [
         valor: 103.24,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "709b:74ce:5625:9cfa:4f6b:56c4:3f0b:ca39",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6953,7 +6953,7 @@ export const transacoes = [
         valor: 279.49,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "56d7:f3f9:dd52:9fe2:eaea:431d:122a:c8cb",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -6961,7 +6961,7 @@ export const transacoes = [
         valor: 1156.06,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "7233:bbf4:8aff:2f16:f25c:be2a:4964:7b1e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6969,7 +6969,7 @@ export const transacoes = [
         valor: 121.01,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "708f:72ee:e859:e947:3c27:3fca:9186:a0d2",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6977,7 +6977,7 @@ export const transacoes = [
         valor: 150.48,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "38e0:8679:375b:5ffc:8072:e037:2609:c11a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -6985,7 +6985,7 @@ export const transacoes = [
         valor: 370.3,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "cf4e:05b6:e176:6527:5ced:83f3:1180:f54e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -6993,7 +6993,7 @@ export const transacoes = [
         valor: 236.28,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5478:2e1b:d529:79c7:03a0:2182:5f9d:2399",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7001,7 +7001,7 @@ export const transacoes = [
         valor: 127.74,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "39c9:ffef:72b9:34da:5742:53e7:9810:38b6",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7009,7 +7009,7 @@ export const transacoes = [
         valor: 106.18,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "bb1b:c8e9:7603:87fe:8f80:aced:3c5a:3112",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7017,7 +7017,7 @@ export const transacoes = [
         valor: 118.63,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "5c2a:17d7:7dd1:ace2:711c:9621:cdb3:86cd",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7025,7 +7025,7 @@ export const transacoes = [
         valor: 96.77,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "f45a:5206:e688:fb32:f9d5:1480:4ac1:ca9f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7033,7 +7033,7 @@ export const transacoes = [
         valor: 126.02,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "a375:6300:16f1:5145:3592:e059:7d6c:a1e7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7041,7 +7041,7 @@ export const transacoes = [
         valor: 128.96,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "29e9:76c8:247a:c39e:1182:7939:b7f4:3966",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7049,7 +7049,7 @@ export const transacoes = [
         valor: 124.25,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "9643:c1f0:d8bc:68fc:68dc:cf5d:80fd:5a80",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7057,7 +7057,7 @@ export const transacoes = [
         valor: 159.42,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "d94a:61e0:6152:aa2b:b014:e017:5837:b8f8",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7065,7 +7065,7 @@ export const transacoes = [
         valor: 124.28,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "8ed7:4a69:909f:0749:744e:b640:f602:80f1",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7073,7 +7073,7 @@ export const transacoes = [
         valor: 64.44,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "d5e8:4b53:b7a4:8515:741b:4085:bcf2:4c62",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7081,7 +7081,7 @@ export const transacoes = [
         valor: 88.4,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "15cc:43d9:b37c:875e:cd53:98ba:15cd:7374",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7089,7 +7089,7 @@ export const transacoes = [
         valor: 263.12,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "8ed6:1c93:639c:dcf1:e908:836d:8ad6:7be2",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7097,7 +7097,7 @@ export const transacoes = [
         valor: 175.36,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "baba:1840:a8e7:63f6:0123:5c08:e6a4:9691",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7105,7 +7105,7 @@ export const transacoes = [
         valor: 237.55,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3d1f:c969:1097:dd6c:9e2b:10f0:c169:d5c1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7113,7 +7113,7 @@ export const transacoes = [
         valor: 356.33,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "cc03:3962:75a0:d01b:0310:4ecb:7cfa:37e9",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7121,7 +7121,7 @@ export const transacoes = [
         valor: 131.4,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "e36c:eb7e:ebfb:4ae2:3613:5416:e7b4:b69b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7129,7 +7129,7 @@ export const transacoes = [
         valor: 145.31,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "a89b:9394:fe28:e30a:c4e2:4f1a:6fb6:3043",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7137,7 +7137,7 @@ export const transacoes = [
         valor: 52.6,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "9dd2:b871:baeb:c26d:1aff:a057:807a:dc0b",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7145,7 +7145,7 @@ export const transacoes = [
         valor: 339.15,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0eda:a22c:d91e:5d98:4a16:1ae1:da94:0339",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7153,7 +7153,7 @@ export const transacoes = [
         valor: 108.41,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "b902:5e92:7c2e:706e:c2f1:bf53:fab3:ce10",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7161,7 +7161,7 @@ export const transacoes = [
         valor: 1058.72,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "7bc8:b0f6:6d09:0ddf:cc59:4557:ed49:86e8",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7169,7 +7169,7 @@ export const transacoes = [
         valor: 84.37,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "ae88:47ec:babc:ae85:2aed:33f7:9a02:15c3",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7177,7 +7177,7 @@ export const transacoes = [
         valor: 748.29,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "7e3e:c751:624e:1f4d:6284:6bf7:11eb:f64f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7185,7 +7185,7 @@ export const transacoes = [
         valor: 1393.02,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "fa5a:d53e:63ed:ab6b:0d80:f3cb:9430:9bd1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7193,7 +7193,7 @@ export const transacoes = [
         valor: 1287.79,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "6b83:040a:ec1b:c41f:8404:5aac:a194:9f7a",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7201,7 +7201,7 @@ export const transacoes = [
         valor: 128.09,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "3d1b:57a7:443a:3390:5733:da70:708f:9882",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7209,7 +7209,7 @@ export const transacoes = [
         valor: 353.69,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "bc8e:f28d:e9d7:435e:82ee:53a2:461f:3e34",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7217,7 +7217,7 @@ export const transacoes = [
         valor: 82.12,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "33ed:aa85:b28c:387d:926b:b84c:3977:047a",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7225,7 +7225,7 @@ export const transacoes = [
         valor: 135.45,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "ffb3:0a3c:c48c:8509:ac2e:26e8:6b76:d5e0",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7233,7 +7233,7 @@ export const transacoes = [
         valor: 98.21,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "1286:b714:004d:6365:96ea:5e84:a560:a114",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7241,7 +7241,7 @@ export const transacoes = [
         valor: 4267,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "8395:651a:893e:f343:372e:16d7:7cdf:166e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7249,7 +7249,7 @@ export const transacoes = [
         valor: 487.24,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "7767:d639:2f01:9e90:b862:29f6:68d0:63d1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7257,7 +7257,7 @@ export const transacoes = [
         valor: 6738,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "bd08:691d:ac2c:0ef6:8362:3be5:db70:c34c",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7265,7 +7265,7 @@ export const transacoes = [
         valor: 56.88,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "90e6:81f5:49df:72ea:c333:ee6e:17e6:d855",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7273,7 +7273,7 @@ export const transacoes = [
         valor: 173.34,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "4b1b:6464:84de:1a98:71e4:72e3:bb08:6be1",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7281,7 +7281,7 @@ export const transacoes = [
         valor: 148.14,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2a50:323d:9113:9968:0775:c6b4:1d70:7e22",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7289,7 +7289,7 @@ export const transacoes = [
         valor: 4140,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "1701:9908:8228:9f82:6679:645c:3591:2609",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7297,7 +7297,7 @@ export const transacoes = [
         valor: 83.34,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "be36:b331:d6ce:f52b:213a:c4f6:f864:b429",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7305,7 +7305,7 @@ export const transacoes = [
         valor: 230.13,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "ed66:7bce:3bfc:c740:f9a7:11c6:e90b:df1f",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7313,7 +7313,7 @@ export const transacoes = [
         valor: 161.34,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "450d:24c4:ed4e:370e:5939:cf89:3b67:9864",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7321,7 +7321,7 @@ export const transacoes = [
         valor: 420.2,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "8655:fb0b:332c:1b15:b612:6b57:c81e:4b39",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7329,7 +7329,7 @@ export const transacoes = [
         valor: 179.29,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "8052:73f1:28e9:f1a7:cff9:723e:d1e6:6e57",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7337,7 +7337,7 @@ export const transacoes = [
         valor: 5080,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "b381:0be6:3f42:d01a:e74c:4725:2391:c865",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7345,7 +7345,7 @@ export const transacoes = [
         valor: 136.92,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "80ca:815f:8b5a:25c5:29dd:01e7:6c8c:b507",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7353,7 +7353,7 @@ export const transacoes = [
         valor: 70.77,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "6015:36af:992f:7659:e35d:eae4:268e:d26c",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7361,7 +7361,7 @@ export const transacoes = [
         valor: 97.47,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "cecc:8bf1:d7e2:5acb:c886:4453:7188:16a6",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7369,7 +7369,7 @@ export const transacoes = [
         valor: 126.87,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "3ed0:47c5:467e:317f:d1a0:0755:6f61:26f8",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7377,7 +7377,7 @@ export const transacoes = [
         valor: 259.53,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "646b:826e:e9d3:1b35:18ca:7eb5:942a:02a3",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7385,7 +7385,7 @@ export const transacoes = [
         valor: 121.42,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "8564:b4ed:f50e:9b3c:dffd:e5e7:f847:d743",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7393,7 +7393,7 @@ export const transacoes = [
         valor: 235.13,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "f002:0e35:ffd2:655a:add5:17a7:2514:35fc",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7401,7 +7401,7 @@ export const transacoes = [
         valor: 165.52,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "54b9:5f68:bba8:18ab:1b53:b729:f273:dc2c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7409,7 +7409,7 @@ export const transacoes = [
         valor: 942.8,
         tipo: 'receita',
         descricao: 'Venda de objeto usado.',
-        id: crypto.randomUUID(),
+        id: "9373:cf9c:22ee:b0e0:a332:06ba:8808:9ca5",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7417,7 +7417,7 @@ export const transacoes = [
         valor: 249.64,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "4796:fa31:5276:d515:98f5:3f0a:052d:f457",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7425,7 +7425,7 @@ export const transacoes = [
         valor: 86.36,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6669:a25e:eb12:9932:981d:707f:f49d:9b0e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7433,7 +7433,7 @@ export const transacoes = [
         valor: 82.66,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "508b:7d5c:cfa8:0afe:4f7a:4c09:504e:f380",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7441,7 +7441,7 @@ export const transacoes = [
         valor: 170.31,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "445c:c49b:995d:ff5d:a2a0:d796:6b2d:d69d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7449,7 +7449,7 @@ export const transacoes = [
         valor: 195.13,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "b817:076b:a161:17ba:c9f3:719b:1a95:164a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7457,7 +7457,7 @@ export const transacoes = [
         valor: 411.88,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "8d8a:1173:05e9:6d8f:72d2:7ff1:4643:48ca",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7465,7 +7465,7 @@ export const transacoes = [
         valor: 178.78,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "00dc:eceb:5223:6339:fd59:0c10:dba4:6bb5",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7473,7 +7473,7 @@ export const transacoes = [
         valor: 330.16,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "d752:c1d9:5c52:cad6:5cf1:11db:08ab:f9d9",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7481,7 +7481,7 @@ export const transacoes = [
         valor: 63.85,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "fad1:5fbf:1f96:42fd:04e0:3441:d295:5c86",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7489,7 +7489,7 @@ export const transacoes = [
         valor: 140.07,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "3441:7063:64ae:3c63:21cf:de5b:8788:b62f",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7497,7 +7497,7 @@ export const transacoes = [
         valor: 348.93,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "22cb:100e:cad6:f539:dce5:fb96:f612:d42d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7505,7 +7505,7 @@ export const transacoes = [
         valor: 175.35,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "0529:d7b9:c6e6:37f3:c5b7:d622:ccda:38aa",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7513,7 +7513,7 @@ export const transacoes = [
         valor: 104.27,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "5883:2483:4b50:bc73:e52b:db81:bd86:d114",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7521,7 +7521,7 @@ export const transacoes = [
         valor: 244.69,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "f365:0c4e:5d3f:76ff:b014:6ebd:bc92:410f",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7529,7 +7529,7 @@ export const transacoes = [
         valor: 111.97,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "7ea0:d535:30b3:2f31:b5db:f077:95f2:4588",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7537,7 +7537,7 @@ export const transacoes = [
         valor: 66.2,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "665e:b921:c455:fc86:9537:ec7e:f42c:3149",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7545,7 +7545,7 @@ export const transacoes = [
         valor: 92.5,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "3ea8:bc16:da5b:a177:0acf:23de:1302:c71e",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7553,7 +7553,7 @@ export const transacoes = [
         valor: 322.31,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "e300:32d7:8d3a:4454:77e9:356a:3465:4152",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7561,7 +7561,7 @@ export const transacoes = [
         valor: 180.9,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "9956:580b:e406:b67c:1da6:f554:993c:7198",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7569,7 +7569,7 @@ export const transacoes = [
         valor: 88.42,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "bdf2:9974:f57a:297e:772e:2c51:e451:78d8",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7577,7 +7577,7 @@ export const transacoes = [
         valor: 52.37,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "af74:9028:2248:96da:0a2b:358d:b6f1:4423",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7585,7 +7585,7 @@ export const transacoes = [
         valor: 355.67,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "12b7:ca70:91db:4b8e:2e13:e038:9bc3:ace6",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7593,7 +7593,7 @@ export const transacoes = [
         valor: 174.38,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "df64:183d:4378:2b9b:421a:d117:fddc:0119",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7601,7 +7601,7 @@ export const transacoes = [
         valor: 261.86,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9e48:6801:d13c:bf1b:6cb4:218d:47f5:e9c7",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7609,7 +7609,7 @@ export const transacoes = [
         valor: 128.76,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "e83f:5e44:0a79:c7f0:b6e9:4e3c:8ff0:9887",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7617,7 +7617,7 @@ export const transacoes = [
         valor: 156.39,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0387:42a6:546b:7ca6:87d6:5ee9:eb01:203f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7625,7 +7625,7 @@ export const transacoes = [
         valor: 100.04,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "aa75:5ca9:17e0:d91d:4bee:2fb3:b58b:950e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7633,7 +7633,7 @@ export const transacoes = [
         valor: 188.99,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "28f2:11e1:fb4c:b6c2:6dfa:923c:fcf8:3ac5",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7641,7 +7641,7 @@ export const transacoes = [
         valor: 201.51,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "2f3a:4f08:c191:bd5b:b84f:343a:68f5:8af5",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7649,7 +7649,7 @@ export const transacoes = [
         valor: 90.39,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "8710:df20:1994:18e9:8a75:6fc9:7406:cf3d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7657,7 +7657,7 @@ export const transacoes = [
         valor: 444.78,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "3a78:d7e1:5ee0:5772:a357:5803:94b6:5759",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7665,7 +7665,7 @@ export const transacoes = [
         valor: 154.8,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "bc82:b641:e755:231a:38ec:0468:7174:71da",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7673,7 +7673,7 @@ export const transacoes = [
         valor: 247.43,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "4de9:a781:843d:3eaf:9dc8:92b9:3d34:ebdf",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7681,7 +7681,7 @@ export const transacoes = [
         valor: 271.1,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "40d7:9b88:bac8:7766:7a28:90ab:775d:adef",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7689,7 +7689,7 @@ export const transacoes = [
         valor: 147.9,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "2f65:b52f:ad70:fcb5:ba85:77b8:61fa:c98c",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7697,7 +7697,7 @@ export const transacoes = [
         valor: 249.31,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "eec4:a6d1:98c0:7c0e:94a6:8a10:97f2:f5d1",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7705,7 +7705,7 @@ export const transacoes = [
         valor: 104.67,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "9013:5323:a7ab:0e50:0310:8967:7859:fd0f",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7713,7 +7713,7 @@ export const transacoes = [
         valor: 179.04,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "06f5:706b:0259:e253:9e14:0688:7687:6aa4",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7721,7 +7721,7 @@ export const transacoes = [
         valor: 790.71,
         tipo: 'receita',
         descricao: 'Reembolso.',
-        id: crypto.randomUUID(),
+        id: "aeeb:d115:e443:2df6:6841:beb5:cf61:4969",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7729,7 +7729,7 @@ export const transacoes = [
         valor: 158.37,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "6755:03b6:08f2:38b5:454e:b9fc:c21d:bc2f",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7737,7 +7737,7 @@ export const transacoes = [
         valor: 148.94,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "249a:bfae:f643:5696:9b3c:d883:c21b:b357",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7745,7 +7745,7 @@ export const transacoes = [
         valor: 195.53,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "af65:8050:9cae:44b6:d6b2:d628:1f90:5558",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7753,7 +7753,7 @@ export const transacoes = [
         valor: 151.38,
         tipo: 'despesa',
         descricao: 'Consulta médica.',
-        id: crypto.randomUUID(),
+        id: "2483:39b0:7044:014e:99e1:a8aa:d01d:ce94",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7761,7 +7761,7 @@ export const transacoes = [
         valor: 1584.8,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "8c66:dcbe:cf0b:6544:90c6:0d9d:f27d:b418",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7769,7 +7769,7 @@ export const transacoes = [
         valor: 390.69,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "a595:2413:7057:d74b:e64f:92b5:5695:a15e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7777,7 +7777,7 @@ export const transacoes = [
         valor: 123.47,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "c4b9:4c9b:40b1:8605:fae6:8d8f:3915:0e39",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7785,7 +7785,7 @@ export const transacoes = [
         valor: 290.57,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a821:c340:6e26:6c2b:e316:6f60:663d:9c0b",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7793,7 +7793,7 @@ export const transacoes = [
         valor: 168.85,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "9a43:0075:baec:e43a:92b7:f4f8:5323:bc8f",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7801,7 +7801,7 @@ export const transacoes = [
         valor: 1679.84,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "c3f2:556d:cf70:4be5:524b:5ef5:9a65:4615",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7809,7 +7809,7 @@ export const transacoes = [
         valor: 71.79,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "0d5f:3983:8cdc:1ed8:ece6:e0d1:6dd7:0e42",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7817,7 +7817,7 @@ export const transacoes = [
         valor: 61.37,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "a270:4a92:eede:f9ed:0740:d5c6:819f:d653",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7825,7 +7825,7 @@ export const transacoes = [
         valor: 35.85,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "16ed:9622:e5c2:af01:9483:5750:bca2:1082",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7833,7 +7833,7 @@ export const transacoes = [
         valor: 94.92,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "a845:2ff4:4801:9a49:dd39:5385:07ab:2905",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7841,7 +7841,7 @@ export const transacoes = [
         valor: 389.48,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "338a:4593:d5ac:7f75:4413:949f:31a0:4fd4",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7849,7 +7849,7 @@ export const transacoes = [
         valor: 230.95,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "6eb3:17e9:8c60:acd4:d561:128a:f47f:9398",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7857,7 +7857,7 @@ export const transacoes = [
         valor: 285.73,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "b685:8560:e727:f95f:5994:e038:f6ca:7993",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7865,7 +7865,7 @@ export const transacoes = [
         valor: 410.76,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "18dc:5183:43bd:abef:cc46:7bbc:3bf9:919d",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -7873,7 +7873,7 @@ export const transacoes = [
         valor: 1758.64,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "237c:5243:08af:2e3a:a338:dabc:5c44:301b",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -7881,7 +7881,7 @@ export const transacoes = [
         valor: 126.96,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "b845:1ef9:17e1:9154:3a2d:d000:cb0a:95ef",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7889,7 +7889,7 @@ export const transacoes = [
         valor: 1595.77,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "70a9:ee3b:88fb:0b64:d10c:5ca9:43d9:c554",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7897,7 +7897,7 @@ export const transacoes = [
         valor: 102.37,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "ab44:20ac:d7ff:d450:9b01:89c8:7ee5:515d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7905,7 +7905,7 @@ export const transacoes = [
         valor: 2509,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "c79f:7363:1a9c:b3f9:e53a:d2ca:a6fe:5017",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7913,7 +7913,7 @@ export const transacoes = [
         valor: 142.51,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "326f:be81:c132:ef7b:3435:d711:b1f1:4620",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7921,7 +7921,7 @@ export const transacoes = [
         valor: 176.64,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "82d3:7974:36b6:7a57:0a48:35e3:742f:40be",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7929,7 +7929,7 @@ export const transacoes = [
         valor: 5051,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "fccf:fcd4:e40e:bc36:ae31:eed5:746e:4a97",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -7937,7 +7937,7 @@ export const transacoes = [
         valor: 193.63,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3113:a234:9a5d:21c6:108e:430a:c6ae:1cc3",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7945,7 +7945,7 @@ export const transacoes = [
         valor: 169.16,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "412c:b6f4:2085:0bf8:0278:5c53:d25c:a354",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7953,7 +7953,7 @@ export const transacoes = [
         valor: 2735,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "c626:be52:3b33:7971:f2ea:e441:5c20:fe8d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7961,7 +7961,7 @@ export const transacoes = [
         valor: 119.84,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "9c68:5ca2:16fd:29f1:b236:c94f:8397:4686",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7969,7 +7969,7 @@ export const transacoes = [
         valor: 203.56,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "3c5f:b63a:d0a8:bd09:98ea:667c:e20b:fff8",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -7977,7 +7977,7 @@ export const transacoes = [
         valor: 32.91,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "6071:9468:4fce:451d:58e9:6e2d:a342:7ef9",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -7985,7 +7985,7 @@ export const transacoes = [
         valor: 305.99,
         tipo: 'despesa',
         descricao: 'Uniforme escolar.',
-        id: crypto.randomUUID(),
+        id: "4ed1:ec6b:8e4d:634c:e2b7:b7d5:6353:3799",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -7993,7 +7993,7 @@ export const transacoes = [
         valor: 134.24,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "e763:1f69:ea2f:1112:f575:05d8:326f:78ed",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8001,7 +8001,7 @@ export const transacoes = [
         valor: 3618,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "11af:8879:ed2d:36d0:ab03:704b:75c8:5467",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8009,7 +8009,7 @@ export const transacoes = [
         valor: 90.75,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "04bd:9bee:e4ac:084e:c789:3a18:2ba9:5b25",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8017,7 +8017,7 @@ export const transacoes = [
         valor: 155.73,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "5fb3:d2d0:c217:542b:07ba:dfc8:a310:b83f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8025,7 +8025,7 @@ export const transacoes = [
         valor: 208.85,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "9355:f81e:a004:716d:ddba:29aa:f2bf:6dda",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8033,7 +8033,7 @@ export const transacoes = [
         valor: 118.05,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "ffdd:3e0e:a5c1:21b8:708a:5b77:32f2:afd3",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8041,7 +8041,7 @@ export const transacoes = [
         valor: 106.09,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "6bf4:60df:c541:c9ae:842d:5de6:1c7a:c150",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8049,7 +8049,7 @@ export const transacoes = [
         valor: 78.83,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "1b66:6f8f:be3d:613d:e4dc:3b5b:a5a2:5312",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8057,7 +8057,7 @@ export const transacoes = [
         valor: 193.38,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "7658:42c8:7f67:80b2:c387:b046:5b3c:0f0f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8065,7 +8065,7 @@ export const transacoes = [
         valor: 144.09,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "bf57:5deb:9f8d:5f5b:3990:e73f:aca7:5c72",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8073,7 +8073,7 @@ export const transacoes = [
         valor: 392.08,
         tipo: 'despesa',
         descricao: 'Exames laboratoriais.',
-        id: crypto.randomUUID(),
+        id: "52a9:f4f3:54e1:74d3:54ac:4be6:f9c6:424d",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8081,7 +8081,7 @@ export const transacoes = [
         valor: 126.23,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "fbcb:6a75:7ec2:fd2f:ce56:85ec:c8f3:b814",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8089,7 +8089,7 @@ export const transacoes = [
         valor: 183.78,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "bbf2:cc26:b9fb:5d7e:c310:06dc:4c50:2ffa",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8097,7 +8097,7 @@ export const transacoes = [
         valor: 138.33,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "fde2:3089:02af:4528:5114:ce6e:0fc5:4434",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8105,7 +8105,7 @@ export const transacoes = [
         valor: 117.93,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "b5b8:6798:cfc4:f6d6:60b6:2dd7:dc94:b51f",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8113,7 +8113,7 @@ export const transacoes = [
         valor: 361.17,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "145a:3400:a2bd:48e0:82db:d7f1:aa6b:ce12",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8121,7 +8121,7 @@ export const transacoes = [
         valor: 98.23,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "f689:1cb7:e41a:7207:ded2:3f36:d6c3:0c5e",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8129,7 +8129,7 @@ export const transacoes = [
         valor: 141.2,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "912d:0032:7a0f:5b97:4dc9:861c:5c8a:3ec5",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8137,7 +8137,7 @@ export const transacoes = [
         valor: 94.64,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "973c:67db:43b3:56f5:6966:22c9:1da9:762b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8145,7 +8145,7 @@ export const transacoes = [
         valor: 154.33,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "d83f:69e7:ac59:18e2:3f10:4b0a:5a74:357b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8153,7 +8153,7 @@ export const transacoes = [
         valor: 339.87,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f465:255b:e7bb:d996:d420:b9d0:b9f7:afdb",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8161,7 +8161,7 @@ export const transacoes = [
         valor: 65.12,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "a5f4:1255:9800:097e:7cb1:314b:fb2c:32ee",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8169,7 +8169,7 @@ export const transacoes = [
         valor: 304.98,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "d4be:16c4:4435:e0bb:1901:b273:5794:0d9f",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8177,7 +8177,7 @@ export const transacoes = [
         valor: 84.85,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "6b87:7a78:f258:809a:8cc7:1000:d8b4:382a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8185,7 +8185,7 @@ export const transacoes = [
         valor: 259.27,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f834:c8e2:8bdb:f5bb:364f:521c:b790:0738",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8193,7 +8193,7 @@ export const transacoes = [
         valor: 286.57,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "0b36:7816:c318:7b02:79cb:2174:acad:2cf1",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8201,7 +8201,7 @@ export const transacoes = [
         valor: 411.83,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "e13c:8329:5d1b:6fd1:47de:03ba:73c5:f479",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8209,7 +8209,7 @@ export const transacoes = [
         valor: 73.53,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "4bde:5f1b:19fd:cd9f:2b14:99ce:10fc:ecd7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8217,7 +8217,7 @@ export const transacoes = [
         valor: 112.42,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "d344:64fe:f779:7494:898b:dafa:8b0b:fe3c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8225,7 +8225,7 @@ export const transacoes = [
         valor: 130.29,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "81b2:e9fb:b254:c752:f52e:2497:c46d:d407",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8233,7 +8233,7 @@ export const transacoes = [
         valor: 191.19,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2ad6:7680:2892:f0f8:cd61:303b:11e3:6f0f",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8241,7 +8241,7 @@ export const transacoes = [
         valor: 114.58,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "5faa:ce92:0f4d:2959:e8b7:49f7:e8fb:d775",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8249,7 +8249,7 @@ export const transacoes = [
         valor: 191.54,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "70f0:f46a:5c86:6f25:de01:af90:3256:91c2",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8257,7 +8257,7 @@ export const transacoes = [
         valor: 714.22,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "5761:28e6:518f:a67a:6f0e:c4b5:c058:a364",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8265,7 +8265,7 @@ export const transacoes = [
         valor: 155.4,
         tipo: 'despesa',
         descricao: 'Eletrônicos.',
-        id: crypto.randomUUID(),
+        id: "c2b9:3f29:a813:9b32:b3a2:28b1:1895:0312",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8273,7 +8273,7 @@ export const transacoes = [
         valor: 115.91,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "0b0c:e060:a381:0f48:81a0:8227:5ec2:8660",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8281,7 +8281,7 @@ export const transacoes = [
         valor: 102.18,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "26c7:e104:b09b:8d95:ee2d:7ea6:1d65:b13d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8289,7 +8289,7 @@ export const transacoes = [
         valor: 43.92,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "3df3:5cfa:5599:6d6e:df6f:d129:d067:3fa4",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8297,7 +8297,7 @@ export const transacoes = [
         valor: 98.15,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "1d13:b33c:9a83:ef7a:6161:99fe:6dc4:976c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8305,7 +8305,7 @@ export const transacoes = [
         valor: 79.83,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "fea3:5164:d8e5:6c65:334c:b9e7:c74e:feda",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8313,7 +8313,7 @@ export const transacoes = [
         valor: 197.22,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "c5eb:4373:6add:bc04:204a:8286:e0d9:0b0d",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8321,7 +8321,7 @@ export const transacoes = [
         valor: 113.16,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "2f97:5d0f:cbcd:9c63:aecc:b729:dafe:f8d6",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8329,7 +8329,7 @@ export const transacoes = [
         valor: 203.92,
         tipo: 'despesa',
         descricao: 'Uniforme escolar.',
-        id: crypto.randomUUID(),
+        id: "b520:519e:5137:ce20:abf5:eb5e:0dbe:13fc",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8337,7 +8337,7 @@ export const transacoes = [
         valor: 511.86,
         tipo: 'despesa',
         descricao: 'Loja de departamentos.',
-        id: crypto.randomUUID(),
+        id: "cc4c:e9a7:a0ee:e584:1735:e2a2:e52a:8b5e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8345,7 +8345,7 @@ export const transacoes = [
         valor: 110.73,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "8605:5c01:b2be:3788:7000:29e1:ca3a:c62c",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8353,7 +8353,7 @@ export const transacoes = [
         valor: 85.04,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "de00:e22d:6705:ee02:cb65:3ef8:702d:8b17",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8361,7 +8361,7 @@ export const transacoes = [
         valor: 169.25,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "7206:db62:709f:3fb8:e91f:278f:1fb7:2548",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8369,7 +8369,7 @@ export const transacoes = [
         valor: 113.3,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "5da2:c0b7:5c94:cc8b:9df6:6159:8508:8a7e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8377,7 +8377,7 @@ export const transacoes = [
         valor: 1259.94,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "6c39:02c6:dd8c:c563:52a0:a2fe:9357:fe97",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8385,7 +8385,7 @@ export const transacoes = [
         valor: 163.85,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "5fed:8c73:d9e8:0ba1:d999:9326:21ab:0c79",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8393,7 +8393,7 @@ export const transacoes = [
         valor: 242.29,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "1a1a:d339:ec0b:8048:e1ca:df71:76ae:cf4b",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8401,7 +8401,7 @@ export const transacoes = [
         valor: 147.85,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "bd85:509c:5e3e:03f1:36d4:3627:b052:1704",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8409,7 +8409,7 @@ export const transacoes = [
         valor: 116.79,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "ab44:1183:bb36:8143:780e:e459:0d89:8cef",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8417,7 +8417,7 @@ export const transacoes = [
         valor: 417.61,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "0c20:3fd3:fb45:0548:d616:15d8:30c5:760a",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8425,7 +8425,7 @@ export const transacoes = [
         valor: 172.37,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "7ad5:7864:6618:cdde:25e8:7461:2dc5:0709",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8433,7 +8433,7 @@ export const transacoes = [
         valor: 107.67,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "df39:c4cc:d576:97f3:f72f:7711:206e:1441",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8441,7 +8441,7 @@ export const transacoes = [
         valor: 177.35,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "286c:abe3:d703:3b0e:9870:d360:e99c:448a",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8449,7 +8449,7 @@ export const transacoes = [
         valor: 95.39,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "2302:f351:ad1f:8907:4ce4:00e6:f7c6:6f15",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8457,7 +8457,7 @@ export const transacoes = [
         valor: 236.62,
         tipo: 'despesa',
         descricao: 'Consulta pediátrica.',
-        id: crypto.randomUUID(),
+        id: "28d8:e9ba:fd54:1951:636c:56c2:a514:1121",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8465,7 +8465,7 @@ export const transacoes = [
         valor: 1124.79,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "c7a1:adf2:701c:1c7f:f904:d1e2:06a3:5c3d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8473,7 +8473,7 @@ export const transacoes = [
         valor: 1100.33,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "3d06:123f:2151:5118:5993:cf8b:822e:72ad",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8481,7 +8481,7 @@ export const transacoes = [
         valor: 78.61,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "2d2a:a5e9:defd:8ce6:1c2d:e08f:c82c:27c1",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8489,7 +8489,7 @@ export const transacoes = [
         valor: 149.39,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "3723:a295:24f3:6938:6925:56d9:809c:38b4",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8497,7 +8497,7 @@ export const transacoes = [
         valor: 135.99,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "5de9:02a9:63fb:84f6:2078:d540:dbdf:d1f6",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8505,7 +8505,7 @@ export const transacoes = [
         valor: 82.3,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "f460:425e:db20:4210:3b56:446d:7719:3aff",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8513,7 +8513,7 @@ export const transacoes = [
         valor: 140.78,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "639a:915a:49f4:ce9a:6e61:6402:6277:79ab",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8521,7 +8521,7 @@ export const transacoes = [
         valor: 971.91,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "683e:d7a4:c497:5745:c8a9:6ee1:bf39:3976",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8529,7 +8529,7 @@ export const transacoes = [
         valor: 331.7,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "8ee1:7a16:3b54:5e9a:22ba:12c3:b216:8607",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8537,7 +8537,7 @@ export const transacoes = [
         valor: 84.97,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "ec17:486d:7690:7658:0a78:73e6:ef3f:dfac",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8545,7 +8545,7 @@ export const transacoes = [
         valor: 131.42,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "15ed:c7a8:057b:3483:62c3:01c1:7874:9379",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8553,7 +8553,7 @@ export const transacoes = [
         valor: 315.74,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "3fb1:e530:43f1:17ef:1765:fc6b:0bab:0b6f",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8561,7 +8561,7 @@ export const transacoes = [
         valor: 73.01,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "2466:1f42:628b:f62e:3268:f8b3:5fb7:4828",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8569,7 +8569,7 @@ export const transacoes = [
         valor: 4684,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "d969:9a62:db8e:bca8:9295:b190:2a3a:0fc7",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8577,7 +8577,7 @@ export const transacoes = [
         valor: 5276,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "92f1:8cef:d43b:e4bc:957a:f3df:6d02:d592",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8585,7 +8585,7 @@ export const transacoes = [
         valor: 6918,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "4506:b0a1:cd1c:ed9e:9176:ebd4:444b:8527",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8593,7 +8593,7 @@ export const transacoes = [
         valor: 275.53,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "7635:0c6e:ed26:7a7e:ff7a:4e0f:c680:06f2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8601,7 +8601,7 @@ export const transacoes = [
         valor: 4830,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "2fc8:3f19:be2b:bd39:5835:13e0:9853:649d",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8609,7 +8609,7 @@ export const transacoes = [
         valor: 132.73,
         tipo: 'despesa',
         descricao: 'Livros.',
-        id: crypto.randomUUID(),
+        id: "2c68:51cb:88d8:dc11:59d9:dd45:88b2:88fd",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8617,7 +8617,7 @@ export const transacoes = [
         valor: 738.43,
         tipo: 'despesa',
         descricao: 'Compras online.',
-        id: crypto.randomUUID(),
+        id: "0eff:ff5f:b9ec:4799:b427:9661:c9b5:c939",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8625,7 +8625,7 @@ export const transacoes = [
         valor: 374.8,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "81a0:c5b4:009e:ae6a:d481:98f5:2815:64ef",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8633,7 +8633,7 @@ export const transacoes = [
         valor: 138.55,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "199a:993a:d938:c550:e0dc:a44c:36e9:4dc2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8641,7 +8641,7 @@ export const transacoes = [
         valor: 130.56,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "a559:f006:785d:a3c9:43e8:d092:2c73:b936",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8649,7 +8649,7 @@ export const transacoes = [
         valor: 224.29,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f367:bafa:66fa:d78e:c696:c88c:15cf:0756",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8657,7 +8657,7 @@ export const transacoes = [
         valor: 168.99,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "b17f:6744:2601:473f:6194:56ec:aa8f:aa19",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8665,7 +8665,7 @@ export const transacoes = [
         valor: 302.89,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "c82b:7fea:ddec:5326:5090:e745:8fb6:d01c",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8673,7 +8673,7 @@ export const transacoes = [
         valor: 27.33,
         tipo: 'despesa',
         descricao: 'Cinema.',
-        id: crypto.randomUUID(),
+        id: "8dd0:4b95:3af4:5017:8823:8849:1655:9f34",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8681,7 +8681,7 @@ export const transacoes = [
         valor: 98.26,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "32d9:738b:0573:9ad1:0c28:f561:ca5e:eccb",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8689,7 +8689,7 @@ export const transacoes = [
         valor: 189.11,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "9c58:2cba:b2e3:c3de:40d0:8815:6dcf:2483",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8697,7 +8697,7 @@ export const transacoes = [
         valor: 241.65,
         tipo: 'despesa',
         descricao: 'Brinquedos.',
-        id: crypto.randomUUID(),
+        id: "955c:464e:68e7:7fc2:b778:bfb4:7147:d0d3",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8705,7 +8705,7 @@ export const transacoes = [
         valor: 100.71,
         tipo: 'despesa',
         descricao: 'Passeio.',
-        id: crypto.randomUUID(),
+        id: "1a87:84df:23ff:e50d:1e94:48ee:d1c4:729b",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8713,7 +8713,7 @@ export const transacoes = [
         valor: 351.66,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "461e:1291:f44b:098f:4506:0dbf:67ba:f3d3",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8721,7 +8721,7 @@ export const transacoes = [
         valor: 172.93,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "3d10:affc:666c:0220:a96c:6d7d:7689:83b7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8729,7 +8729,7 @@ export const transacoes = [
         valor: 113.3,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "7577:200c:0ff1:40ca:fe8d:b0b3:1491:6f6e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8737,7 +8737,7 @@ export const transacoes = [
         valor: 125.13,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "1ac4:9842:3a19:8ff2:aaa9:2e5b:4b78:350a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8745,7 +8745,7 @@ export const transacoes = [
         valor: 187.95,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "26cb:52a1:d7a6:1407:43b3:79ac:3fa7:e3ca",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8753,7 +8753,7 @@ export const transacoes = [
         valor: 108.03,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "ffa8:fa94:f549:ca17:f163:abf5:ffab:63ff",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8761,7 +8761,7 @@ export const transacoes = [
         valor: 218.77,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "2e9a:a6c5:ee8a:6d2f:147f:c80f:0da1:b1b4",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8769,7 +8769,7 @@ export const transacoes = [
         valor: 245.97,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c596:de58:70f1:3ab9:2a87:7980:b2fa:afb2",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8777,7 +8777,7 @@ export const transacoes = [
         valor: 121.89,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "b5ed:96ea:1bca:8a68:e2fa:f0ce:72b9:1f31",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8785,7 +8785,7 @@ export const transacoes = [
         valor: 99.98,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "836f:41b8:0956:3a82:dc45:e860:fb21:a514",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8793,7 +8793,7 @@ export const transacoes = [
         valor: 119.83,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "0c28:84e2:942f:978d:a279:449e:b981:3e37",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8801,7 +8801,7 @@ export const transacoes = [
         valor: 61.46,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "1ef6:735d:22b1:100c:b4c2:44d8:0598:8229",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8809,7 +8809,7 @@ export const transacoes = [
         valor: 117.32,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "012b:9af2:87e2:8d60:52cb:2d13:08e6:abc1",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8817,7 +8817,7 @@ export const transacoes = [
         valor: 445.71,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "acf9:936e:b4eb:8e27:4e89:4826:8853:0ae0",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8825,7 +8825,7 @@ export const transacoes = [
         valor: 304.58,
         tipo: 'despesa',
         descricao: 'Conta de energia.',
-        id: crypto.randomUUID(),
+        id: "4c0a:7729:26b1:1f85:2967:47c1:a19b:e628",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8833,7 +8833,7 @@ export const transacoes = [
         valor: 239.08,
         tipo: 'despesa',
         descricao: 'Livros escolares.',
-        id: crypto.randomUUID(),
+        id: "de9b:74f2:cbd3:e124:3f77:129d:fd23:26c4",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8841,7 +8841,7 @@ export const transacoes = [
         valor: 134.85,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "e52c:602d:9143:0880:8d12:7040:8adf:3fc3",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8849,7 +8849,7 @@ export const transacoes = [
         valor: 296.15,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "6b2f:b21b:c1d1:c554:e15a:b6d4:a287:8d96",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8857,7 +8857,7 @@ export const transacoes = [
         valor: 344.4,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "c6ab:98a5:0337:bc63:bf21:e6fb:3025:8cc4",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8865,7 +8865,7 @@ export const transacoes = [
         valor: 213.35,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c132:7e38:f334:35bf:e549:aed8:012d:17db",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8873,7 +8873,7 @@ export const transacoes = [
         valor: 394.7,
         tipo: 'despesa',
         descricao: 'Consulta médica.',
-        id: crypto.randomUUID(),
+        id: "4424:999a:fee3:d558:56bf:a91d:a23f:b4af",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8881,7 +8881,7 @@ export const transacoes = [
         valor: 112.17,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "ac74:c20c:47d6:4d54:075a:8689:28d3:14c5",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8889,7 +8889,7 @@ export const transacoes = [
         valor: 87.91,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "f2be:d67d:03a7:08a2:6e78:6c9b:6adb:7bbc",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8897,7 +8897,7 @@ export const transacoes = [
         valor: 172.07,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "14cc:7682:0f43:74d3:37f8:dd49:3bef:0ee9",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -8905,7 +8905,7 @@ export const transacoes = [
         valor: 223.72,
         tipo: 'despesa',
         descricao: 'Material escolar.',
-        id: crypto.randomUUID(),
+        id: "5ae2:44f1:c502:7e21:3c4f:e59a:cd21:f34b",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -8913,7 +8913,7 @@ export const transacoes = [
         valor: 72.97,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "377d:a2c5:fc94:7f29:d1f2:78f1:8726:98e1",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -8921,7 +8921,7 @@ export const transacoes = [
         valor: 267.17,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "d9ad:1932:7f2f:fc29:af17:1993:4f9c:2bd7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8929,7 +8929,7 @@ export const transacoes = [
         valor: 72.14,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "8e7c:05b8:60d6:9a29:9db6:1ce5:5c86:4f2b",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8937,7 +8937,7 @@ export const transacoes = [
         valor: 163.47,
         tipo: 'despesa',
         descricao: 'Conta de água.',
-        id: crypto.randomUUID(),
+        id: "e53f:33a0:85f7:4df1:143e:bdd0:0853:0c38",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8945,7 +8945,7 @@ export const transacoes = [
         valor: 50.44,
         tipo: 'despesa',
         descricao: 'Restaurante.',
-        id: crypto.randomUUID(),
+        id: "85ab:5b2b:d262:c0e5:9e40:98e7:a919:3075",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8953,7 +8953,7 @@ export const transacoes = [
         valor: 111.95,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "5d30:31d1:a2c7:ed20:e974:08a9:e5a5:ed6b",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8961,7 +8961,7 @@ export const transacoes = [
         valor: 414.97,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "0ea4:1540:7582:dbd4:9f94:4cbd:e1bc:701a",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -8969,7 +8969,7 @@ export const transacoes = [
         valor: 193.31,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "34cf:11de:4415:12f1:c058:cab4:79b4:9519",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -8977,7 +8977,7 @@ export const transacoes = [
         valor: 109.61,
         tipo: 'despesa',
         descricao: 'Delivery.',
-        id: crypto.randomUUID(),
+        id: "603a:05cd:25c9:f253:cae3:8570:9ffa:cafa",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8985,7 +8985,7 @@ export const transacoes = [
         valor: 127,
         tipo: 'despesa',
         descricao: 'Internet residencial.',
-        id: crypto.randomUUID(),
+        id: "6d85:948b:59a7:7ec8:d472:07e5:2b8f:ffe9",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -8993,7 +8993,7 @@ export const transacoes = [
         valor: 721.2,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "18cc:3aeb:f922:04d1:0cc1:ea41:2167:4e3e",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -9001,7 +9001,7 @@ export const transacoes = [
         valor: 172.48,
         tipo: 'despesa',
         descricao: 'Streaming.',
-        id: crypto.randomUUID(),
+        id: "8038:dc83:e9e9:ad9f:60ad:09f7:9535:980e",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -9009,7 +9009,7 @@ export const transacoes = [
         valor: 1257.87,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "9c7e:25ce:8435:e9af:42a2:e65a:b006:1ec6",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -9017,7 +9017,7 @@ export const transacoes = [
         valor: 56.92,
         tipo: 'despesa',
         descricao: 'Lanchonete.',
-        id: crypto.randomUUID(),
+        id: "e19e:4ef6:40ba:f046:a83e:9f65:9666:baea",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -9025,7 +9025,7 @@ export const transacoes = [
         valor: 206.38,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2117:5033:1e6e:4bcc:630c:d5b7:d7c7:68b5",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -9033,7 +9033,7 @@ export const transacoes = [
         valor: 339.02,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "f8b6:e2ad:cad6:e1db:3638:071b:e0e5:08ac",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -9041,7 +9041,7 @@ export const transacoes = [
         valor: 112.85,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "cd16:12f9:f850:54a1:ea58:db62:4ff1:1f25",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -9049,7 +9049,7 @@ export const transacoes = [
         valor: 1633.03,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "5195:4829:4e23:303a:7ddb:a3c5:b72d:7852",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -9057,7 +9057,7 @@ export const transacoes = [
         valor: 194.76,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "68a6:af4e:2653:e146:7d9b:25d3:3061:8484",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -9065,7 +9065,7 @@ export const transacoes = [
         valor: 773.13,
         tipo: 'despesa',
         descricao: 'Aluguel.',
-        id: crypto.randomUUID(),
+        id: "8b81:ba73:9a2e:b8be:5565:3f7b:1946:a755",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -9073,7 +9073,7 @@ export const transacoes = [
         valor: 5613,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "90eb:21b1:a0bc:c4fd:bd99:621b:ccbb:18de",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -9081,7 +9081,7 @@ export const transacoes = [
         valor: 156.71,
         tipo: 'despesa',
         descricao: 'Combustível.',
-        id: crypto.randomUUID(),
+        id: "c61a:9b8b:bd2f:49f4:09ec:45ac:3a0c:3b32",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -9089,7 +9089,7 @@ export const transacoes = [
         valor: 4916,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "854e:969c:e980:7df4:2885:1683:d2fb:6ee5",
     },
     {
         pessoaId: '654a:d52e:ddab:eea2:68e5',
@@ -9097,7 +9097,7 @@ export const transacoes = [
         valor: 348.88,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "06ca:0b5c:5aa1:582e:47eb:aa39:864b:e949",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -9105,7 +9105,7 @@ export const transacoes = [
         valor: 221.7,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "06a0:02f8:5545:e901:894f:fb66:9c16:f7f7",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -9113,7 +9113,7 @@ export const transacoes = [
         valor: 5800,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "cac7:b550:5833:e5ed:e6f9:32c6:6c51:49d0",
     },
     {
         pessoaId: 'c372:167f:81ee:6d7b:9dce',
@@ -9121,7 +9121,7 @@ export const transacoes = [
         valor: 392.43,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "49c9:21f2:d9f8:7a98:e92d:ef33:e970:449a",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -9129,7 +9129,7 @@ export const transacoes = [
         valor: 158.87,
         tipo: 'despesa',
         descricao: 'Medicamentos.',
-        id: crypto.randomUUID(),
+        id: "74c6:5717:debe:1938:5d85:b092:0516:c919",
     },
     {
         pessoaId: '93be:9780:5100:dae8:15b1',
@@ -9137,7 +9137,7 @@ export const transacoes = [
         valor: 606.48,
         tipo: 'despesa',
         descricao: 'Roupas.',
-        id: crypto.randomUUID(),
+        id: "b3f7:1c1a:824a:2fe3:2d78:e74d:14da:5d0c",
     },
     {
         pessoaId: 'df17:ad32:0d2a:1836:3b61',
@@ -9145,7 +9145,7 @@ export const transacoes = [
         valor: 267.65,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "7dd1:1b52:aa77:e393:e31c:eb62:2f7c:51aa",
     },
     {
         pessoaId: 'b7a7:f5aa:fa9a:194e:db6d',
@@ -9153,7 +9153,7 @@ export const transacoes = [
         valor: 145.74,
         tipo: 'despesa',
         descricao: 'Compras no atacado.',
-        id: crypto.randomUUID(),
+        id: "c767:1c9c:a329:7387:73f2:4706:b947:f328",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -9161,7 +9161,7 @@ export const transacoes = [
         valor: 96.75,
         tipo: 'despesa',
         descricao: 'Compras em supermercado.',
-        id: crypto.randomUUID(),
+        id: "2ab5:4eac:9c93:74c8:bc88:2996:9fc3:a66e",
     },
     {
         pessoaId: '9e3e:083e:be32:a600:e819',
@@ -9169,6 +9169,6 @@ export const transacoes = [
         valor: 6223,
         tipo: 'receita',
         descricao: 'Salário mensal.',
-        id: crypto.randomUUID(),
+        id: "3bbc:e60e:40a9:3703:4297:e218:7f34:3dcd",
     },
 ];

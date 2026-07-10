@@ -1,12 +1,18 @@
 import { useState } from 'react';
-import { criarPessoa } from '../../api/criarPessoas';
+import { criarPessoa } from '../../api/criarPessoa';
+import type { pessoasType } from '../../mockData';
 
-export default function CriarPessoa({ onPessoaCriada }: { onPessoaCriada: () => void }) {
+export default function CriarPessoa({ pessoas, onPessoaCriada }: {pessoas:pessoasType; onPessoaCriada: () => void }) {
 	const [nome, setNome] = useState('');
 	const [dataNascimento, setDataNascimento] = useState('');
 	async function handleSubmit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
 		e.preventDefault();
-		await criarPessoa(nome, dataNascimento);
+		if (pessoas.find(pessoa => pessoa.nome === nome)) {
+			alert('Já existe uma pessoa com esse nome!');
+			return;
+		}else{
+			await criarPessoa(nome, dataNascimento);
+		}
 		onPessoaCriada();
 		console.log('Pessoa criada com sucesso!');
 		setNome('');

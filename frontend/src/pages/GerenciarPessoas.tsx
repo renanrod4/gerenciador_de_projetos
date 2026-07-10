@@ -14,9 +14,9 @@ export default function GerenciarPessoas() {
 
 	return (
 		<>
-			<CardGerenciarPessoas pessoas={pessoas} />
+			<CardGerenciarPessoas pessoas={pessoas} onPessoaAtualizada={() => fetchPessoas(setPessoas, () => {})}/>
 			<div className="criar-excluir-pessoa">
-				<CriarPessoa onPessoaCriada={() =>fetchPessoas(setPessoas, () => {})} />
+				<CriarPessoa onPessoaCriada={() =>fetchPessoas(setPessoas, () => {})} pessoas={pessoas} />
 				<ExcluirPessoa pessoas={pessoas} onPessoasExcluidas={() => {
 					console.log('Pessoas excluídas com sucesso!2');
 					fetchPessoas(setPessoas, () => {})}

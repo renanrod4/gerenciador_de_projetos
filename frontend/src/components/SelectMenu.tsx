@@ -1,6 +1,7 @@
-import type { Dispatch, SetStateAction } from 'react';
+import { createElement, type Dispatch, type SetStateAction } from 'react';
 import './SelectMenu.css';
 import { FaAngleDown } from 'react-icons/fa';
+import type { IconType } from 'react-icons';
 
 export default function SelectMenu({
 	text,
@@ -8,7 +9,9 @@ export default function SelectMenu({
 	isOpen,
 	onToggle,
 	setValue,
-    value
+    value,
+	classname,
+	customIcon
 }: {
 	text: string;
 	options: string[];
@@ -16,12 +19,14 @@ export default function SelectMenu({
 	onToggle?: () => void;
 	setValue?: Dispatch<SetStateAction<string|null>>;
     value?: string|null;
+	classname?: string;
+	customIcon?: IconType;
 }) {
 	return (
-		<div className="select-menu">
+		<div className={`select-menu ${classname ? classname : ''}`}>
 			<button className="select-menu-button" onClick={onToggle}>
 				{value ? value : text}
-				<FaAngleDown className={`select-menu-icon ${isOpen ? 'open' : ''}`} />
+				{customIcon ? createElement(customIcon, { className: `select-menu-icon filter ${isOpen ? 'open' : ''}` }) : <FaAngleDown className={`select-menu-icon ${isOpen ? 'open' : ''}`} />}
 			</button>
 			{isOpen && (
 				<ul className="select-menu-options">

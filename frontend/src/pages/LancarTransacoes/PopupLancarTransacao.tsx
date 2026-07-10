@@ -1,17 +1,23 @@
 import { useState, type Dispatch, type SetStateAction } from 'react';
-import { pessoas } from '../../mockData';
 import { createPortal } from 'react-dom';
 import Tooltip from '../../components/Tooltip';
+import type { pessoasType } from '../../mockData';
+import { criarTransacao } from '../../api/criarTransacao';
 
 export default function PopupLancarTransacao({
 	setIsLancarTransacaoOpen,
+	pessoas,
+	onCriarTransacao = () => {},
 }: {
 	setIsLancarTransacaoOpen: Dispatch<SetStateAction<boolean>>;
+	pessoas: pessoasType;
+	onCriarTransacao?: () => void;
 }) {
 	const [valor, setValor] = useState('R$ 0,00');
 	const [nomeSelecionado, setNomeSelecionado] = useState(pessoas[0].nome);
 	const [data, setData] = useState(new Date().toISOString().split('T')[0]);
 	const [hora, setHora] = useState(new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }));
+	const [descricao, setDescricao] = useState('');
 	const pessoaSelecionada = pessoas.find(pessoa => pessoa.nome === nomeSelecionado);
 	const idade = pessoaSelecionada
 		? new Date().getFullYear() - new Date(pessoaSelecionada.dataNascimento).getFullYear()
@@ -22,6 +28,19 @@ export default function PopupLancarTransacao({
 	function handleClose() {
 		setIsLancarTransacaoOpen(false);
 	}
+	async function handleSubmit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+		e.preventDefault();
+		const pessoa = pessoas.find(pessoa => pessoa.nome === nomeSelecionado);
+		if (!pessoa) {
+			alert('Pessoa não encontrada!');
+			return;
+		}
+		await criarTransacao(pessoa.id, parseFloat(valor.replace(/\D/g, '')) / 100, `${data}T${hora}`, tipoSelecionado as 'receita' | 'despesa', descricao);
+		onCriarTransacao();
+		setIsLancarTransacaoOpen(false);
+
+	}
+
 	function handleValorChange(e: React.ChangeEvent<HTMLInputElement>) {
 		const inputValor = e.target.value;
 		// Remove todos os caracteres que não sejam números e formata o valor como moeda brasileira
@@ -100,12 +119,13 @@ export default function PopupLancarTransacao({
 					</div>
 					<div className="descricao">
 						<p>Descrição:</p>
-						<textarea name="" id="" placeholder="Digite a descrição da transação">
+						<textarea name="" id="" placeholder={tipoSelecionado === 'receita' ? 'Ex: Salário, Bônus, etc.' : 'Ex: Aluguel, Supermercado, etc.'}
+						value={descricao} onChange={e => setDescricao(e.target.value)}>
 
 						</textarea>
 					</div>
 					<div className="botoes">
-						<button type="submit" className="botao-lancar">
+						<button type="submit" className="botao-lancar" onClick={handleSubmit}>
 							Lançar
 						</button>
 						<button type="button" className="botao-cancelar" onClick={handleClose}>

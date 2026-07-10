@@ -21,7 +21,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     {
         // Converte os enums para strings no JSON 
         // para não precisar ficar usando `0` e `1` nos requests e responses
-        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter(System.Text.Json.JsonNamingPolicy.CamelCase));
         // evita que o .NET entre em loop ao processar a relação entre Pessoa e Transacao
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     });

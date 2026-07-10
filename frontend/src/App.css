@@ -70,6 +70,7 @@ main {
   padding: 20px;
 
   &.gerenciarPessoas {
+    position: relative;
     height: 100%;
 
     .lista-pessoas {
@@ -200,10 +201,13 @@ form {
       border-radius: 5px;
       border: none;
       cursor: pointer;
+
       transition: all 0.1s ease-in-out;
       &.botao-cancelar {
         background-color: var(--cor-linha);
         color: var(--cor-texto-escuro);
+        border: 2px solid var(--cor-linha-escuro);
+
         &:hover {
           transform: scaleY(1.1) translateY(-2px);
           background-color: color-mix(in srgb, var(--cor-linha), #000 10%);
@@ -257,11 +261,11 @@ form {
           width: 100%;
         }
       }
-      .descricao{
+      .descricao {
         display: flex;
         flex-direction: column;
         width: fit-content;
-        flex:1;
+        flex: 1;
         gap: 10px;
         textarea {
           padding: 10px;
@@ -287,6 +291,15 @@ form {
       }
     }
   }
+  &.popup-editar-pessoa {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    min-width: 400px;
+    z-index: 20;
+    transform: translate(-50%, -50%) scale(1.2);
+    text-align: left;
+  }
 }
 .overlay {
   position: fixed;
@@ -303,6 +316,7 @@ form {
   flex: 1;
   max-height: 100%;
   width: 50%;
+  height: 100%;
   background-color: var(--cor-fundo-tela);
   box-shadow: inset -1px -1px 6px 3px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
@@ -320,21 +334,27 @@ form {
     h2 {
       margin-left: 20px;
     }
-    .lancar-transacao {
+    .botoes {
       display: flex;
-      gap: 5px;
-      margin-right: 20px;
-      padding: 10px 15px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.1s ease-in-out;
-      background-color: var(--cor-botao);
-      color: var(--cor-texto-claro);
-      font-size: 16px;
-      &:hover {
-        transform: scaleY(1.1) translateY(-2px);
-        background-color: var(--cor-botao-hover);
+      gap: 10px;
+      .lancar-transacao {
+        display: flex;
+        gap: 5px;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+        margin-right: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+        background-color: var(--cor-botao);
+        color: var(--cor-texto-claro);
+        font-size: 16px;
+        &:hover {
+          transform: scaleY(1.1) translateY(-2px);
+          background-color: var(--cor-botao-hover);
+        }
       }
     }
   }
